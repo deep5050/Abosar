@@ -1,0 +1,32 @@
+
+name: GitHub CI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        lfs: true
+        
+    - name: Use Node.js 13.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 13.x
+      
+    - name: Install
+      run: yarn install
+      
+      
+    - name: test
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: node index.js
+      
+    - name: publish changes
+      uses: mikeal/publish-to-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
