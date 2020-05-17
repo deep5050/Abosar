@@ -15,7 +15,7 @@ if (!fs.existsSync('./metadata')) {
 
 
 var todays_url = ""
-var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=20&slab=0&tnp=50";
+var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=21&slab=0&tnp=50";
 
 
 
