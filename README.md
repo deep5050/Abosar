@@ -7,6 +7,7 @@
 <h4> stories are added every Sunday on 10 A.M. automatically ( CRON jobs and Github CI) </h4>
 </div>
 
+![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
 
 ## SOURCES
 1. https://www.anandabazar.com/supplementary/rabibashoriyo/
