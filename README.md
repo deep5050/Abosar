@@ -4,8 +4,14 @@
 </p>
 
 **A Collection Of Short Bengali Stories Web Scraped From Various Bengali eMagazines And eNewspapers**
+<h4> stories are added every Sunday on 10 A.M. automatically ( CRON jobs and Github CI) </h4>
 </div>
 
+
+## SOURCES
+1. https://www.anandabazar.com/supplementary/rabibashoriyo/
+
+( more will be added soon )
 ## INDEX
 
 * [ পায়ে পায়ে - দেবব্রত পাল ](./stories/পায়ে-পায়ে.md)
