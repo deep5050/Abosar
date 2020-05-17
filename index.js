@@ -3,6 +3,17 @@ const cheerio = require('cheerio');
 const log = require('signale');
 const fs = require('fs');
 
+
+if (!fs.existsSync('./stories')) {
+    fs.mkdirSync('./stories');
+}
+
+if (!fs.existsSync('./metadata')) {
+    fs.mkdirSync('./metadata');
+}
+
+
+
 var todays_url = ""
 var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
 
@@ -85,6 +96,17 @@ function crawl_a_story(story_url) {
             var author_html = '<h2 align=center>' + author + '</h2>\n';
 
 
+            // check if this already exists don't inlude it again
+            if (fs.existsSync('./stories/'+story_name.replace(/ /g,"-")+".md")) {
+                log.info("File already exists");
+                return;
+                }
+
+            var readme_entry = story_name + " - " + author;
+            var readme_entry_text = "* [ "+readme_entry + " ](./stories/"+story_name.replace(/ /g,"-")+".md)\n";
+            fs.appendFileSync('./README.md', readme_entry_text);
+
+
             var img_div = $('div[id="abp-storypage-img-section"]');
             var img_src = img_div.find('img[class="img-fluid"]').attr('src'); // returns with leading '//'
             img_src = img_src.substr(2);
@@ -99,23 +121,23 @@ function crawl_a_story(story_url) {
                 }
             });
 
-            var out_stream = fs.createWriteStream('./stories/' + story_name + '.md');
+            var out_stream = fs.createWriteStream('./stories/' + story_name.replace(/ /g,"-") + '.md');
             out_stream.write(img_html);
             out_stream.write(story_name_html);
             out_stream.write(author_html);
             out_stream.write(story_html);
 
             // out_stream.destroy();
-            log.success(story_name + '.md created')
+            log.success(story_name.replace(/ /g,"-") + '.md created')
 
             metadata = {};
             metadata.url = story_url;
             metadata.author = author;
             metadata.crawl_date = Date();
 
-            var json_stream = fs.createWriteStream('./metadata/' + story_name + '.json');
+            var json_stream = fs.createWriteStream('./metadata/' + story_name.replace(/ /g,"-") + '.json');
             json_stream.write(JSON.stringify(metadata));
-            log.success(story_name + '.json created');
+            log.success(story_name.replace(/ /g,"-") + '.json created');
 
             // json_stream.destroy();
             log.complete();
