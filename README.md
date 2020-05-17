@@ -1,4 +1,6 @@
-# Abosar
+<div>
+<h1 align=center Abosar >
+</div>
 **A Collection Of Short Bengali Stories Web Scraped From Various Bengali eMagazines And eNewspapers**
 
 ## INDEX
