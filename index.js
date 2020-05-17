@@ -14,18 +14,24 @@ if (!fs.existsSync('./metadata')) {
 
 
 
-var todays_url = ""
-const  anandabazar_archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=26&slab=0&tnp=50";
 
+const rabibashoriyo_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
 
-for ( var i = 29;i<=50;i++)
+get_recent_stories(rabibashoriyo_url);
+
+/* only for manual entry */
+/* 
+ for ( var i = 1;i<=3;i++)
 {
     var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
-    get_all_story_links(archive_url);
-}
+    get_recent_stories(archive_url);
+}  */
 
 
-function get_all_story_links(url) {
+
+
+
+function get_recent_stories(url) {
     var options = {
         url: url,
         headers: {
@@ -55,24 +61,6 @@ function get_all_story_links(url) {
         }
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -150,6 +138,4 @@ function crawl_a_story(story_url) {
 }
 
 
-
-
-    // crawl_a_story(story_url);
+ 
