@@ -18,7 +18,7 @@ var todays_url = ""
 const  anandabazar_archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=26&slab=0&tnp=50";
 
 
-for ( var i = 26;i<=30;i++)
+for ( var i = 29;i<=50;i++)
 {
     var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
     get_all_story_links(archive_url);
