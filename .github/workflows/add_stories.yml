@@ -1,6 +1,6 @@
 name: CRON test
 on:
-  schedule: [cron: '0 22 * * SUN']
+  schedule: [cron: '33 21 * * SUN']
 
 jobs:
   build:
