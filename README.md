@@ -1,7 +1,10 @@
-<div>
-<h1 align=center Abosar >
-</div>
+<div align=center>
+<p>
+<h1 align=center > অবসর ( Abosar ) </h1>
+</p>
+
 **A Collection Of Short Bengali Stories Web Scraped From Various Bengali eMagazines And eNewspapers**
+</div>
 
 ## INDEX
 
