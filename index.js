@@ -12,6 +12,9 @@ if (!fs.existsSync('./metadata')) {
     fs.mkdirSync('./metadata');
 }
 
+if (!fs.existsSync('./metadata/images')) {
+    fs.mkdirSync('./metadata/images');
+}
 
 
 
@@ -20,13 +23,13 @@ const rabibashoriyo_url = "https://www.anandabazar.com/supplementary/rabibashori
 get_recent_stories(rabibashoriyo_url);
 
 /* only for manual entry */
-/* 
- for ( var i = 1;i<=3;i++)
+/*
+ for ( var i = 1;i<=50;i++)
 {
     var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
     get_recent_stories(archive_url);
-}  */
-
+} 
+*/
 
 
 
@@ -54,7 +57,7 @@ function get_recent_stories(url) {
 
                     log.start(article_link);
                     crawl_a_story(article_link);
-                    
+
                 }
 
             })
@@ -89,53 +92,68 @@ function crawl_a_story(story_url) {
 
 
             // check if this already exists don't inlude it again
-            if (fs.existsSync('./stories/'+story_name.replace(/ /g,"-")+".md")) {
+            if (fs.existsSync('./stories/' + story_name.replace(/ /g, "-") + ".md")) {
                 log.info("File already exists");
                 return;
-                }
+            }
 
             var readme_entry = story_name + " - " + author;
-            var readme_entry_text = "* [ "+readme_entry + " ](./stories/"+story_name.replace(/ /g,"-")+".md)\n";
+            var readme_entry_text = "* [ " + readme_entry + " ](./stories/" + story_name.replace(/ /g, "-") + ".md)\n";
             fs.appendFileSync('./README.md', readme_entry_text);
 
 
             var img_div = $('div[id="abp-storypage-img-section"]');
             var img_src = img_div.find('img[class="img-fluid"]').attr('src'); // returns with leading '//'
             img_src = img_src.substr(2);
-            img_html = '<div align=center> <img src="http://' + img_src + '" alt="' + story_name + '" align="center" ></div>\n';
 
-            var story_html = "";
-            $("div[class='col-12 abp-storypage-articlebody abp-videoarticle-content']").find('p').each(function (index, element) {
-                if (index != 0) {
-                    story_html = story_html + '<br> <br>' + $(element).html().trim();
-                } else if (index == 0) {
-                    story_html = $(element).html().trim();
+            // download image
+            var image = "http://" + img_src;
+
+            var options2 = {
+                url: image,
+                headers: {
+                    'User-Agent': 'request'
                 }
+            };
+
+            request(image, options2).pipe(fs.createWriteStream('./metadata/images/' + story_name.replace(/ /g, "-") + '.jpg')).on('close', () => {
+                log.success(story_name.replace(/ /g, "-") + '.jpg created')
+                var img_html = '<div align=center> <img src="./../metadata/images/' + story_name.replace(/ /g, "-") + '.jpg" align="center" ></div>\n';
+
+
+                var story_html = "";
+                $("div[class='col-12 abp-storypage-articlebody abp-videoarticle-content']").find('p').each(function (index, element) {
+                    if (index != 0) {
+                        if ($(element).html().trim().search('feedback@abpdigital.in') == -1) {
+                            story_html = story_html + '<br> <br>' + $(element).html().trim();
+                        }
+                    } else if (index == 0) {
+                        story_html = $(element).html().trim();
+                    }
+                });
+
+                var out_stream = fs.createWriteStream('./stories/' + story_name.replace(/ /g, "-") + '.md');
+                out_stream.write(img_html);
+                out_stream.write(story_name_html);
+                out_stream.write(author_html);
+                out_stream.write(story_html);
+
+                // out_stream.destroy();
+                log.success(story_name.replace(/ /g, "-") + '.md created')
+
+                metadata = {};
+                metadata.url = story_url;
+                metadata.author = author;
+                metadata.crawl_date = Date();
+
+                var json_stream = fs.createWriteStream('./metadata/' + story_name.replace(/ /g, "-") + '.json');
+                json_stream.write(JSON.stringify(metadata));
+                log.success(story_name.replace(/ /g, "-") + '.json created');
+
+                // json_stream.destroy();
+                log.complete();
             });
-
-            var out_stream = fs.createWriteStream('./stories/' + story_name.replace(/ /g,"-") + '.md');
-            out_stream.write(img_html);
-            out_stream.write(story_name_html);
-            out_stream.write(author_html);
-            out_stream.write(story_html);
-
-            // out_stream.destroy();
-            log.success(story_name.replace(/ /g,"-") + '.md created')
-
-            metadata = {};
-            metadata.url = story_url;
-            metadata.author = author;
-            metadata.crawl_date = Date();
-
-            var json_stream = fs.createWriteStream('./metadata/' + story_name.replace(/ /g,"-") + '.json');
-            json_stream.write(JSON.stringify(metadata));
-            log.success(story_name.replace(/ /g,"-") + '.json created');
-
-            // json_stream.destroy();
-            log.complete();
         }
     });
 }
 
-
- 
