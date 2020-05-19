@@ -7,12 +7,22 @@
 <h4> stories are added every Sunday on 10 A.M. automatically ( CRON jobs and Github CI) </h4>
 </div>
 
+![GitHub repo size](https://img.shields.io/github/repo-size/deep5050/Abosar?style=for-the-badge)
+![last commit](https://img.shields.io/github/last-commit/deep5050/Abosar?style=for-the-badge)
+![Commot /M](https://img.shields.io/github/commit-activity/m/deep5050/Abosar?style=for-the-badge)
+[![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
+[![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://GitHub.com/deep5050/)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 
 ## SOURCES ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
 1. https://www.anandabazar.com/supplementary/rabibashoriyo/
 
-( more will be added soon )
+## TODO
+- [x]  Auto Update on Sunday
+- [ ]  Auto Convert to PDF
+- [ ]  Send Latest Stories via WhatsApp
+
 ## INDEX
 * [ তারা ও আমি - সর্বাণী বন্দ্যোপাধ্যায় ](./stories/তারা-ও-আমি.md)
 * [ গুপিনাথ - বাপ্পাদিত্য চট্টোপাধ্যায় ](./stories/গুপিনাথ.md)
