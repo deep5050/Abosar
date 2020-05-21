@@ -7,72 +7,34 @@ const fs = require('fs');
 if (!fs.existsSync('./stories')) {
     fs.mkdirSync('./stories');
 }
-if (!fs.existsSync('./stories/rabibasariya')) {
-    fs.mkdirSync('./stories/rabibasariya');
+if (!fs.existsSync('./stories/iexpress')) {
+    fs.mkdirSync('./stories/iexpress');
 }
 if (!fs.existsSync('./metadata')) {
     fs.mkdirSync('./metadata');
 }
-if (!fs.existsSync('./metadata/rabibasariya')) {
-    fs.mkdirSync('./metadata/rabibasariya');
+if (!fs.existsSync('./metadata/iexpress')) {
+    fs.mkdirSync('./metadata/iexpress');
 }
 
 if (!fs.existsSync('./metadata/images')) {
     fs.mkdirSync('./metadata/images');
 }
-if (!fs.existsSync('./metadata/images/rabibasariya')) {
-    fs.mkdirSync('./metadata/images/rabibasariya');
+if (!fs.existsSync('./metadata/images/iexpress')) {
+    fs.mkdirSync('./metadata/images/iexpress');
 }
 
 
-
-const rabibashoriyo_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
-
-get_recent_stories(rabibashoriyo_url);
-
-/* only for manual entry */
-/*
- for ( var i = 1;i<=50;i++)
-{
-    var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
-    get_recent_stories(archive_url);
-} 
-*/
+const url = "https://bengali.indianexpress.com/about/bengali-short-story/";
 
 
+var stories_id = [144609,142923,141659,140963,140024,139095,137920,134723,132915,129318,128632,127696,126143,125736,
+124195,123808,122728,122087,121051,119334,118444,117754,117164,116450,114530,113742,112468,
+108753,108138,106532,105549,104930,103900,103308,97145,95762,94021,92503,90156,88766,81596,80294,79331,
+78136,76148];
+var img_link = "https://api.sananda.in/image/journal/article?img_id=76148";
 
 
-
-function get_recent_stories(url) {
-    var options = {
-        url: url,
-        headers: {
-            'User-Agent': 'request'
-        }
-    };
-
-    request.get(options, (error, response, html) => {
-        if (error) {
-            log.error("could not fetch the source");
-        }
-        else if (!error && response.statusCode === 200) {
-            const $ = cheerio.load(html);
-
-            $('article[class="search-result row"]').each(function (index, elem) {
-                var article_link = "https://www.anandabazar.com" + $(elem).find('a[class = "thumbnail"]').attr('href').trim();
-
-                // now get only the links that contains the word 'short-story'
-                if (article_link.search('short-story') !== -1) {
-
-                    log.start(article_link);
-                    crawl_a_story(article_link);
-
-                }
-
-            })
-        }
-    });
-}
 
 
 
@@ -94,6 +56,7 @@ function crawl_a_story(story_url) {
             const $ = cheerio.load(html);
 
             var story_name = $('div[class="col-12 abp-storypage-headline"]').text().trim();
+
             var story_name_html = '<h1 align=center>' + story_name + '</h1>\n';
 
             var author = $('ul[class="author"]').text().trim();
@@ -167,4 +130,3 @@ function crawl_a_story(story_url) {
         }
     });
 }
-
