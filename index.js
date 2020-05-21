@@ -101,9 +101,15 @@ function crawl_a_story(story_url) {
 
 
             // check if this already exists don't inlude it again
-            if (fs.existsSync('./stories/rabibasariya/' + story_name.replace(/ /g, "-") + ".md")) {
-                log.info("File already exists");
-                return;
+            if (fs.existsSync('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + ".json")) {
+                var check = fs.readFileSync('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + ".json",{encoding:'utf8', flag:'r'});
+                var data = JSON.parse(check);
+               
+                if (data.author.trim() === author)
+                {
+                    log.warn("story already exist");
+                    return;
+                }
             }
 
             var readme_entry = story_name + " - " + author;
