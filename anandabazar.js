@@ -126,7 +126,7 @@ function crawl_a_story(story_url) {
 
             request(image, options2).pipe(fs.createWriteStream('./metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.jpg')).on('close', () => {
                 log.success(story_name.replace(/ /g, "-") + '.jpg created')
-                var img_html = '<div align=center> <img src="./../metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.jpg" align="center" ></div>\n';
+                var img_html = '<div align=center> <img src="./../../metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.jpg" align="center" ></div>\n';
 
 
                 var story_html = "";
@@ -156,7 +156,7 @@ function crawl_a_story(story_url) {
                 metadata.author = author;
                 metadata.crawl_date = Date();
 
-                var json_stream = fs.createWriteStream('./metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.json');
+                var json_stream = fs.createWriteStream('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + '.json');
                 json_stream.write(JSON.stringify(metadata));
                 log.success(story_name.replace(/ /g, "-") + '.json created');
 
