@@ -3,7 +3,6 @@ const cheerio = require('cheerio');
 const log = require('signale');
 const fs = require('fs');
 
-
 if (!fs.existsSync('./stories')) {
     fs.mkdirSync('./stories');
 }
