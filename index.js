@@ -20,7 +20,7 @@ if (!fs.existsSync('./metadatarabibasariya')) {
 if (!fs.existsSync('./metadata/images')) {
     fs.mkdirSync('./metadata/images');
 }
-if (!fs.existsSync('./metadata/images/rabibasaraya')) {
+if (!fs.existsSync('./metadata/images/rabibasariya')) {
     fs.mkdirSync('./metadata/images/rabibasariya');
 }
 
@@ -106,7 +106,7 @@ function crawl_a_story(story_url) {
             }
 
             var readme_entry = story_name + " - " + author;
-            var readme_entry_text = "* [ " + readme_entry + " ](./stories/rabibasariya/" + story_name.replace(/ /g, "-") + ".md)\n";
+            var readme_entry_text = "1.  [ " + readme_entry + " ](./stories/rabibasariya/" + story_name.replace(/ /g, "-") + ".md)\n";
             fs.appendFileSync('./README.md', readme_entry_text);
 
 
@@ -156,7 +156,7 @@ function crawl_a_story(story_url) {
                 metadata.author = author;
                 metadata.crawl_date = Date();
 
-                var json_stream = fs.createWriteStream('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + '.json');
+                var json_stream = fs.createWriteStream('./metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.json');
                 json_stream.write(JSON.stringify(metadata));
                 log.success(story_name.replace(/ /g, "-") + '.json created');
 
