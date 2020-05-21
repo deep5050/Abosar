@@ -27,16 +27,16 @@ if (!fs.existsSync('./metadata/images/rabibasariya')) {
 
 const rabibashoriyo_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
 
-get_recent_stories(rabibashoriyo_url);
+//get_recent_stories(rabibashoriyo_url);
 
 /* only for manual entry */
-/*
+
  for ( var i = 1;i<=50;i++)
 {
     var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
     get_recent_stories(archive_url);
 } 
-*/
+
 
 
 
