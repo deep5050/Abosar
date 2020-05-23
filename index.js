@@ -27,15 +27,15 @@ if (!fs.existsSync('./metadata/images/rabibasariya')) {
 
 const rabibashoriyo_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
 
-//get_recent_stories(rabibashoriyo_url);
+get_recent_stories(rabibashoriyo_url);
 
 /* only for manual entry */
 
- for ( var i = 1;i<=50;i++)
-{
-    var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
-    get_recent_stories(archive_url);
-} 
+//  for ( var i = 1;i<=50;i++)
+// {
+//     var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
+//     get_recent_stories(archive_url);
+// } 
 
 
 
@@ -109,9 +109,10 @@ function crawl_a_story(story_url) {
                     log.warn("story already exist");
                     return;
                 }
+                story_name += "_"+author;
             }
 
-            var readme_entry = story_name + " - " + author;
+            var readme_entry = story_name.split("_",1)[0] + " - " + author;
             var readme_entry_text = "1.  [ " + readme_entry + " ](./stories/rabibasariya/" + story_name.replace(/ /g, "-") + ".md)\n";
             fs.appendFileSync('./README.md', readme_entry_text);
 
