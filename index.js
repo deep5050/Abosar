@@ -3,17 +3,24 @@ const cheerio = require('cheerio');
 const log = require('signale');
 const fs = require('fs');
 
-
 if (!fs.existsSync('./stories')) {
     fs.mkdirSync('./stories');
 }
-
+if (!fs.existsSync('./stories/rabibasariya')) {
+    fs.mkdirSync('./stories/rabibasariya');
+}
 if (!fs.existsSync('./metadata')) {
     fs.mkdirSync('./metadata');
+}
+if (!fs.existsSync('./metadata/rabibasariya')) {
+    fs.mkdirSync('./metadata/rabibasariya');
 }
 
 if (!fs.existsSync('./metadata/images')) {
     fs.mkdirSync('./metadata/images');
+}
+if (!fs.existsSync('./metadata/images/rabibasariya')) {
+    fs.mkdirSync('./metadata/images/rabibasariya');
 }
 
 
@@ -23,13 +30,14 @@ const rabibashoriyo_url = "https://www.anandabazar.com/supplementary/rabibashori
 get_recent_stories(rabibashoriyo_url);
 
 /* only for manual entry */
-/*
- for ( var i = 1;i<=50;i++)
-{
-    var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
-    get_recent_stories(archive_url);
-} 
-*/
+
+//  for ( var i = 1;i<=50;i++)
+// {
+//     var archive_url = "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
+//     get_recent_stories(archive_url);
+// } 
+
+
 
 
 
@@ -92,13 +100,20 @@ function crawl_a_story(story_url) {
 
 
             // check if this already exists don't inlude it again
-            if (fs.existsSync('./stories/' + story_name.replace(/ /g, "-") + ".md")) {
-                log.info("File already exists");
-                return;
+            if (fs.existsSync('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + ".json")) {
+                var check = fs.readFileSync('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + ".json",{encoding:'utf8', flag:'r'});
+                var data = JSON.parse(check);
+               
+                if (data.author.trim() === author)
+                {
+                    log.warn("story already exist");
+                    return;
+                }
+                story_name += "_"+author;
             }
 
-            var readme_entry = story_name + " - " + author;
-            var readme_entry_text = "* [ " + readme_entry + " ](./stories/" + story_name.replace(/ /g, "-") + ".md)\n";
+            var readme_entry = story_name.split("_",1)[0] + " - " + author;
+            var readme_entry_text = "1.  [ " + readme_entry + " ](./stories/rabibasariya/" + story_name.replace(/ /g, "-") + ".md)\n";
             fs.appendFileSync('./README.md', readme_entry_text);
 
 
@@ -116,23 +131,25 @@ function crawl_a_story(story_url) {
                 }
             };
 
-            request(image, options2).pipe(fs.createWriteStream('./metadata/images/' + story_name.replace(/ /g, "-") + '.jpg')).on('close', () => {
+            request(image, options2).pipe(fs.createWriteStream('./metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.jpg')).on('close', () => {
                 log.success(story_name.replace(/ /g, "-") + '.jpg created')
-                var img_html = '<div align=center> <img src="./../metadata/images/' + story_name.replace(/ /g, "-") + '.jpg" align="center" ></div>\n';
+                var img_html = '<div align=center> <img src="./../../metadata/images/rabibasariya/' + story_name.replace(/ /g, "-") + '.jpg" align="center" ></div>\n';
 
 
                 var story_html = "";
                 $("div[class='col-12 abp-storypage-articlebody abp-videoarticle-content']").find('p').each(function (index, element) {
+                    stry_elm = $(element).html().trim();
                     if (index != 0) {
-                        if ($(element).html().trim().search('feedback@abpdigital.in') == -1) {
-                            story_html = story_html + '<br> <br>' + $(element).html().trim();
+                        if (stry_elm.search('feedback@abpdigital.in') == -1 || stry_elm.search('rabibasariya@abp.in') == -1 || stry_elm.search('YouTube Channel') == -1 ) {
+                            story_html = story_html + '<p>' + stry_elm +'</p>';
                         }
                     } else if (index == 0) {
-                        story_html = $(element).html().trim();
+                        story_html = '<div>'+ '<p>' + stry_elm +'</p>';
                     }
+                    
                 });
-
-                var out_stream = fs.createWriteStream('./stories/' + story_name.replace(/ /g, "-") + '.md');
+                story_html += '</div>';
+                var out_stream = fs.createWriteStream('./stories/rabibasariya/' + story_name.replace(/ /g, "-") + '.md');
                 out_stream.write(img_html);
                 out_stream.write(story_name_html);
                 out_stream.write(author_html);
@@ -146,7 +163,7 @@ function crawl_a_story(story_url) {
                 metadata.author = author;
                 metadata.crawl_date = Date();
 
-                var json_stream = fs.createWriteStream('./metadata/' + story_name.replace(/ /g, "-") + '.json');
+                var json_stream = fs.createWriteStream('./metadata/rabibasariya/' + story_name.replace(/ /g, "-") + '.json');
                 json_stream.write(JSON.stringify(metadata));
                 log.success(story_name.replace(/ /g, "-") + '.json created');
 
