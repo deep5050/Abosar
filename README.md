@@ -235,3 +235,5 @@
 1.  [ সরাসরি সম্প্রচার - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/সরাসরি-সম্প্রচার.md)
 1.  [ সেই রাতে - ইমন চৌধুরী ](./stories/rabibasariya/সেই-রাতে.md)
 1.  [ বিপ্রতীপ - সুবর্ণ বসু ](./stories/rabibasariya/বিপ্রতীপ.md)
+1.  [ ভাবনা রহস্য - হুমায়ুন কবীর ](./stories/rabibasariya/ভাবনা-রহস্য.md)
+1.  [ রং নাম্বার - ধ্রুব মুখোপাধ্যায় ](./stories/rabibasariya/রং-নাম্বার.md)
