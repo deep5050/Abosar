@@ -3,7 +3,9 @@
 <h1 align=center > অবসর ( Abosar ) </h1>
 </p>
 
-**A Collection Of Short Bengali Stories Web Scraped From Various Bengali eMagazines And eNewspapers**
+**A Collection Of Short Bengali Stories Web Scraped From Various Bengali
+eMagazines And eNewspapers**
+
 <h4> stories are added every Sunday on 10 A.M. automatically ( CRON jobs and Github CI) </h4>
 </div>
 
@@ -14,20 +16,23 @@
 [![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://GitHub.com/deep5050/)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
+## SOURCES
 
-## SOURCES 
-- [x] Anandabazar Rabibasariya ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
+- [x] Anandabazar Rabibasariya
+      ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
 - [ ] Sananda
 - [ ] Desh
 - [ ] UnishKuri
 - [ ] Bengali Indian Express
 
 ## TODO
-- [x]  Auto Update on Sunday
-- [ ]  Auto Convert to PDF
-- [ ]  Send Latest Stories via WhatsApp
+
+- [x] Auto Update on Sunday
+- [ ] Auto Convert to PDF
+- [ ] Send Latest Stories via WhatsApp
 
 ## INDEX
+
 1.  [ পায়ে পায়ে - দেবব্রত পাল ](./stories/rabibasariya/পায়ে-পায়ে.md)
 1.  [ রসিক বিবি - সুস্মিতা নাথ ](./stories/rabibasariya/রসিক-বিবি.md)
 1.  [ মানুষের ঘরবাড়ি - ঝর্ণা সান্যাল ](./stories/rabibasariya/মানুষের-ঘরবাড়ি.md)
@@ -44,7 +49,7 @@
 1.  [ চৈত্র - জয়শীলা গুহ বাগচী ](./stories/rabibasariya/চৈত্র.md)
 1.  [ মৃগাঙ্কর ছবি - অমিতাভ মৈত্র ](./stories/rabibasariya/মৃগাঙ্কর-ছবি.md)
 1.  [ জ্যোৎস্নাভুক - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/জ্যোৎস্নাভুক.md)
-1.  [ অন্ধ অভিলাষ -  ](./stories/rabibasariya/অন্ধ-অভিলাষ.md)
+1.  [ অন্ধ অভিলাষ - ](./stories/rabibasariya/অন্ধ-অভিলাষ.md)
 1.  [ ভেজা তোয়ালে - সাগরিকা রায় ](./stories/rabibasariya/ভেজা-তোয়ালে.md)
 1.  [ মায়া প্রপঞ্চময় - কানাইলাল ঘোষ ](./stories/rabibasariya/মায়া-প্রপঞ্চময়.md)
 1.  [ ডক্টর জি ভাগো - প্রকাশ চট্টোপাধ্যায় ](./stories/rabibasariya/ডক্টর-জি-ভাগো.md)
@@ -98,8 +103,8 @@
 1.  [ তর্পণ - শুভজিৎ ভাদুড়ী ](./stories/rabibasariya/তর্পণ.md)
 1.  [ যুগলাঙ্গুরীয় - হর্ষ দত্ত ](./stories/rabibasariya/যুগলাঙ্গুরীয়.md)
 1.  [ ব্যাটারি পুতুল - দেবাশিস ভট্টাচার্য ](./stories/rabibasariya/ব্যাটারি-পুতুল.md)
-1.  [ প্যারিসকে নাৎসিমুক্ত করলেন ‘পাপা’ -  ](./stories/rabibasariya/প্যারিসকে-নাৎসিমুক্ত-করলেন-‘পাপা’.md)
-1.  [ ইন্দ্রনীল সান্যাল -  ](./stories/rabibasariya/ইন্দ্রনীল-সান্যাল.md)
+1.  [ প্যারিসকে নাৎসিমুক্ত করলেন ‘পাপা’ - ](./stories/rabibasariya/প্যারিসকে-নাৎসিমুক্ত-করলেন-‘পাপা’.md)
+1.  [ ইন্দ্রনীল সান্যাল - ](./stories/rabibasariya/ইন্দ্রনীল-সান্যাল.md)
 1.  [ প্রশাসক প্রস্তুত - রাজশ্রী বসু অধিকারী ](./stories/rabibasariya/প্রশাসক-প্রস্তুত.md)
 1.  [ লাল সাইকেল - স্মরণজিৎ চক্রবর্তী ](./stories/rabibasariya/লাল-সাইকেল.md)
 1.  [ পোর্ট্রেট - মোনালিসা চন্দ্র ](./stories/rabibasariya/পোর্ট্রেট.md)
@@ -126,7 +131,7 @@
 1.  [ মিস্তিরি - শ্যামল দত্তচৌধুরী ](./stories/rabibasariya/মিস্তিরি.md)
 1.  [ কৃপণ - সপ্তর্ষি বসু ](./stories/rabibasariya/কৃপণ.md)
 1.  [ অনিরুদ্ধর বাবা - শ্যামল মুখোপাধ্যায় ](./stories/rabibasariya/অনিরুদ্ধর-বাবা.md)
-1.  [ কৃষ্ণগহ্বর -  ](./stories/rabibasariya/কৃষ্ণগহ্বর.md)
+1.  [ কৃষ্ণগহ্বর - ](./stories/rabibasariya/কৃষ্ণগহ্বর.md)
 1.  [ গন্ধ - ওঙ্কারনাথ ভট্টাচার্য ](./stories/rabibasariya/গন্ধ.md)
 1.  [ রুমির বোন - পত্রলেখা নাথ ](./stories/rabibasariya/রুমির-বোন.md)
 1.  [ বিড়াল - স্মরণজিৎ চক্রবর্তী ](./stories/rabibasariya/বিড়াল.md)
@@ -138,7 +143,7 @@
 1.  [ চুলোচুলি - রজতশুভ্র মজুমদার ](./stories/rabibasariya/চুলোচুলি.md)
 1.  [ বন্ধ দরজা - প্রচেত গুপ্ত ](./stories/rabibasariya/বন্ধ-দরজা.md)
 1.  [ গিরগিটি - রজত ঘোষ ](./stories/rabibasariya/গিরগিটি.md)
-1.  [ বেলার উপহার -  ](./stories/rabibasariya/বেলার-উপহার.md)
+1.  [ বেলার উপহার - ](./stories/rabibasariya/বেলার-উপহার.md)
 1.  [ পণ - কৌস্তুভ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/পণ.md)
 1.  [ রেল কাম ঝমাঝম - জয়ন্ত সেনগুপ্ত ](./stories/rabibasariya/রেল-কাম-ঝমাঝম.md)
 1.  [ ফাঁড়া - রাজশ্রী বসু অধিকারী ](./stories/rabibasariya/ফাঁড়া.md)
@@ -161,7 +166,7 @@
 1.  [ চৈতি মেঘ - অরুণ কর ](./stories/rabibasariya/চৈতি-মেঘ.md)
 1.  [ প্রতিবিম্ব - ভাস্বর চট্টোপাধ্যায় ](./stories/rabibasariya/প্রতিবিম্ব.md)
 1.  [ চিঠি - সুস্মিতা নাথ ](./stories/rabibasariya/চিঠি.md)
-1.  [ গুরুভাইয়ের  নিদান - রাজশ্রী বসু অধিকারী ](./stories/rabibasariya/গুরুভাইয়ের--নিদান.md)
+1.  [ গুরুভাইয়ের নিদান - রাজশ্রী বসু অধিকারী ](./stories/rabibasariya/গুরুভাইয়ের--নিদান.md)
 1.  [ খুদে চুটিয়া - তিলোত্তমা মজুমদার ](./stories/rabibasariya/খুদে-চুটিয়া.md)
 1.  [ ডেটিং অ্যাপ - কৌশিক পাল ](./stories/rabibasariya/ডেটিং-অ্যাপ.md)
 1.  [ হনন - শ্যামলী আচার্য ](./stories/rabibasariya/হনন.md)
@@ -172,7 +177,7 @@
 1.  [ পাল ভিলার গুপ্তধন - অভিনন্দন সরকার ](./stories/rabibasariya/পাল-ভিলার-গুপ্তধন.md)
 1.  [ উপলব্ধি - আনন্দদীপ চৌধুরী ](./stories/rabibasariya/উপলব্ধি.md)
 1.  [ অপদার্থ - তমাল বন্দ্যোপাধ্যায় ](./stories/rabibasariya/অপদার্থ.md)
-1.  [ ডাক্তারবাবু  সব দেখছেন - অভিজিৎ দত্ত ](./stories/rabibasariya/ডাক্তারবাবু--সব-দেখছেন.md)
+1.  [ ডাক্তারবাবু সব দেখছেন - অভিজিৎ দত্ত ](./stories/rabibasariya/ডাক্তারবাবু--সব-দেখছেন.md)
 1.  [ ওস্তাদ - সায়ন্তনী পূততুন্ড ](./stories/rabibasariya/ওস্তাদ.md)
 1.  [ বাইক বয় - শাশ্বতী নন্দী ](./stories/rabibasariya/বাইক-বয়.md)
 1.  [ পাখসাট - নন্দিতা বাগচী ](./stories/rabibasariya/পাখসাট.md)
@@ -211,7 +216,7 @@
 1.  [ হাতবদল - জয়দীপ বিশ্বাস ](./stories/rabibasariya/হাতবদল.md)
 1.  [ ফাঁকি - সঞ্জয় কর্মকার ](./stories/rabibasariya/ফাঁকি.md)
 1.  [ বশীকরণ - উপল পাত্র ](./stories/rabibasariya/বশীকরণ.md)
-1.  [ ব্যুমেরাং - উস্রি  দে ](./stories/rabibasariya/ব্যুমেরাং.md)
+1.  [ ব্যুমেরাং - উস্রি দে ](./stories/rabibasariya/ব্যুমেরাং.md)
 1.  [ গোধূলি - সায়ন চক্রবর্তী ](./stories/rabibasariya/গোধূলি.md)
 1.  [ গুপিনাথ - বাপ্পাদিত্য চট্টোপাধ্যায় ](./stories/rabibasariya/গুপিনাথ.md)
 1.  [ জ্যোৎস্নায় গর্ভধারিণী - কমলেশ রায় ](./stories/rabibasariya/জ্যোৎস্নায়-গর্ভধারিণী.md)
@@ -224,7 +229,7 @@
 1.  [ মেক ওভার - রাজশ্রী বসু অধিকারী ](./stories/rabibasariya/মেক-ওভার.md)
 1.  [ শব্দটা জরুরি - রিমি মুৎসুদ্দি ](./stories/rabibasariya/শব্দটা-জরুরি.md)
 1.  [ অসভ্য - সঙ্গীতা বন্দ্যোপাধ্যায় ](./stories/rabibasariya/অসভ্য.md)
-1.  [ ভালবাসার  স্বাদ নোনতা - পত্রলেখা নাথ ](./stories/rabibasariya/ভালবাসার--স্বাদ-নোনতা.md)
+1.  [ ভালবাসার স্বাদ নোনতা - পত্রলেখা নাথ ](./stories/rabibasariya/ভালবাসার--স্বাদ-নোনতা.md)
 1.  [ আর এক জন - সুকান্ত গঙ্গোপাধ্যায় ](./stories/rabibasariya/আর-এক-জন.md)
 1.  [ ইস্কুলবাড়ি - নবনীতা দত্ত ](./stories/rabibasariya/ইস্কুলবাড়ি.md)
 1.  [ হারা কার্তিক - শিশির রায় ](./stories/rabibasariya/হারা-কার্তিক.md)
@@ -237,3 +242,4 @@
 1.  [ বিপ্রতীপ - সুবর্ণ বসু ](./stories/rabibasariya/বিপ্রতীপ.md)
 1.  [ ভাবনা রহস্য - হুমায়ুন কবীর ](./stories/rabibasariya/ভাবনা-রহস্য.md)
 1.  [ রং নাম্বার - ধ্রুব মুখোপাধ্যায় ](./stories/rabibasariya/রং-নাম্বার.md)
+1.  [ পঞ্চম স্বর - ঋতা বসু ](./stories/rabibasariya/পঞ্চম-স্বর.md)
