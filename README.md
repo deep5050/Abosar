@@ -237,3 +237,4 @@
 1.  [ বিপ্রতীপ - সুবর্ণ বসু ](./stories/rabibasariya/বিপ্রতীপ.md)
 1.  [ ভাবনা রহস্য - হুমায়ুন কবীর ](./stories/rabibasariya/ভাবনা-রহস্য.md)
 1.  [ রং নাম্বার - ধ্রুব মুখোপাধ্যায় ](./stories/rabibasariya/রং-নাম্বার.md)
+1.  [ পঞ্চম স্বর - ঋতা বসু ](./stories/rabibasariya/পঞ্চম-স্বর.md)
