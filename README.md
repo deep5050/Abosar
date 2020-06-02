@@ -1,12 +1,14 @@
 <div align=center>
+<img src="./metadata/images/abosar.png" title="(c) Absurd Design" >
 <p>
-<h1 align=center > অবসর ( Abosar ) </h1>
+<h1 align=center > অবসর ( ABOSAR ) </h1>
 </p>
 
-**A Collection Of Short Bengali Stories Web Scraped From Various Bengali
-eMagazines And eNewspapers**
+A Collection Of Short Bengali Stories Web Scraped From Various Bengali
+Emagazines And Enewspapers
 
-<h4> stories are added every Sunday on 10 A.M. automatically ( CRON jobs and Github CI) </h4>
+Stories Are Added Every Sunday On 8 A.M. Automatically ( CRON And Github CI) 
+
 </div>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/deep5050/Abosar?style=for-the-badge)
@@ -27,9 +29,9 @@ eMagazines And eNewspapers**
 
 ## TODO
 
-- [x] Auto Update on Sunday
-- [ ] Auto Convert to PDF
-- [ ] Send Latest Stories via WhatsApp
+- [X] Auto Update On Sunday
+- [ ] Auto Convert To Pdf
+- [ ] Send Latest Stories Via Whatsapp
 
 ## INDEX
 
@@ -242,4 +244,4 @@ eMagazines And eNewspapers**
 1.  [ বিপ্রতীপ - সুবর্ণ বসু ](./stories/rabibasariya/বিপ্রতীপ.md)
 1.  [ ভাবনা রহস্য - হুমায়ুন কবীর ](./stories/rabibasariya/ভাবনা-রহস্য.md)
 1.  [ রং নাম্বার - ধ্রুব মুখোপাধ্যায় ](./stories/rabibasariya/রং-নাম্বার.md)
-1.  [ পঞ্চম স্বর - ঋতা বসু ](./stories/rabibasariya/পঞ্চম-স্বর.md)
+
