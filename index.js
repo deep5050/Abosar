@@ -2,6 +2,7 @@ const request = require("request");
 const cheerio = require("cheerio");
 const log = require("signale");
 const fs = require("fs");
+
 const { crawl_a_story } = require("./scraper/crawl");
 
 if (!fs.existsSync("./stories")) {
