@@ -1,5 +1,7 @@
 <div align=center>
-<img src="./metadata/images/abosar.png" title="(c) Absurd Design" >
+
+<img src="metadata/images/abosar.png" title="(c) Absurd Design" >
+
 <p>
 <h1 align=center > অবসর ( ABOSAR ) </h1>
 </p>
@@ -9,19 +11,20 @@ Emagazines And Enewspapers
 
 Stories Are Added Every Sunday On 8 A.M. Automatically ( CRON And Github CI) 
 
-</div>
+
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/deep5050/Abosar?style=for-the-badge)
 ![last commit](https://img.shields.io/github/last-commit/deep5050/Abosar?style=for-the-badge)
 ![Commot /M](https://img.shields.io/github/commit-activity/m/deep5050/Abosar?style=for-the-badge)
+
 [![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
 [![ForTheBadge built-with-swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)](https://GitHub.com/deep5050/)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+</div>
 
 ## SOURCES
 
-- [x] Anandabazar Rabibasariya
-      ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
+- [x] Anandabazar Rabibasariya ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
 - [ ] Sananda
 - [ ] Desh
 - [ ] UnishKuri
