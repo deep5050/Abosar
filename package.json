@@ -1,6 +1,6 @@
 {
   "name": "abosar",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A simple web scrapper app that collects short stories fom Bengali eNewspapers",
   "main": "index.js",
   "scripts": {
