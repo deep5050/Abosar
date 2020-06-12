@@ -25,5 +25,8 @@
     "jest": "^26.0.1",
     "request": "^2.88.2",
     "signale": "^1.4.0"
+  },
+  "devDependencies": {
+    "xo": "^0.32.0"
   }
 }
