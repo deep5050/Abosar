@@ -16,7 +16,7 @@ if (!fs.existsSync("./metadata/images")) {
 }
 
 const rabibashoriyo_url =
-  "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
+    "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
 
 get_recent_stories(rabibashoriyo_url);
 
@@ -31,7 +31,7 @@ get_recent_stories(rabibashoriyo_url);
 */
 
 function get_recent_stories(url) {
-  const options = { url, headers: { "User-Agent": "request" } };
+  const options = {url, headers : {"User-Agent" : "request"}};
 
   request.get(options, (error, response, html) => {
     if (error) {
@@ -41,8 +41,8 @@ function get_recent_stories(url) {
 
       $('article[class="search-result row"]').each((index, element) => {
         const article_link =
-          "https://www.anandabazar.com" +
-          $(element).find('a[class = "thumbnail"]').attr("href").trim();
+            "https://www.anandabazar.com" +
+            $(element).find('a[class = "thumbnail"]').attr("href").trim();
 
         // Now get only the links that contains the word 'short-story'
         if (article_link.search("short-story") !== -1) {
@@ -55,7 +55,7 @@ function get_recent_stories(url) {
 }
 
 function crawl_a_story(story_url) {
-  const options = { url: story_url, headers: { "User-Agent": "request" } };
+  const options = {url : story_url, headers : {"User-Agent" : "request"}};
 
   request.get(options, (error, response, html) => {
     if (error) {
@@ -64,9 +64,8 @@ function crawl_a_story(story_url) {
       log.success("successfully fetched");
       const $ = cheerio.load(html);
 
-      const story_name = $('div[class="col-12 abp-storypage-headline"]')
-        .text()
-        .trim();
+      const story_name =
+          $('div[class="col-12 abp-storypage-headline"]').text().trim();
       const story_name_html = "<h1 align=center>" + story_name + "</h1>\n";
 
       const author = $('ul[class="author"]').text().trim();
@@ -80,82 +79,70 @@ function crawl_a_story(story_url) {
 
       try {
         const img_div = $('div[id="abp-storypage-img-section"]');
-        var img_src = img_div.find('img[class="img-fluid"]').attr("src"); // Returns with leading '//'
+        var img_src = img_div.find('img[class="img-fluid"]')
+                          .attr("src"); // Returns with leading '//'
         img_src = img_src.slice(2);
       } catch {
         return;
       }
 
       const readme_entry = story_name + " - " + author;
-      const readme_entry_text =
-        "1. [ " +
-        readme_entry +
-        " ](./stories/" +
-        story_name.replace(/ /g, "-") +
-        ".md)\n";
+      const readme_entry_text = "1. [ " + readme_entry + " ](./stories/" +
+                                story_name.replace(/ /g, "-") + ".md)\n";
       fs.appendFileSync("./README.md", readme_entry_text);
       // Download image
       const image = "http://" + img_src;
 
-      const options2 = { url: image, headers: { "User-Agent": "request" } };
+      const options2 = {url : image, headers : {"User-Agent" : "request"}};
 
       request(image, options2)
-        .pipe(
-          fs.createWriteStream(
-            "./metadata/images/" + story_name.replace(/ /g, "-") + ".jpg"
-          )
-        )
-        .on("close", () => {
-          log.success(story_name.replace(/ /g, "-") + ".jpg created");
-          const img_html =
-            '<div align=center> <img src="./../metadata/images/' +
-            story_name.replace(/ /g, "-") +
-            '.jpg" align="center" ></div>\n';
+          .pipe(fs.createWriteStream("./metadata/images/" +
+                                     story_name.replace(/ /g, "-") + ".jpg"))
+          .on("close", () => {
+            log.success(story_name.replace(/ /g, "-") + ".jpg created");
+            const img_html =
+                '<div align=center> <img src="./../metadata/images/' +
+                story_name.replace(/ /g, "-") +
+                '.jpg" align="center" ></div>\n';
 
-          let story_html = "";
-          $(
-            "div[class='col-12 abp-storypage-articlebody abp-videoarticle-content']"
-          )
-            .find("p")
-            .each((index, element) => {
-              if (index != 0) {
-                if (
-                  $(element).html().trim().search("feedback@abpdigital.in") ==
-                  -1
-                ) {
-                  story_html =
-                    story_html + "<br> <br>" + $(element).html().trim();
-                }
-              } else if (index == 0) {
-                story_html = $(element).html().trim();
-              }
-            });
+            let story_html = "";
+            $("div[class='col-12 abp-storypage-articlebody abp-videoarticle-content']")
+                .find("p")
+                .each((index, element) => {
+                  if (index != 0) {
+                    if ($(element).html().trim().search(
+                            "feedback@abpdigital.in") == -1) {
+                      story_html =
+                          story_html + "<br> <br>" + $(element).html().trim();
+                    }
+                  } else if (index == 0) {
+                    story_html = $(element).html().trim();
+                  }
+                });
 
-          const out_stream = fs.createWriteStream(
-            "./stories/" + story_name.replace(/ /g, "-") + ".md"
-          );
-          out_stream.write(img_html);
-          out_stream.write(story_name_html);
-          out_stream.write(author_html);
-          out_stream.write(story_html);
+            const out_stream = fs.createWriteStream(
+                "./stories/" + story_name.replace(/ /g, "-") + ".md");
+            out_stream.write(img_html);
+            out_stream.write(story_name_html);
+            out_stream.write(author_html);
+            out_stream.write(story_html);
 
-          // Out_stream.destroy();
-          log.success(story_name.replace(/ /g, "-") + ".md created");
+            // Out_stream.destroy();
+            log.success(story_name.replace(/ /g, "-") + ".md created");
 
-          const metadata = {};
-          metadata.url = story_url;
-          metadata.author = author;
-          metadata.crawl_date = new Date();
+            const metadata = {};
+            metadata.url = story_url;
+            metadata.author = author;
+            metadata.crawl_date = new Date();
 
-          const json_stream = fs.createWriteStream(
-            "./metadata/" + story_name.replace(/ /g, "-") + ".json"
-          );
-          json_stream.write(JSON.stringify(metadata));
-          log.success(story_name.replace(/ /g, "-") + ".json created");
+            const json_stream = fs.createWriteStream(
+                "./metadata/" + story_name.replace(/ /g, "-") + ".json");
+            json_stream.write(JSON.stringify(metadata));
+            log.success(story_name.replace(/ /g, "-") + ".json created");
 
-          // Json_stream.destroy();
-          log.complete();
-        });
+            // Json_stream.destroy();
+            log.complete();
+          });
     }
   });
 }
