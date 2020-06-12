@@ -5,14 +5,18 @@ const fs = require("fs");
 
 if (!fs.existsSync("./stories")) {
   fs.mkdirSync("./stories");
-}
+  fs.mkdirSync("./stories/rabibasariya");
+}  
+
 
 if (!fs.existsSync("./metadata")) {
   fs.mkdirSync("./metadata");
-}
+  fs.mkdirSync("./metadata/rabibasariya");
+} 
 
 if (!fs.existsSync("./metadata/images")) {
   fs.mkdirSync("./metadata/images");
+  fs.mkdirSync("./metadata/images/rabibasariya");
 }
 
 const rabibashoriyo_url =
@@ -73,7 +77,7 @@ function crawl_a_story(story_url) {
       const author_html = "<h2 align=center>" + author + "</h2>\n";
 
       // Check if this already exists don't inlude it again
-      if (fs.existsSync("./stories/" + story_name.replace(/ /g, "-") + ".md")) {
+      if (fs.existsSync("./stories/rabibasariya/" + story_name.replace(/ /g, "-") + ".md")) {
         log.info("File already exists");
         return;
       }
@@ -90,7 +94,7 @@ function crawl_a_story(story_url) {
       const readme_entry_text =
         "1. [ " +
         readme_entry +
-        " ](./stories/" +
+        " ](./stories/rabibasariya/" +
         story_name.replace(/ /g, "-") +
         ".md)\n";
       fs.appendFileSync("./README.md", readme_entry_text);
@@ -102,13 +106,13 @@ function crawl_a_story(story_url) {
       request(image, options2)
         .pipe(
           fs.createWriteStream(
-            "./metadata/images/" + story_name.replace(/ /g, "-") + ".jpg"
+            "./metadata/images/rabibasariya/" + story_name.replace(/ /g, "-") + ".jpg"
           )
         )
         .on("close", () => {
           log.success(story_name.replace(/ /g, "-") + ".jpg created");
           const img_html =
-            '<div align=center> <img src="./../metadata/images/' +
+            '<div align=center> <img src="../../metadata/images/rabibasariya/' +
             story_name.replace(/ /g, "-") +
             '.jpg" align="center" ></div>\n';
 
@@ -132,7 +136,7 @@ function crawl_a_story(story_url) {
             });
 
           const out_stream = fs.createWriteStream(
-            "./stories/" + story_name.replace(/ /g, "-") + ".md"
+            "./stories/rabibasariya/" + story_name.replace(/ /g, "-") + ".md"
           );
           out_stream.write(img_html);
           out_stream.write(story_name_html);
@@ -148,7 +152,7 @@ function crawl_a_story(story_url) {
           metadata.crawl_date = new Date();
 
           const json_stream = fs.createWriteStream(
-            "./metadata/" + story_name.replace(/ /g, "-") + ".json"
+            "./metadata/rabibasariya/" + story_name.replace(/ /g, "-") + ".json"
           );
           json_stream.write(JSON.stringify(metadata));
           log.success(story_name.replace(/ /g, "-") + ".json created");
