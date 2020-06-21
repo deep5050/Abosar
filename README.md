@@ -235,3 +235,7 @@ eMagazines And eNewspapers**
 1. [ দরমার বেড়া - বিতান সিকদার ](./stories/rabibasariya/দরমার-বেড়া.md)
 1. [ রং নাম্বার - ধ্রুব মুখোপাধ্যায় ](./stories/rabibasariya/রং-নাম্বার.md)
 1. [ ভাবনা রহস্য - হুমায়ুন কবীর ](./stories/rabibasariya/ভাবনা-রহস্য.md)
+1. [ ভ্রম সংশোধন - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/ভ্রম-সংশোধন.md)
+1. [ খাপ - অতনু বিশ্বাস ](./stories/rabibasariya/খাপ.md)
+1. [ লাল গিরগিটি - মণিদীপা নন্দী বিশ্বাস ](./stories/rabibasariya/লাল-গিরগিটি.md)
+1. [ কুসুমপুরের রূপকথা - কমলেশ কুমার ](./stories/rabibasariya/কুসুমপুরের-রূপকথা.md)
