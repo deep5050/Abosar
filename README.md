@@ -239,3 +239,5 @@ eMagazines And eNewspapers**
 1. [ খাপ - অতনু বিশ্বাস ](./stories/rabibasariya/খাপ.md)
 1. [ লাল গিরগিটি - মণিদীপা নন্দী বিশ্বাস ](./stories/rabibasariya/লাল-গিরগিটি.md)
 1. [ কুসুমপুরের রূপকথা - কমলেশ কুমার ](./stories/rabibasariya/কুসুমপুরের-রূপকথা.md)
+1. [ পিছুডাক - মনোলীনা রায় কুণ্ডু ](./stories/rabibasariya/পিছুডাক.md)
+1. [ ছায়ার গন্ধ - রাজেশ গঙ্গোপাধ্যায় ](./stories/rabibasariya/ছায়ার-গন্ধ.md)
