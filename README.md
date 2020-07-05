@@ -241,3 +241,5 @@ eMagazines And eNewspapers**
 1. [ কুসুমপুরের রূপকথা - কমলেশ কুমার ](./stories/rabibasariya/কুসুমপুরের-রূপকথা.md)
 1. [ পিছুডাক - মনোলীনা রায় কুণ্ডু ](./stories/rabibasariya/পিছুডাক.md)
 1. [ ছায়ার গন্ধ - রাজেশ গঙ্গোপাধ্যায় ](./stories/rabibasariya/ছায়ার-গন্ধ.md)
+1. [ স্মৃতিভ্রংশ - চঞ্চল পাল ](./stories/rabibasariya/স্মৃতিভ্রংশ.md)
+1. [ ঈশপের গল্প - ইন্দ্রনীল সান্যাল ](./stories/rabibasariya/ঈশপের-গল্প.md)
