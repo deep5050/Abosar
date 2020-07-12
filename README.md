@@ -243,3 +243,5 @@ eMagazines And eNewspapers**
 1. [ ছায়ার গন্ধ - রাজেশ গঙ্গোপাধ্যায় ](./stories/rabibasariya/ছায়ার-গন্ধ.md)
 1. [ স্মৃতিভ্রংশ - চঞ্চল পাল ](./stories/rabibasariya/স্মৃতিভ্রংশ.md)
 1. [ ঈশপের গল্প - ইন্দ্রনীল সান্যাল ](./stories/rabibasariya/ঈশপের-গল্প.md)
+1. [ ভোরের কুয়াশা - ঋতুপর্ণা রুদ্র ](./stories/rabibasariya/ভোরের-কুয়াশা.md)
+1. [ পূর্ণিমা আসর - গৌতম দে সরকার ](./stories/rabibasariya/পূর্ণিমা-আসর.md)
