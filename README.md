@@ -245,3 +245,5 @@ eMagazines And eNewspapers**
 1. [ ঈশপের গল্প - ইন্দ্রনীল সান্যাল ](./stories/rabibasariya/ঈশপের-গল্প.md)
 1. [ ভোরের কুয়াশা - ঋতুপর্ণা রুদ্র ](./stories/rabibasariya/ভোরের-কুয়াশা.md)
 1. [ পূর্ণিমা আসর - গৌতম দে সরকার ](./stories/rabibasariya/পূর্ণিমা-আসর.md)
+1. [ প্রতিশ্রুতি - সুদীপ সরকার ](./stories/rabibasariya/প্রতিশ্রুতি.md)
+1. [ স্বপ্ন কুহক - উপল পাত্র ](./stories/rabibasariya/স্বপ্ন-কুহক.md)
