@@ -10,12 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
       with:
         lfs: true
         
     - name: Use Node.js 13.x
-      uses: actions/setup-node@master
+      uses: actions/setup-node@main
       with:
         node-version: 13.x
       
