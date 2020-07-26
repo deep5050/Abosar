@@ -247,3 +247,5 @@ eMagazines And eNewspapers**
 1. [ পূর্ণিমা আসর - গৌতম দে সরকার ](./stories/rabibasariya/পূর্ণিমা-আসর.md)
 1. [ প্রতিশ্রুতি - সুদীপ সরকার ](./stories/rabibasariya/প্রতিশ্রুতি.md)
 1. [ স্বপ্ন কুহক - উপল পাত্র ](./stories/rabibasariya/স্বপ্ন-কুহক.md)
+1. [ ছাই - মহুয়া চৌধুরী ](./stories/rabibasariya/ছাই.md)
+1. [ বাবার ঘড়ি - শৈবাল চট্টোপাধ্যায় ](./stories/rabibasariya/বাবার-ঘড়ি.md)
