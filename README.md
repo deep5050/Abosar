@@ -249,3 +249,5 @@ eMagazines And eNewspapers**
 1. [ স্বপ্ন কুহক - উপল পাত্র ](./stories/rabibasariya/স্বপ্ন-কুহক.md)
 1. [ ছাই - মহুয়া চৌধুরী ](./stories/rabibasariya/ছাই.md)
 1. [ বাবার ঘড়ি - শৈবাল চট্টোপাধ্যায় ](./stories/rabibasariya/বাবার-ঘড়ি.md)
+1. [ স্বজন - দেবব্রত দাশ ](./stories/rabibasariya/স্বজন.md)
+1. [ মনোময়ের মনোজগৎ - মোনালিসা চন্দ্র ](./stories/rabibasariya/মনোময়ের-মনোজগৎ.md)
