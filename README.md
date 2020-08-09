@@ -251,3 +251,5 @@ eMagazines And eNewspapers**
 1. [ বাবার ঘড়ি - শৈবাল চট্টোপাধ্যায় ](./stories/rabibasariya/বাবার-ঘড়ি.md)
 1. [ স্বজন - দেবব্রত দাশ ](./stories/rabibasariya/স্বজন.md)
 1. [ মনোময়ের মনোজগৎ - মোনালিসা চন্দ্র ](./stories/rabibasariya/মনোময়ের-মনোজগৎ.md)
+1. [ সাদা - সুতপন চট্টোপাধ্যায় ](./stories/rabibasariya/সাদা.md)
+1. [ লকডাউনের কড়চা - রাজশ্রী বসু ](./stories/rabibasariya/লকডাউনের-কড়চা.md)
