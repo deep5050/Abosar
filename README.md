@@ -254,3 +254,5 @@ eMagazines And eNewspapers**
 1. [ মনোময়ের মনোজগৎ - মোনালিসা চন্দ্র ](./stories/rabibasariya/মনোময়ের-মনোজগৎ.md)
 1. [ সাদা - সুতপন চট্টোপাধ্যায় ](./stories/rabibasariya/সাদা.md)
 1. [ লকডাউনের কড়চা - রাজশ্রী বসু ](./stories/rabibasariya/লকডাউনের-কড়চা.md)
+1. [ বেওয়ারিশ - স্বপনকুমার মণ্ডল ](./stories/rabibasariya/বেওয়ারিশ.md)
+1. [ পুতুল খেলা - সীমা জানা ](./stories/rabibasariya/পুতুল-খেলা.md)
