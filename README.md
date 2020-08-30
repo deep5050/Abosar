@@ -256,3 +256,5 @@ eMagazines And eNewspapers**
 1. [ লকডাউনের কড়চা - রাজশ্রী বসু ](./stories/rabibasariya/লকডাউনের-কড়চা.md)
 1. [ বেওয়ারিশ - স্বপনকুমার মণ্ডল ](./stories/rabibasariya/বেওয়ারিশ.md)
 1. [ পুতুল খেলা - সীমা জানা ](./stories/rabibasariya/পুতুল-খেলা.md)
+1. [ চিরন্তন - বর্ষা পূততুণ্ড ](./stories/rabibasariya/চিরন্তন.md)
+1. [ আবার সূর্য উঠবে - শাশ্বতী নন্দী ](./stories/rabibasariya/আবার-সূর্য-উঠবে.md)
