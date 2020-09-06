@@ -258,3 +258,5 @@ eMagazines And eNewspapers**
 1. [ পুতুল খেলা - সীমা জানা ](./stories/rabibasariya/পুতুল-খেলা.md)
 1. [ চিরন্তন - বর্ষা পূততুণ্ড ](./stories/rabibasariya/চিরন্তন.md)
 1. [ আবার সূর্য উঠবে - শাশ্বতী নন্দী ](./stories/rabibasariya/আবার-সূর্য-উঠবে.md)
+1. [ অমনোনীত - জয় সেনগুপ্ত ](./stories/rabibasariya/অমনোনীত.md)
+1. [ বাতিল - সুকান্ত গঙ্গোপাধ্যায় ](./stories/rabibasariya/বাতিল.md)
