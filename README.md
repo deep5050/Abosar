@@ -260,3 +260,5 @@ eMagazines And eNewspapers**
 1. [ আবার সূর্য উঠবে - শাশ্বতী নন্দী ](./stories/rabibasariya/আবার-সূর্য-উঠবে.md)
 1. [ অমনোনীত - জয় সেনগুপ্ত ](./stories/rabibasariya/অমনোনীত.md)
 1. [ বাতিল - সুকান্ত গঙ্গোপাধ্যায় ](./stories/rabibasariya/বাতিল.md)
+1. [ হরপার্বতীর অষ্টপ্রহর - বিপুল মজুমদার ](./stories/rabibasariya/হরপার্বতীর-অষ্টপ্রহর.md)
+1. [ ঢেঁকি - রামামৃত সিংহ মহাপাত্র ](./stories/rabibasariya/ঢেঁকি.md)
