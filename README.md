@@ -262,3 +262,5 @@ eMagazines And eNewspapers**
 1. [ বাতিল - সুকান্ত গঙ্গোপাধ্যায় ](./stories/rabibasariya/বাতিল.md)
 1. [ হরপার্বতীর অষ্টপ্রহর - বিপুল মজুমদার ](./stories/rabibasariya/হরপার্বতীর-অষ্টপ্রহর.md)
 1. [ ঢেঁকি - রামামৃত সিংহ মহাপাত্র ](./stories/rabibasariya/ঢেঁকি.md)
+1. [ ভারতবর্ষ - সুস্মিতা নাথ ](./stories/rabibasariya/ভারতবর্ষ.md)
+1. [ অনুরক্তি - জয়িতা রায় ](./stories/rabibasariya/অনুরক্তি.md)
