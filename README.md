@@ -264,3 +264,5 @@ eMagazines And eNewspapers**
 1. [ ঢেঁকি - রামামৃত সিংহ মহাপাত্র ](./stories/rabibasariya/ঢেঁকি.md)
 1. [ ভারতবর্ষ - সুস্মিতা নাথ ](./stories/rabibasariya/ভারতবর্ষ.md)
 1. [ অনুরক্তি - জয়িতা রায় ](./stories/rabibasariya/অনুরক্তি.md)
+1. [ গাধা - সিদ্ধার্থ মুখোপাধ্যায় ](./stories/rabibasariya/গাধা.md)
+1. [ সিসিফাস - রম্যাণী গোস্বামী ](./stories/rabibasariya/সিসিফাস.md)
