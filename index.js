@@ -21,7 +21,6 @@ if (!fs.existsSync("./metadata/images")) {
 
 const rabibashoriyo_url =
   "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
-
 get_recent_stories(rabibashoriyo_url);
 
 /* Only for manual entry */
@@ -163,3 +162,6 @@ function crawl_a_story(story_url) {
     }
   });
 }
+
+// manual add
+//crawl_a_story("https://www.anandabazar.com/supplementary/rabibashoriyo/short-story-by-ramyani-goswami-1.1208073")
