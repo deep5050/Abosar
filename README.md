@@ -266,3 +266,6 @@ eMagazines And eNewspapers**
 1. [ অনুরক্তি - জয়িতা রায় ](./stories/rabibasariya/অনুরক্তি.md)
 1. [ গাধা - সিদ্ধার্থ মুখোপাধ্যায় ](./stories/rabibasariya/গাধা.md)
 1. [ সিসিফাস - রম্যাণী গোস্বামী ](./stories/rabibasariya/সিসিফাস.md)
+1. [ ভাল থাকার রেসিপি - মণিদীপা নন্দী বিশ্বাস ](./stories/rabibasariya/ভাল-থাকার-রেসিপি.md)
+1. [ ফুলশয্যা - সুজিত বসাক ](./stories/rabibasariya/ফুলশয্যা.md)
+1. [ ফুলশয্যা -  ](./stories/rabibasariya/ফুলশয্যা.md)
