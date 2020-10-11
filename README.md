@@ -269,3 +269,5 @@ eMagazines And eNewspapers**
 1. [ ভাল থাকার রেসিপি - মণিদীপা নন্দী বিশ্বাস ](./stories/rabibasariya/ভাল-থাকার-রেসিপি.md)
 1. [ ফুলশয্যা - সুজিত বসাক ](./stories/rabibasariya/ফুলশয্যা.md)
 1. [ ফুলশয্যা -  ](./stories/rabibasariya/ফুলশয্যা.md)
+1. [ সিনিয়র সিটিজ়েন - বিক্রম অধিকারী ](./stories/rabibasariya/সিনিয়র-সিটিজ়েন.md)
+1. [ অহেতুক - মধুমিতা ঘোষ ](./stories/rabibasariya/অহেতুক.md)
