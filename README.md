@@ -271,3 +271,5 @@ eMagazines And eNewspapers**
 1. [ ফুলশয্যা -  ](./stories/rabibasariya/ফুলশয্যা.md)
 1. [ সিনিয়র সিটিজ়েন - বিক্রম অধিকারী ](./stories/rabibasariya/সিনিয়র-সিটিজ়েন.md)
 1. [ অহেতুক - মধুমিতা ঘোষ ](./stories/rabibasariya/অহেতুক.md)
+1. [ জুনির জন্মদিনে - ঋতুপর্ণা ভট্টাচার্য ](./stories/rabibasariya/জুনির-জন্মদিনে.md)
+1. [ মালু - চঞ্চলকুমার ঘোষ ](./stories/rabibasariya/মালু.md)
