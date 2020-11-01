@@ -273,3 +273,5 @@ eMagazines And eNewspapers**
 1. [ অহেতুক - মধুমিতা ঘোষ ](./stories/rabibasariya/অহেতুক.md)
 1. [ জুনির জন্মদিনে - ঋতুপর্ণা ভট্টাচার্য ](./stories/rabibasariya/জুনির-জন্মদিনে.md)
 1. [ মালু - চঞ্চলকুমার ঘোষ ](./stories/rabibasariya/মালু.md)
+1. [ নিরুদ্দেশের একটু আগে - সাগরিকা রায় ](./stories/rabibasariya/নিরুদ্দেশের-একটু-আগে.md)
+1. [ মার - প্রচেত গুপ্ত‌ ](./stories/rabibasariya/মার.md)
