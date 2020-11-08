@@ -275,3 +275,5 @@ eMagazines And eNewspapers**
 1. [ মালু - চঞ্চলকুমার ঘোষ ](./stories/rabibasariya/মালু.md)
 1. [ নিরুদ্দেশের একটু আগে - সাগরিকা রায় ](./stories/rabibasariya/নিরুদ্দেশের-একটু-আগে.md)
 1. [ মার - প্রচেত গুপ্ত‌ ](./stories/rabibasariya/মার.md)
+1. [ গুরুমন্ত্র - প্রিয়রঞ্জন পাল ](./stories/rabibasariya/গুরুমন্ত্র.md)
+1. [ কালশিটে - অরিন্দম শীল ](./stories/rabibasariya/কালশিটে.md)
