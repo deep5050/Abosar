@@ -279,3 +279,6 @@ eMagazines And eNewspapers**
 1. [ কালশিটে - অরিন্দম শীল ](./stories/rabibasariya/কালশিটে.md)
 1. [ লকডাউন বিভ্রাট - রজতশুভ্র মজুমদার ](./stories/rabibasariya/লকডাউন-বিভ্রাট.md)
 1. [ পরীক্ষিত সত্য - বিতান সিকদার ](./stories/rabibasariya/পরীক্ষিত-সত্য.md)
+1. [ সখী - অমৃতা ভট্টাচার্য ](./stories/rabibasariya/সখী.md)
+1. [ চুয়ান্ন - স্মরণজিৎ চক্রবর্তী ](./stories/rabibasariya/চুয়ান্ন.md)
+1. [ শহিদ বেদির সামনে - শুভ্রদীপ চৌধুরী ](./stories/rabibasariya/শহিদ-বেদির-সামনে.md)
