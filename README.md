@@ -282,3 +282,5 @@ eMagazines And eNewspapers**
 1. [ সখী - অমৃতা ভট্টাচার্য ](./stories/rabibasariya/সখী.md)
 1. [ চুয়ান্ন - স্মরণজিৎ চক্রবর্তী ](./stories/rabibasariya/চুয়ান্ন.md)
 1. [ শহিদ বেদির সামনে - শুভ্রদীপ চৌধুরী ](./stories/rabibasariya/শহিদ-বেদির-সামনে.md)
+1. [ শিকড় - অরুণাভ দত্ত ](./stories/rabibasariya/শিকড়.md)
+1. [ ভাবী কাল - শ্যামল দত্তচৌধুরী ](./stories/rabibasariya/ভাবী-কাল.md)
