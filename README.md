@@ -284,3 +284,5 @@ eMagazines And eNewspapers**
 1. [ শহিদ বেদির সামনে - শুভ্রদীপ চৌধুরী ](./stories/rabibasariya/শহিদ-বেদির-সামনে.md)
 1. [ শিকড় - অরুণাভ দত্ত ](./stories/rabibasariya/শিকড়.md)
 1. [ ভাবী কাল - শ্যামল দত্তচৌধুরী ](./stories/rabibasariya/ভাবী-কাল.md)
+1. [ বাক্সের বাইরে - অম্লানকুসুম ](./stories/rabibasariya/বাক্সের-বাইরে.md)
+1. [ বোঝে কি আনজনে - পার্থ দে ](./stories/rabibasariya/বোঝে-কি-আনজনে.md)
