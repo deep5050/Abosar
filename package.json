@@ -27,6 +27,6 @@
     "signale": "^1.4.0"
   },
   "devDependencies": {
-    "xo": "^0.32.0"
+    "xo": "^0.36.1"
   }
 }
