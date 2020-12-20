@@ -287,3 +287,5 @@ eMagazines And eNewspapers**
 1. [ বাক্সের বাইরে - অম্লানকুসুম ](./stories/rabibasariya/বাক্সের-বাইরে.md)
 1. [ বোঝে কি আনজনে - পার্থ দে ](./stories/rabibasariya/বোঝে-কি-আনজনে.md)
 1. [ গাছ - পিন্টু ভট্টাচার্য ](./stories/rabibasariya/গাছ.md)
+1. [ চোর - চঞ্চল ঘোষ ](./stories/rabibasariya/চোর.md)
+1. [ না লেখা - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/না-লেখা.md)
