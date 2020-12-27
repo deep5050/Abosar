@@ -289,3 +289,5 @@ eMagazines And eNewspapers**
 1. [ গাছ - পিন্টু ভট্টাচার্য ](./stories/rabibasariya/গাছ.md)
 1. [ চোর - চঞ্চল ঘোষ ](./stories/rabibasariya/চোর.md)
 1. [ না লেখা - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/না-লেখা.md)
+1. [ উন্মোচন - রিমা বিশ্বাস ](./stories/rabibasariya/উন্মোচন.md)
+1. [ কাঁটাতার - দিলীপ মাশ্চরক ](./stories/rabibasariya/কাঁটাতার.md)
