@@ -291,3 +291,5 @@ eMagazines And eNewspapers**
 1. [ না লেখা - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/না-লেখা.md)
 1. [ উন্মোচন - রিমা বিশ্বাস ](./stories/rabibasariya/উন্মোচন.md)
 1. [ কাঁটাতার - দিলীপ মাশ্চরক ](./stories/rabibasariya/কাঁটাতার.md)
+1. [ তৃতীয় নয়ন - নন্দিতা বাগচী ](./stories/rabibasariya/তৃতীয়-নয়ন.md)
+1. [ খালাস - সৌরভ মুখোপাধ্যায় ](./stories/rabibasariya/খালাস.md)
