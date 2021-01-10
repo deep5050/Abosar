@@ -293,3 +293,5 @@ eMagazines And eNewspapers**
 1. [ কাঁটাতার - দিলীপ মাশ্চরক ](./stories/rabibasariya/কাঁটাতার.md)
 1. [ তৃতীয় নয়ন - নন্দিতা বাগচী ](./stories/rabibasariya/তৃতীয়-নয়ন.md)
 1. [ খালাস - সৌরভ মুখোপাধ্যায় ](./stories/rabibasariya/খালাস.md)
+1. [ শবাগারের শব্দেরা - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/শবাগারের-শব্দেরা.md)
+1. [ বৃষ্টিদিনের পাখি - অভিনন্দন সরকার ](./stories/rabibasariya/বৃষ্টিদিনের-পাখি.md)
