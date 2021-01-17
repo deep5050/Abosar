@@ -295,3 +295,5 @@ eMagazines And eNewspapers**
 1. [ খালাস - সৌরভ মুখোপাধ্যায় ](./stories/rabibasariya/খালাস.md)
 1. [ শবাগারের শব্দেরা - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/শবাগারের-শব্দেরা.md)
 1. [ বৃষ্টিদিনের পাখি - অভিনন্দন সরকার ](./stories/rabibasariya/বৃষ্টিদিনের-পাখি.md)
+1. [ অচেনা সুর - ছন্দা বিশ্বাস ](./stories/rabibasariya/অচেনা-সুর.md)
+1. [ রোদ মেঘ বৃষ্টি - রাখী নাথ কর্মকার ](./stories/rabibasariya/রোদ-মেঘ-বৃষ্টি.md)
