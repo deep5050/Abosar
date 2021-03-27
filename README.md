@@ -299,3 +299,4 @@ eMagazines And eNewspapers**
 1. [ বৃষ্টিদিনের পাখি - অভিনন্দন সরকার ](./stories/rabibasariya/বৃষ্টিদিনের-পাখি.md)
 1. [ অচেনা সুর - ছন্দা বিশ্বাস ](./stories/rabibasariya/অচেনা-সুর.md)
 1. [ রোদ মেঘ বৃষ্টি - রাখী নাথ কর্মকার ](./stories/rabibasariya/রোদ-মেঘ-বৃষ্টি.md)
+2. [অস্তরাগ.md](./hand_crawled/অস্তরাগ.md)
