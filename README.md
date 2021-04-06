@@ -299,9 +299,23 @@ eMagazines And eNewspapers**
 1. [ বৃষ্টিদিনের পাখি - অভিনন্দন সরকার ](./stories/rabibasariya/বৃষ্টিদিনের-পাখি.md)
 1. [ অচেনা সুর - ছন্দা বিশ্বাস ](./stories/rabibasariya/অচেনা-সুর.md)
 1. [ রোদ মেঘ বৃষ্টি - রাখী নাথ কর্মকার ](./stories/rabibasariya/রোদ-মেঘ-বৃষ্টি.md)
+1. [ জলঢোঁড়া -  ](./stories/rabibasariya/জলঢোঁড়া.md)
+1. [ ভগবান - ইন্দ্রনীল সান্যাল ](./stories/rabibasariya/ভগবান.md)
+1. [ নিভৃতবাসের গল্প - গৌতম দে সরকার ](./stories/rabibasariya/নিভৃতবাসের-গল্প.md)
+1. [ পঙ্কজ - অরুণাভ দত্ত ](./stories/rabibasariya/পঙ্কজ.md)
+1. [ ঘাটের কথা - গৌতম চক্রবর্তী ](./stories/rabibasariya/ঘাটের-কথা.md)
+1. [ ছিন্নমূল - বীথি ব্রহ্ম ](./stories/rabibasariya/ছিন্নমূল.md)
+1. [ স্বার্থপর - সায়ন্তনী পূততুন্ড ](./stories/rabibasariya/স্বার্থপর.md)
+1. [ লাখ টাকা খরচ করে রক্ষিতার বেড়ালের বিয়ে - দীপঙ্কর ভট্টাচার্য ](./stories/rabibasariya/লাখ-টাকা-খরচ-করে-রক্ষিতার-বেড়ালের-বিয়ে.md)
+1. [ শৃঙ্খল - চিত্রিতা চক্রবর্তী ](./stories/rabibasariya/শৃঙ্খল.md)
+1. [ কাকজ্যোৎস্না - নন্দিতা মিশ্র চক্রবর্তী ](./stories/rabibasariya/কাকজ্যোৎস্না.md)
+1. [ রোদ্দুর - অপরাজিতা দাশগুপ্ত ](./stories/rabibasariya/রোদ্দুর.md)
+1. [ উলকাঁটা - তিস্তা চক্রবর্তী ](./stories/rabibasariya/উলকাঁটা.md)
+1. [ অস্তরাগ - সিজার বাগচী ](./stories/rabibasariya/অস্তরাগ.md)
+1. [ উচ্চারণ - কৌশিক ঘোষ ](./stories/rabibasariya/উচ্চারণ.md)
+1. [ মনের কোণে - অনির্বাণ বসু ](./stories/rabibasariya/মনের-কোণে.md)
+1. [ চকমকি - শুচিস্মিতা দেব ](./stories/rabibasariya/চকমকি.md)
+1. [ নকশিকাঁথার উঠোন - বিপুল দাস ](./stories/rabibasariya/নকশিকাঁথার-উঠোন.md)
+1. [ কাঞ্চনজঙ্ঘা - বন্দনা মিত্র ](./stories/rabibasariya/কাঞ্চনজঙ্ঘা.md)
+1. [ কাকচরিত্র - অরিন্দম গঙ্গোপাধ্যায় ](./stories/rabibasariya/কাকচরিত্র.md)
 
-
-
-Automatic publications has been discontinued from this point......
-
-More hand-crawled stories can be found at [more stories](./hand_crawled)

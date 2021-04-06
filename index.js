@@ -67,12 +67,15 @@ function crawl_a_story(story_url) {
       log.success("successfully fetched");
       const $ = cheerio.load(html);
 
-      const story_name = $('div[class="col-12 abp-storypage-headline"]')
+      const story_name = $('h1[class="fs-42 lh-54 notob-bold mb-4"]')
         .text()
         .trim();
+
+        console.log("story_name:" + story_name);
+
       const story_name_html = "<h1 align=center>" + story_name + "</h1>\n";
 
-      const author = $('ul[class="author"]').text().trim();
+      const author = $('span[class="fs-16 notob-regular"]').text().trim();
       const author_html = "<h2 align=center>" + author + "</h2>\n";
 
       // Check if this already exists don't inlude it again
@@ -82,8 +85,8 @@ function crawl_a_story(story_url) {
       }
 
       try {
-        const img_div = $('div[id="abp-storypage-img-section"]');
-        var img_src = img_div.find('img[class="img-fluid"]').attr("src"); // Returns with leading '//'
+        const img_div = $('div[class="asp_16_9"]');
+        var img_src = img_div.find('img[class="w-100"]').attr("src"); // Returns with leading '//'
         img_src = img_src.slice(2);
       } catch {
         return;
@@ -98,8 +101,8 @@ function crawl_a_story(story_url) {
         ".md)\n";
       fs.appendFileSync("./README.md", readme_entry_text);
       // Download image
-      const image = "http://" + img_src;
-
+      const image = "ht" + img_src;
+      console.log(image);
       const options2 = { url: image, headers: { "User-Agent": "request" } };
 
       request(image, options2)
@@ -117,7 +120,7 @@ function crawl_a_story(story_url) {
 
           let story_html = "";
           $(
-            "div[class='col-12 abp-storypage-articlebody abp-videoarticle-content']"
+            "div[class='fs-20 notob-regular lh-017 mb-4']"
           )
             .find("p")
             .each((index, element) => {
@@ -164,4 +167,4 @@ function crawl_a_story(story_url) {
 }
 
 // manual add
-//crawl_a_story("https://www.anandabazar.com/supplementary/rabibashoriyo/short-story-by-ramyani-goswami-1.1208073")
+crawl_a_story("https://www.anandabazar.com/rabibashoriyo/short-story-by-chanda-biswas-1.1260891");
