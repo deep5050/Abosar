@@ -167,4 +167,4 @@ function crawl_a_story(story_url) {
 }
 
 // manual add
-crawl_a_story("https://www.anandabazar.com/rabibashoriyo/short-story-by-chanda-biswas-1.1260891");
+crawl_a_story("https://www.anandabazar.com/rabibashoriyo/short-story-by-indranil-sanyal/cid/1274121");
