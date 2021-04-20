@@ -318,6 +318,7 @@ eMagazines And eNewspapers**
 1. [ নকশিকাঁথার উঠোন - বিপুল দাস ](./stories/rabibasariya/নকশিকাঁথার-উঠোন.md)
 1. [ কাঞ্চনজঙ্ঘা - বন্দনা মিত্র ](./stories/rabibasariya/কাঞ্চনজঙ্ঘা.md)
 1. [ কাকচরিত্র - অরিন্দম গঙ্গোপাধ্যায় ](./stories/rabibasariya/কাকচরিত্র.md)
-
 1. [ শীতলপাটি - কৃষ্ণেন্দু মুখোপাধ্যায় ](./stories/rabibasariya/শীতলপাটি.md)
 1. [ সোনার ডিম - সুজিত বসাক ](./stories/rabibasariya/সোনার-ডিম.md)
+1. [ আক্ষরিক - সৌরভ মুখোপাধ্যায় ](./stories/rabibasariya/আক্ষরিক.md)
+1. [ সামন্তস্যরের অঙ্ক - উল্লাস মল্লিক ](./stories/rabibasariya/সামন্তস্যরের-অঙ্ক.md)
