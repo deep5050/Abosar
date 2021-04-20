@@ -20,7 +20,7 @@ if (!fs.existsSync("./metadata/images")) {
 }
 
 const rabibashoriyo_url =
-  "https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page=1&slab=0&tnp=50";
+  "https://www.anandabazar.com/rabibashoriyo/";
 get_recent_stories(rabibashoriyo_url);
 
 /* Only for manual entry */
@@ -42,10 +42,10 @@ function get_recent_stories(url) {
     } else if (!error && response.statusCode === 200) {
       const $ = cheerio.load(html);
 
-      $('article[class="search-result row"]').each((index, element) => {
+      $('div[class="thumb-row section mb-4"]').each((index, element) => {
         const article_link =
           "https://www.anandabazar.com" +
-          $(element).find('a[class = "thumbnail"]').attr("href").trim();
+          $(element).find('a[class = "d-flex text-decoration-none link-reset mb-4"]').attr("href").trim();
 
         // Now get only the links that contains the word 'short-story'
         if (article_link.search("short-story") !== -1) {
