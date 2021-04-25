@@ -322,3 +322,5 @@ eMagazines And eNewspapers**
 1. [ সোনার ডিম - সুজিত বসাক ](./stories/rabibasariya/সোনার-ডিম.md)
 1. [ আক্ষরিক - সৌরভ মুখোপাধ্যায় ](./stories/rabibasariya/আক্ষরিক.md)
 1. [ সামন্তস্যরের অঙ্ক - উল্লাস মল্লিক ](./stories/rabibasariya/সামন্তস্যরের-অঙ্ক.md)
+1. [ বৃশ্চিকবৃত্ত - সুপ্রিয় চৌধুরী ](./stories/rabibasariya/বৃশ্চিকবৃত্ত.md)
+1. [ অন্য আলো - অর্ণব দে ](./stories/rabibasariya/অন্য-আলো.md)
