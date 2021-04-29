@@ -324,3 +324,4 @@ eMagazines And eNewspapers**
 1. [ সামন্তস্যরের অঙ্ক - উল্লাস মল্লিক ](./stories/rabibasariya/সামন্তস্যরের-অঙ্ক.md)
 1. [ বৃশ্চিকবৃত্ত - সুপ্রিয় চৌধুরী ](./stories/rabibasariya/বৃশ্চিকবৃত্ত.md)
 1. [ অন্য আলো - অর্ণব দে ](./stories/rabibasariya/অন্য-আলো.md)
+1. [ চব্বিশে ছাব্বিশ - অনিন্দ্য মুখোপাধ্যায় ](./stories/rabibasariya/চব্বিশে-ছাব্বিশ.md)
