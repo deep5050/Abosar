@@ -327,3 +327,5 @@ eMagazines And eNewspapers**
 1. [ চব্বিশে ছাব্বিশ - অনিন্দ্য মুখোপাধ্যায় ](./stories/rabibasariya/চব্বিশে-ছাব্বিশ.md)
 1. [ বিভূতি অথবা... - অভিজিৎ তরফদার ](./stories/rabibasariya/বিভূতি-অথবা....md)
 1. [ লিস্ট - দেবাশিস গঙ্গোপাধ্যায় ](./stories/rabibasariya/লিস্ট.md)
+1. [ ওয়েট মেশিন - সৌরভ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/ওয়েট-মেশিন.md)
+1. [ খোঁজ - দেবাশিস দাস ](./stories/rabibasariya/খোঁজ.md)
