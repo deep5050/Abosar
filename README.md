@@ -331,3 +331,5 @@ eMagazines And eNewspapers**
 1. [ খোঁজ - দেবাশিস দাস ](./stories/rabibasariya/খোঁজ.md)
 1. [ পরাজিত - মহুয়া চৌধুরী ](./stories/rabibasariya/পরাজিত.md)
 1. [ সৈনিক - প্রতিমা রায় ](./stories/rabibasariya/সৈনিক.md)
+1. [ জনসংযোগ - সঞ্জীব চৌধুরী ](./stories/rabibasariya/জনসংযোগ.md)
+1. [ মোহনবিলাস - দেবপ্রিয়া সরকার ](./stories/rabibasariya/মোহনবিলাস.md)
