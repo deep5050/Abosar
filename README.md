@@ -333,3 +333,4 @@ eMagazines And eNewspapers**
 1. [ সৈনিক - প্রতিমা রায় ](./stories/rabibasariya/সৈনিক.md)
 1. [ জনসংযোগ - সঞ্জীব চৌধুরী ](./stories/rabibasariya/জনসংযোগ.md)
 1. [ মোহনবিলাস - দেবপ্রিয়া সরকার ](./stories/rabibasariya/মোহনবিলাস.md)
+1. [ ইচ্ছে - নন্দিতা বাগচী ](./stories/rabibasariya/ইচ্ছে.md)
