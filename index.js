@@ -2,6 +2,7 @@ const request = require("request");
 const cheerio = require("cheerio");
 const log = require("signale");
 const fs = require("fs");
+const { connected } = require("process");
 
 if (!fs.existsSync("./stories")) {
   fs.mkdirSync("./stories");
@@ -19,19 +20,19 @@ if (!fs.existsSync("./metadata/images")) {
   fs.mkdirSync("./metadata/images/rabibasariya");
 }
 
-const rabibashoriyo_url =
-  "https://www.anandabazar.com/rabibashoriyo/";
-get_recent_stories(rabibashoriyo_url);
+// const rabibashoriyo_url =
+//   "https://www.anandabazar.com/rabibashoriyo/";
+// get_recent_stories(rabibashoriyo_url);
 
 /* Only for manual entry */
-/*
- for ( var i = 1;i<=50;i++)
+
+ for ( var i = 35;i<=40;i++)
 {
     var archive_url =
-"https://www.anandabazar.com/supplementary/rabibashoriyo/archive?page="+i+"&slab=0&tnp=50";
+"https://www.anandabazar.com/rabibashoriyo/page-"+i;
     get_recent_stories(archive_url);
 }
-*/
+
 
 function get_recent_stories(url) {
   const options = { url, headers: { "User-Agent": "request" } };
@@ -75,7 +76,9 @@ function crawl_a_story(story_url) {
 
       const story_name_html = "<h1 align=center>" + story_name + "</h1>\n";
 
-      const author = $('span[class="fs-16 notob-regular"]').text().trim();
+      const author = $('span[class="fs-18 notob-regular"]').text().trim();
+      console.log("author:"+ author);
+
       const author_html = "<h2 align=center>" + author + "</h2>\n";
 
       // Check if this already exists don't inlude it again
@@ -85,7 +88,7 @@ function crawl_a_story(story_url) {
       }
 
       try {
-        const img_div = $('div[class="asp_16_9"]');
+        const img_div = $('div[class="asp_16_9 admainimage"]');
         var img_src = img_div.find('img[class="w-100"]').attr("src"); // Returns with leading '//'
         img_src = img_src.slice(2);
       } catch {
@@ -167,4 +170,4 @@ function crawl_a_story(story_url) {
 }
 
 // manual add
-crawl_a_story("https://www.anandabazar.com/rabibashoriyo/short-story-by-indranil-sanyal/cid/1274121");
+// crawl_a_story("https://www.anandabazar.com/rabibashoriyo/short-story-by-sampurna-banerjee/cid/1322651");
