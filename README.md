@@ -1,8 +1,6 @@
-
-
 <div align=center>
  
- 
+
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   <path fill="#273036" fill-opacity="1" d="M0,256L21.8,240C43.6,224,87,192,131,197.3C174.5,203,218,245,262,234.7C305.5,224,349,160,393,117.3C436.4,75,480,53,524,64C567.3,75,611,117,655,133.3C698.2,149,742,139,785,133.3C829.1,128,873,128,916,138.7C960,149,1004,171,1047,149.3C1090.9,128,1135,64,1178,48C1221.8,32,1265,64,1309,106.7C1352.7,149,1396,203,1418,229.3L1440,256L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path>
@@ -270,7 +268,7 @@ eMagazines And eNewspapers**
 1. [ সিসিফাস - রম্যাণী গোস্বামী ](./stories/rabibasariya/সিসিফাস.md)
 1. [ ভাল থাকার রেসিপি - মণিদীপা নন্দী বিশ্বাস ](./stories/rabibasariya/ভাল-থাকার-রেসিপি.md)
 1. [ ফুলশয্যা - সুজিত বসাক ](./stories/rabibasariya/ফুলশয্যা.md)
-1. [ ফুলশয্যা -  ](./stories/rabibasariya/ফুলশয্যা.md)
+1. [ ফুলশয্যা - ](./stories/rabibasariya/ফুলশয্যা.md)
 1. [ সিনিয়র সিটিজ়েন - বিক্রম অধিকারী ](./stories/rabibasariya/সিনিয়র-সিটিজ়েন.md)
 1. [ অহেতুক - মধুমিতা ঘোষ ](./stories/rabibasariya/অহেতুক.md)
 1. [ জুনির জন্মদিনে - ঋতুপর্ণা ভট্টাচার্য ](./stories/rabibasariya/জুনির-জন্মদিনে.md)
@@ -299,7 +297,7 @@ eMagazines And eNewspapers**
 1. [ বৃষ্টিদিনের পাখি - অভিনন্দন সরকার ](./stories/rabibasariya/বৃষ্টিদিনের-পাখি.md)
 1. [ অচেনা সুর - ছন্দা বিশ্বাস ](./stories/rabibasariya/অচেনা-সুর.md)
 1. [ রোদ মেঘ বৃষ্টি - রাখী নাথ কর্মকার ](./stories/rabibasariya/রোদ-মেঘ-বৃষ্টি.md)
-1. [ জলঢোঁড়া -  ](./stories/rabibasariya/জলঢোঁড়া.md)
+1. [ জলঢোঁড়া - ](./stories/rabibasariya/জলঢোঁড়া.md)
 1. [ ভগবান - ইন্দ্রনীল সান্যাল ](./stories/rabibasariya/ভগবান.md)
 1. [ নিভৃতবাসের গল্প - গৌতম দে সরকার ](./stories/rabibasariya/নিভৃতবাসের-গল্প.md)
 1. [ পঙ্কজ - অরুণাভ দত্ত ](./stories/rabibasariya/পঙ্কজ.md)
@@ -334,7 +332,7 @@ eMagazines And eNewspapers**
 1. [ জনসংযোগ - সঞ্জীব চৌধুরী ](./stories/rabibasariya/জনসংযোগ.md)
 1. [ মোহনবিলাস - দেবপ্রিয়া সরকার ](./stories/rabibasariya/মোহনবিলাস.md)
 1. [ ইচ্ছে - নন্দিতা বাগচী ](./stories/rabibasariya/ইচ্ছে.md)
-1. [ তিমিরহনন -  ](./stories/rabibasariya/তিমিরহনন.md)
+1. [ তিমিরহনন - ](./stories/rabibasariya/তিমিরহনন.md)
 1. [ অগোচরে - সৌরদীপ্ত সেন ](./stories/rabibasariya/অগোচরে.md)
 1. [ রান্নাঘরে রঞ্জাবতী - সম্পূর্ণা বন্দ্যোপাধ্যায় ](./stories/rabibasariya/রান্নাঘরে-রঞ্জাবতী.md)
 1. [ অলরাউন্ডার - মানসেন্দু সমাজপতি ](./stories/rabibasariya/অলরাউন্ডার.md)
@@ -366,12 +364,12 @@ eMagazines And eNewspapers**
 1. [ থিম - চিরঞ্জিত সাহা ](./stories/rabibasariya/short-story:-থিম.md)
 1. [ কাজের মাসি - নন্দিনী নাগ ](./stories/rabibasariya/short-story:-কাজের-মাসি.md)
 1. [ মধুমাঝির নৌকো - শ্রীকান্ত অধিকারী ](./stories/rabibasariya/মধুমাঝির-নৌকো.md)
-1. [ হাঁচি -  ](./stories/rabibasariya/short-story:-হাঁচি.md)
+1. [ হাঁচি - ](./stories/rabibasariya/short-story:-হাঁচি.md)
 1. [ পাশের ঘরের ভাড়াটে - ছন্দা বিশ্বাস ](./stories/rabibasariya/Short-story:-পাশের-ঘরের-ভাড়াটে.md)
 1. [ মেরুজ্যোতি - সঙ্গীতা বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-মেরুজ্যোতি.md)
 1. [ ক্ষীরখোর - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/short-story:-ক্ষীরখোর.md)
 1. [ প্রহেলিকা - শীর্ষক বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-প্রহেলিকা.md)
-1. [ দৃষ্টি -  ](./stories/rabibasariya/short-story:-দৃষ্টি.md)
+1. [ দৃষ্টি - ](./stories/rabibasariya/short-story:-দৃষ্টি.md)
 1. [ সাধিকা - স্বাতী চক্রবর্তী ](./stories/rabibasariya/short-story:-সাধিকা.md)
 1. [ অনাস্থা প্রস্তাব - অংশুমিত্রা দত্ত ](./stories/rabibasariya/অনাস্থা-প্রস্তাব.md)
 1. [ প্রার্থী - চৈতালী বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-প্রার্থী.md)
@@ -392,8 +390,8 @@ eMagazines And eNewspapers**
 1. [ কপালে পুরুষ - বিতান সিকদার ](./stories/rabibasariya/কপালে-পুরুষ.md)
 1. [ টগরপাতি - শেখর মুখোপাধ্যায় ](./stories/rabibasariya/টগরপাতি.md)
 1. [ ভূতগ্রস্ত - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/ভূতগ্রস্ত.md)
-1. [ ফলন্ত -  ](./stories/rabibasariya/ফলন্ত.md)
-1. [ কালুমিয়াঁ, দয়াভাই  ও ঈশ্বরের হাত - অমিতাভ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/কালুমিয়াঁ,-দয়াভাই--ও-ঈশ্বরের-হাত.md)
+1. [ ফলন্ত - ](./stories/rabibasariya/ফলন্ত.md)
+1. [ কালুমিয়াঁ, দয়াভাই ও ঈশ্বরের হাত - অমিতাভ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/কালুমিয়াঁ,-দয়াভাই--ও-ঈশ্বরের-হাত.md)
 1. [ রূপলেখা - সুমন মহান্তি ](./stories/rabibasariya/রূপলেখা.md)
 1. [ মরা জ্যোৎস্না - বাসুদেব মালাকর ](./stories/rabibasariya/মরা-জ্যোৎস্না.md)
 1. [ মুবাইল - অরিন্দম শীল ](./stories/rabibasariya/মুবাইল.md)
