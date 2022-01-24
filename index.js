@@ -24,9 +24,10 @@ if (!fs.existsSync("./metadata/images")) {
 //   "https://www.anandabazar.com/rabibashoriyo/";
 // get_recent_stories(rabibashoriyo_url);
 
+// from now this will run
 /* Only for manual entry */
 
- for ( var i = 35;i<=40;i++)
+ for ( var i = 1;i<=3;i++)
 {
     var archive_url =
 "https://www.anandabazar.com/rabibashoriyo/page-"+i;
@@ -169,5 +170,12 @@ function crawl_a_story(story_url) {
   });
 }
 
-// manual add
+// manual add iff needed, testing purpose 
 // crawl_a_story("https://www.anandabazar.com/rabibashoriyo/short-story-by-sampurna-banerjee/cid/1322651");
+
+// TODO: classes, IDs are getting modified frequently by developers, need another approach
+// to look for the targets while crawling.
+
+// TODO: some of the stories name are gerbage, clean them
+// TODO: write more clean code, refactoring needed!
+// TODO: need documentation for future development, specify the steps to build and run
