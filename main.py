@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import datetime
 import time
+import os
 
 DOMAIN = "https://www.anandabazar.com"
 
@@ -105,13 +106,16 @@ class Story:
         markdown_outfile = f'./stories/rabibasariya/{self.name}-{self.author}.md'
         markdown_outfile = markdown_outfile.replace(" ", '-')
 
-        with open(markdown_outfile, 'w') as f:
-            f.write(markdown_content)
+        # if not already scraped
+        if not os.path.exists(markdown_outfile):
+            with open(markdown_outfile, 'w') as f:
+                f.write(markdown_content)
 
-        ## append to README
-        with open ('README.md', "a") as f:
-            f.write(f"\n1. [ {self.name} - {self.author} ]({markdown_outfile})")
-        print(f'{self.name}: Appending to README')
+            ## append to README
+            with open ('README.md', "a") as f:
+                
+                f.write(f"\n1. [ {self.name} - {self.author} ]({markdown_outfile})")
+            print(f'{self.name}: Appending to README')
 
 
 ###########################################
@@ -138,26 +142,34 @@ class Homepage:
                 if story_url not in self.stories:
                     self.stories.append(story_url)
 
-######################################
+###################################### manual add ###########################
 
-# Set the URL and user agent
-# url = "https://www.anandabazar.com/rabibashoriyo/bengali-short-story-written-by-amit-das/cid/1417309"
 
-# story = Story(url)
+def manual_crawl(url):
+    story = Story(url)
+
+
 # print(story.author)
 # print(story.text)
 # print(story.image)
 
 
-#####################################
+##################################### CI add ####################################
 
-for i in range(10,20):
-    rabibasariya = Homepage(str(i))
-    stories_url = rabibasariya.stories
+def auto_crawl(start,end):
+    for i in range(start,end):
+        rabibasariya = Homepage(str(i))
+        stories_url = rabibasariya.stories
 
-    for story_url in stories_url:
-        url = f"{DOMAIN}/{story_url}"
-        print(f"Fetching: {url}")
-        story = Story(url)
-        time.sleep(5)
+        for story_url in stories_url:
+            url = f"{DOMAIN}/{story_url}"
+            print(f"Fetching: {url}")
+            story = Story(url)
+            time.sleep(5)
+
+#################################### entry point ####################################
+url = "https://www.anandabazar.com//rabibashoriyo/bengali-short-story-written-by-sujit-basak/cid/1377215"
+
+# manual_crawl(url)
+auto_crawl(25,30)
     
