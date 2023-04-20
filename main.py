@@ -4,6 +4,7 @@ import json
 import datetime
 import time
 import os
+import re
 
 DOMAIN = "https://www.anandabazar.com"
 
@@ -39,11 +40,26 @@ class Story:
         name_div = self.soup.find('div',{'class': 'articletbox mt-32'})
         name_tag = name_div.find('h1')
         self.name = name_tag.text.strip()
+        # define regular expression to match English characters
+        english_pattern = re.compile("[a-zA-Z]")
+
+        # remove English characters from the text
+        self.name = re.sub(english_pattern, "", self.name)
+        self.name = self.name.replace(':','').strip()
+
+        self.name = self.name.replace("short story:-", "").strip()
+        self.name = self.name.replace("Short Story: ", "").strip()
+        self.name = self.name.replace("short story: ", '').strip()
+        self.name = self.name.replace("A shrot story: ", "").strip()
+        self.name = self.name.replace("A short story: ", "").strip()
     
     def get_author(self):
-        author_div = self.soup.find('div',{'class': 'editorbox mt-24'})
-        author_tag = author_div.find('h5')
-        self.author = author_tag.text.strip()
+        try:
+            author_div = self.soup.find('div',{'class': 'editorbox mt-24'})
+            author_tag = author_div.find('h5')
+            self.author = author_tag.text.strip()
+        except:
+            self.author = "Unknown"
 
     def get_image(self):
         image_div = self.soup.find('div',{'class': 'leadimgbox mt-24'})
@@ -138,7 +154,7 @@ class Homepage:
         for a_tag in a_tags:
             story_url = a_tag.get('href')
             # matching the keyword
-            if "bengali-short-story" in story_url:
+            if "short-story" in story_url:
                 if story_url not in self.stories:
                     self.stories.append(story_url)
 
@@ -158,6 +174,7 @@ def manual_crawl(url):
 
 def auto_crawl(start,end):
     for i in range(start,end):
+        print("############# " + str(i) + "\n")
         rabibasariya = Homepage(str(i))
         stories_url = rabibasariya.stories
 
@@ -171,5 +188,5 @@ def auto_crawl(start,end):
 url = "https://www.anandabazar.com//rabibashoriyo/bengali-short-story-written-by-sujit-basak/cid/1377215"
 
 # manual_crawl(url)
-auto_crawl(44,46)
+auto_crawl(40,43)
     
