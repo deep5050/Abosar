@@ -1,13 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import datetime
 
 HEADERS =  {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
     }
 
+url = ""
+with open('url') as f:
+    url = f.read()
+
 #################################
-url = "https://www.prothomalo.com/onnoalo/stories/%E0%A6%AC%E0%A7%81%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF"
+# url = "https://www.prothomalo.com/onnoalo/stories/%E0%A6%AC%E0%A7%81%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF"
 #################################
 
 response = requests.get(url, headers=HEADERS)
@@ -74,7 +79,20 @@ if response.status_code == 200:
 else:
     print('Failed to download image')
 
+data = {}
+data['name'] = story_name
+data['author'] = story_author
+data['image'] = story_image
+data['url'] = url
+now = datetime.datetime.now()
+# Convert the datetime object to a string with the desired format
+date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
+date_str = now.strftime("%d-%m-%Y")
+data['crawl_date'] = date_time_str
 
+
+with open(f"{metadata_path}{outfile_pattern}.json", 'w', encoding='utf-8') as outfile:
+        json.dump(data, outfile, ensure_ascii=False) 
 
 with open(f"{story_path}{outfile_pattern}.md",'w') as f:
     f.write(markdown_content)
