@@ -341,49 +341,49 @@ eMagazines And eNewspapers**
 | 307 | [ অগোচরে - সৌরদীপ্ত সেন ](./stories/rabibasariya/অগোচরে.md)                                                                   |           |
 | 308 | [ রান্নাঘরে রঞ্জাবতী - সম্পূর্ণা বন্দ্যোপাধ্যায় ](./stories/rabibasariya/রান্নাঘরে-রঞ্জাবতী.md)                                        |           |
 | 309 | [ অলরাউন্ডার - মানসেন্দু সমাজপতি ](./stories/rabibasariya/অলরাউন্ডার.md)                                                         |           |
-| 310 | [ স্বর্গাদপি গরীয়সী - সমীরণ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/Short-story:-স্বর্গাদপি-গরীয়সী.md)                              |           |
+| 310 | [ স্বর্গাদপি গরীয়সী - সমীরণ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/স্বর্গাদপি-গরীয়সী.md)                              |           |
 | 311 | [ খদ্দের - বিপুল রায় ](./stories/rabibasariya/খদ্দের.md)                                                                        |           |
-| 312 | [ ভালবাসার টুকরো - অধীর সিংহ ](./stories/rabibasariya/short-story:-ভালবাসার-টুকরো.md)                                          |           |
+| 312 | [ ভালবাসার টুকরো - অধীর সিংহ ](./stories/rabibasariya/ভালবাসার-টুকরো.md)                                          |           |
 | 313 | [ শেষ পর্যন্ত - মহুয়া চৌধুরী ](./stories/rabibasariya/শেষ-পর্যন্ত.md)                                                              |           |
 | 314 | [ সাক্ষীতরু - মৌসুমী বন্দ্যোপাধ্যায় ](./stories/rabibasariya/সাক্ষীতরু.md)                                                           |           |
-| 315 | [ শ্মশানভৈরব - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/short-story:-শ্মশানভৈরব.md)                                              |           |
-| 316 | [ মাস্টারপিস - সৌম্যদীপ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-মাস্টারপিস.md)                                        |           |
-| 317 | [ আধুনিক - প্রতিমা রায় ](./stories/rabibasariya/Short-story:-আধুনিক.md)                                                         |           |
-| 318 | [ চা - চিত্রালী ভট্টাচার্য ](./stories/rabibasariya/Short-story:-চা.md)                                                         |           |
-| 319 | [ শুধু ইভার জন্য - সন্দীপ চট্টোপাধ্যায় ](./stories/rabibasariya/short-story:-শুধু-ইভার-জন্য.md)                                      |           |
-| 320 | [ আন্তর্জালি যাত্রা - অমল আচার্য ](./stories/rabibasariya/Short-story:-আন্তর্জালি-যাত্রা.md)                                        |           |
-| 321 | [ ভদ্রলোক - সোমা কুশারী বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-ভদ্রলোক.md)                                           |           |
+| 315 | [ শ্মশানভৈরব - জয়দীপ চক্রবর্তী ](./stories/rabibasariya/শ্মশানভৈরব.md)                                              |           |
+| 316 | [ মাস্টারপিস - সৌম্যদীপ বন্দ্যোপাধ্যায় ](./stories/rabibasariya/মাস্টারপিস.md)                                        |           |
+| 317 | [ আধুনিক - প্রতিমা রায় ](./stories/rabibasariya/আধুনিক.md)                                                         |           |
+| 318 | [ চা - চিত্রালী ভট্টাচার্য ](./stories/rabibasariya/চা.md)                                                         |           |
+| 319 | [ শুধু ইভার জন্য - সন্দীপ চট্টোপাধ্যায় ](./stories/rabibasariya/শুধু-ইভার-জন্য.md)                                      |           |
+| 320 | [ আন্তর্জালি যাত্রা - অমল আচার্য ](./stories/rabibasariya/আন্তর্জালি-যাত্রা.md)                                        |           |
+| 321 | [ ভদ্রলোক - সোমা কুশারী বন্দ্যোপাধ্যায় ](./stories/rabibasariya/ভদ্রলোক.md)                                           |           |
 | 322 | [ শর্মীর গল্প - জয় গোস্বামী ](./stories/rabibasariya/শর্মীর-গল্প.md)                                                              |           |
-| 323 | [ বিস্ময়চিহ্ন - বাসুদেব মালাকর ](./stories/rabibasariya/short-story:-বিস্ময়চিহ্ন.md)                                              |           |
-| 324 | [ প্রতিষ্ঠা - মোনালিসা চন্দ্র ](./stories/rabibasariya/short-story:-প্রতিষ্ঠা.md)                                                  |           |
-| 325 | [ গোড়ায় গলদ - সোমজা দাস ](./stories/rabibasariya/short-story:-গোড়ায়-গলদ.md)                                                  |           |
+| 323 | [ বিস্ময়চিহ্ন - বাসুদেব মালাকর ](./stories/rabibasariya/বিস্ময়চিহ্ন.md)                                              |           |
+| 324 | [ প্রতিষ্ঠা - মোনালিসা চন্দ্র ](./stories/rabibasariya/প্রতিষ্ঠা.md)                                                  |           |
+| 325 | [ গোড়ায় গলদ - সোমজা দাস ](./stories/rabibasariya/গোড়ায়-গলদ.md)                                                  |           |
 | 326 | [ ক্যাডাভারের মুখ - তাপস রায় ](./stories/rabibasariya/ক্যাডাভারের-মুখ.md)                                                        |           |
-| 327 | [ চৈত্রবসন্ত - সুদর্শন মুখোটী ](./stories/rabibasariya/short-story:-চৈত্রবসন্ত.md)                                                  |           |
-| 328 | [ ঝড় - সংহিতা ঘোষাল মুখোপাধ্যায় ](./stories/rabibasariya/short-story:-ঝড়.md)                                                   |           |
-| 329 | [ রিজ়নুয়া - অন্বেষা রায় ](./stories/rabibasariya/short-story:-রিজ়নুয়া.md)                                                       |           |
-| 330 | [ সেলেব্রিটি - সুব্রত মজুমদার ](./stories/rabibasariya/Short-story:-সেলেব্রিটি.md)                                                |           |
-| 331 | [ ঘটকালি - পুলক চট্টোপাধ্যায় ](./stories/rabibasariya/short-story:-ঘটকালি.md)                                                   |           |
-| 332 | [ ফরোয়ার্ড-পাসে গোল - বিতান সিকদার ](./stories/rabibasariya/short-story:-ফরোয়ার্ড-পাসে-গোল.md)                                 |           |
-| 333 | [ হৃদয়বতী - অরূপরতন আইচ ](./stories/rabibasariya/short-story:-হৃদয়বতী.md)                                                       |           |
-| 334 | [ জুতো - সঞ্জীব ঘোষ ](./stories/rabibasariya/short-story:-জুতো.md)                                                              |           |
-| 335 | [ থিম - চিরঞ্জিত সাহা ](./stories/rabibasariya/short-story:-থিম.md)                                                           |           |
-| 336 | [ কাজের মাসি - নন্দিনী নাগ ](./stories/rabibasariya/short-story:-কাজের-মাসি.md)                                               |           |
+| 327 | [ চৈত্রবসন্ত - সুদর্শন মুখোটী ](./stories/rabibasariya/চৈত্রবসন্ত.md)                                                  |           |
+| 328 | [ ঝড় - সংহিতা ঘোষাল মুখোপাধ্যায় ](./stories/rabibasariya/ঝড়.md)                                                   |           |
+| 329 | [ রিজ়নুয়া - অন্বেষা রায় ](./stories/rabibasariya/রিজ়নুয়া.md)                                                       |           |
+| 330 | [ সেলেব্রিটি - সুব্রত মজুমদার ](./stories/rabibasariya/সেলেব্রিটি.md)                                                |           |
+| 331 | [ ঘটকালি - পুলক চট্টোপাধ্যায় ](./stories/rabibasariya/ঘটকালি.md)                                                   |           |
+| 332 | [ ফরোয়ার্ড-পাসে গোল - বিতান সিকদার ](./stories/rabibasariya/ফরোয়ার্ড-পাসে-গোল.md)                                 |           |
+| 333 | [ হৃদয়বতী - অরূপরতন আইচ ](./stories/rabibasariya/হৃদয়বতী.md)                                                       |           |
+| 334 | [ জুতো - সঞ্জীব ঘোষ ](./stories/rabibasariya/জুতো.md)                                                              |           |
+| 335 | [ থিম - চিরঞ্জিত সাহা ](./stories/rabibasariya/থিম.md)                                                           |           |
+| 336 | [ কাজের মাসি - নন্দিনী নাগ ](./stories/rabibasariya/কাজের-মাসি.md)                                               |           |
 | 337 | [ মধুমাঝির নৌকো - শ্রীকান্ত অধিকারী ](./stories/rabibasariya/মধুমাঝির-নৌকো.md)                                                   |           |
-| 338 | [ হাঁচি -  ](./stories/rabibasariya/short-story:-হাঁচি.md)                                                                     |           |
-| 339 | [ পাশের ঘরের ভাড়াটে - ছন্দা বিশ্বাস ](./stories/rabibasariya/Short-story:-পাশের-ঘরের-ভাড়াটে.md)                                |           |
-| 340 | [ মেরুজ্যোতি - সঙ্গীতা বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-মেরুজ্যোতি.md)                                           |           |
-| 341 | [ ক্ষীরখোর - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/short-story:-ক্ষীরখোর.md)                                                  |           |
-| 342 | [ প্রহেলিকা - শীর্ষক বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-প্রহেলিকা.md)                                            |           |
-| 343 | [ দৃষ্টি - Unknown ](./stories/rabibasariya/short-story:-দৃষ্টি.md)                                                              |           |
-| 344 | [ সাধিকা - স্বাতী চক্রবর্তী ](./stories/rabibasariya/short-story:-সাধিকা.md)                                                    |           |
+| 338 | [ হাঁচি -  ](./stories/rabibasariya/হাঁচি.md)                                                                     |           |
+| 339 | [ পাশের ঘরের ভাড়াটে - ছন্দা বিশ্বাস ](./stories/rabibasariya/পাশের-ঘরের-ভাড়াটে.md)                                |           |
+| 340 | [ মেরুজ্যোতি - সঙ্গীতা বন্দ্যোপাধ্যায় ](./stories/rabibasariya/মেরুজ্যোতি.md)                                           |           |
+| 341 | [ ক্ষীরখোর - প্রসেনজিৎ সিংহ ](./stories/rabibasariya/ক্ষীরখোর.md)                                                  |           |
+| 342 | [ প্রহেলিকা - শীর্ষক বন্দ্যোপাধ্যায় ](./stories/rabibasariya/প্রহেলিকা.md)                                            |           |
+| 343 | [ দৃষ্টি - Unknown ](./stories/rabibasariya/দৃষ্টি.md)                                                              |           |
+| 344 | [ সাধিকা - স্বাতী চক্রবর্তী ](./stories/rabibasariya/সাধিকা.md)                                                    |           |
 | 345 | [ অনাস্থা প্রস্তাব - অংশুমিত্রা দত্ত ](./stories/rabibasariya/অনাস্থা-প্রস্তাব.md)                                                    |           |
-| 346 | [ প্রার্থী - চৈতালী বন্দ্যোপাধ্যায় ](./stories/rabibasariya/short-story:-প্রার্থী.md)                                               |           |
+| 346 | [ প্রার্থী - চৈতালী বন্দ্যোপাধ্যায় ](./stories/rabibasariya/প্রার্থী.md)                                               |           |
 | 347 | [ আলোয় ফেরা - সুস্মিতা নাথ ](./stories/rabibasariya/আলোয়-ফেরা.md)                                                              |           |
 | 348 | [ প্রমিথিউস - রাখী নাথ কর্মকার ](./stories/rabibasariya/প্রমিথিউস.md)                                                           |           |
-| 349 | [ প্রতিকৃতি - নন্দিতা বাগচী ](./stories/rabibasariya/short-story:-প্রতিকৃতি.md)                                                   |           |
-| 350 | [ মশা - দুলালেন্দু সরকার ](./stories/rabibasariya/Short-Story:-মশা.md)                                                          |           |
+| 349 | [ প্রতিকৃতি - নন্দিতা বাগচী ](./stories/rabibasariya/প্রতিকৃতি.md)                                                   |           |
+| 350 | [ মশা - দুলালেন্দু সরকার ](./stories/rabibasariya/মশা.md)                                                          |           |
 | 351 | [ জলের পাশে - শ্যামলী আচার্য ](./stories/rabibasariya/জলের-পাশে.md)                                                            |           |
-| 352 | [ বিলকিস বেওয়া - শুভজিৎ ভাদুড়ী ](./stories/rabibasariya/short-story:-বিলকিস-বেওয়া.md)                                          |           |
+| 352 | [ বিলকিস বেওয়া - শুভজিৎ ভাদুড়ী ](./stories/rabibasariya/বিলকিস-বেওয়া.md)                                          |           |
 | 353 | [ সিদ্ধিলাভ - বিক্রম অধিকারী ](./stories/rabibasariya/সিদ্ধিলাভ.md)                                                             |           |
 | 354 | [ ভক্তরামের স্মরণসভা - উল্লাস মল্লিক ](./stories/rabibasariya/ভক্তরামের-স্মরণসভা.md)                                               |           |
 | 355 | [ আয় নম্বর, আয় - অম্লানকুসুম চক্রবর্তী ](./stories/rabibasariya/আয়-নম্বর,-আয়.md)                                                    |           |
