@@ -128,9 +128,9 @@ class Story:
                 f.write(markdown_content)
 
             ## append to README
-            with open ('README.md', "a") as f:
+            with open ('rabibasariya', "a") as f:
                 
-                f.write(f"\n1. [ {self.name} - {self.author} ]({markdown_outfile})")
+                f.write(f"\n[ {self.name} - {self.author} ]({markdown_outfile})")
             print(f'{self.name}: Appending to README')
 
 
