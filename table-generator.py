@@ -48,7 +48,6 @@ eMagazines And eNewspapers**
 
 <img src=onnoalo.svg width=200px >
 
-
 <img src=anandabazar.png width=200px>
 
 1. https://www.anandabazar.com/supplementary/rabibashoriyo/
