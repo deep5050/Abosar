@@ -1,5 +1,5 @@
 import pandas as pd
-from markdownTable import markdownTable
+# from markdownTable import markdownTable
 from tabulate import tabulate
 
 # https://www.onnoalo.com/onnoalo
@@ -11,13 +11,18 @@ def get_rabibasariya():
         return rabibasariya
 
 def get_onnoalo():
+    with open('onnoalo', 'r') as f:
+        onnoalo_arr = f.readlines()
+    
     get_first_column_length = len(get_rabibasariya())
+    left_length = get_first_column_length - len(onnoalo_arr)
+
     # generate blank array for now
-    blank_array = [''] * get_first_column_length
-    return blank_array
+    blank_array = [''] * left_length
+    return onnoalo_arr + blank_array
 
 rabibasariya_arr = get_rabibasariya()
-onnoalo_arr = ['a','b']
+
 
 data = {'রবিবাসরীয়':  get_rabibasariya(),
         'অন্য আলো': get_onnoalo(),
