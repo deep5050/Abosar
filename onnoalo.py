@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import datetime
+import os
 
 HEADERS =  {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
@@ -94,9 +95,12 @@ data['crawl_date'] = date_time_str
 with open(f"{metadata_path}{outfile_pattern}.json", 'w', encoding='utf-8') as outfile:
         json.dump(data, outfile, ensure_ascii=False) 
 
-with open(f"{story_path}{outfile_pattern}.md",'w') as f:
-    f.write(markdown_content)
+# if already exists skip
 
-# append to list
-with open('onnoalo','a') as f:
-    f.write(f"[ {story_name} - {story_author} ]({story_path}{outfile_pattern}.md)\n")
+markdown_file = f"{story_path}{outfile_pattern}.md"
+if not os.path.exists(markdown_file):
+    with open(markdown_file,'w') as f:
+        f.write(markdown_content)
+        ## append to list
+    with open('onnoalo','a') as f:
+        f.write(f"[ {story_name} - {story_author} ]({story_path}{outfile_pattern}.md)\n")
