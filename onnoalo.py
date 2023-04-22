@@ -32,11 +32,14 @@ story_name = name_div.find('h1').text
 print(story_name)
 
 # story author
-author_span = soup.find('span',{'class':'contributor-name'})
-story_author = author_span.text
-if "লেখা" in story_author:
-    author_span = soup.find('span',{'class':'author-location'})
+try:
+    author_span = soup.find('span',{'class':'contributor-name'})
     story_author = author_span.text
+    if "লেখা" in story_author:
+        author_span = soup.find('span',{'class':'author-location'})
+        story_author = author_span.text
+except:
+    story_author = "unknown"
 print(story_author) 
 
 # story image
@@ -104,3 +107,6 @@ if not os.path.exists(markdown_file):
         ## append to list
     with open('onnoalo','a') as f:
         f.write(f"[ {story_name} - {story_author} ]({story_path}{outfile_pattern}.md)\n")
+        print("new story added !!")
+else:
+    print("Skipping duplicate story")
