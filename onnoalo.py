@@ -1,8 +1,9 @@
+import datetime
+import json
+import os
+
 import requests
 from bs4 import BeautifulSoup
-import json
-import datetime
-import os
 from selenium import webdriver
 
 HEADERS = {

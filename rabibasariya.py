@@ -1,10 +1,11 @@
-import requests
-from bs4 import BeautifulSoup
-import json
 import datetime
-import time
+import json
 import os
 import re
+import time
+
+import requests
+from bs4 import BeautifulSoup
 
 DOMAIN = "https://www.anandabazar.com"
 
