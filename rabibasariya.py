@@ -10,11 +10,13 @@ from bs4 import BeautifulSoup
 DOMAIN = "https://www.anandabazar.com"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+    "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
 }
 
 
 class Story:
+
     def __init__(self, url):
         self.name = ""
         self.author = ""
@@ -132,7 +134,8 @@ class Story:
 
             # append to README
             with open("rabibasariya", "a") as f:
-                f.write(f"\n[ {self.name} - {self.author} ]({markdown_outfile})")
+                f.write(
+                    f"\n[ {self.name} - {self.author} ]({markdown_outfile})")
             print(f"{self.name}: Appending to README")
 
 
@@ -140,6 +143,7 @@ class Story:
 
 
 class Homepage:
+
     def __init__(self, page):
         self.home = "https://www.anandabazar.com/rabibashoriyo/"
         self.page = page
@@ -171,7 +175,6 @@ def manual_crawl(url):
 # print(story.author)
 # print(story.text)
 # print(story.image)
-
 
 ##################################### CI add ####################################
 

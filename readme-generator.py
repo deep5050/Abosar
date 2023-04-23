@@ -39,7 +39,10 @@ def make_readme():
         "অন্য আলো": second_column,
     }
     df = pd.DataFrame(data)
-    markdown_table = tabulate(df, headers="keys", tablefmt="pipe", showindex=True)
+    markdown_table = tabulate(df,
+                              headers="keys",
+                              tablefmt="pipe",
+                              showindex=True)
 
     readme_header = """
 <div align=center>

@@ -7,9 +7,9 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+    "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
 }
-
 
 f.read()
 
@@ -23,7 +23,8 @@ def crawler(url):
     # Parse the HTML with Beautiful Soup
     soup = BeautifulSoup(response.text, "html.parser")
     # print(soup)
-    story_divs = soup.find_all("div", {"class": "story-element story-element-text"})
+    story_divs = soup.find_all("div",
+                               {"class": "story-element story-element-text"})
     # print(story_divs)
     # name_tag = story_div.find('h1')
     # self.name = name_tag.text.strip()
@@ -73,9 +74,8 @@ def crawler(url):
 
     markdown_content = f"<div align=center>\n<img src={story_image} />\n<br><br>\n<h1>{story_name}</h1> \n<h4>{story_author}</h4>\n<br><br>\n</div>\n\n{story_text}"
 
-    outfile_pattern = (
-        f"{story_name}-{story_author}".strip().replace(" ", "-").replace(":", "")
-    )
+    outfile_pattern = (f"{story_name}-{story_author}".strip().replace(
+        " ", "-").replace(":", ""))
 
     # download image
     response = requests.get(story_image)
@@ -98,9 +98,8 @@ def crawler(url):
     date_str = now.strftime("%d-%m-%Y")
     data["crawl_date"] = date_time_str
 
-    with open(
-        f"{metadata_path}{outfile_pattern}.json", "w", encoding="utf-8"
-    ) as outfile:
+    with open(f"{metadata_path}{outfile_pattern}.json", "w",
+              encoding="utf-8") as outfile:
         json.dump(data, outfile, ensure_ascii=False)
 
     # if already exists skip
