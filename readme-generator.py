@@ -1,4 +1,5 @@
 import pandas as pd
+
 # from markdownTable import markdownTable
 from tabulate import tabulate
 
@@ -7,13 +8,13 @@ from tabulate import tabulate
 
 
 def get_rabibasariya():
-    with open('rabibasariya', 'r') as f:
+    with open("rabibasariya", "r") as f:
         rabibasariya = f.readlines()
         return rabibasariya
 
 
 def get_onnoalo():
-    with open('onnoalo', 'r') as f:
+    with open("onnoalo", "r") as f:
         onnoalo_arr = f.readlines()
         return onnoalo_arr
 
@@ -26,20 +27,20 @@ def make_readme():
     if len(rabibasariya_arr) > len(onnoalo_arr):
         first_column = rabibasariya_arr
         remaining_len = len(rabibasariya_arr) - len(onnoalo_arr)
-        blank_array = [''] * remaining_len
+        blank_array = [""] * remaining_len
         second_column = onnoalo_arr + blank_array
     else:
         second_column = onnoalo_arr
         remaining_len = len(onnoalo_arr) - len(rabibasariya_arr)
-        blank_array = [''] * remaining_len
+        blank_array = [""] * remaining_len
         first_column = rabibasariya_arr + blank_array
 
-    data = {'রবিবাসরীয়':  first_column,
-            'অন্য আলো': second_column,
-            }
+    data = {
+        "রবিবাসরীয়": first_column,
+        "অন্য আলো": second_column,
+    }
     df = pd.DataFrame(data)
-    markdown_table = tabulate(
-        df, headers='keys', tablefmt='pipe', showindex=True)
+    markdown_table = tabulate(df, headers="keys", tablefmt="pipe", showindex=True)
 
     readme_header = """
 <div align=center>
@@ -74,7 +75,7 @@ eMagazines And eNewspapers**
 
     new_readme_text = readme_header + "\n" + markdown_table
 
-    with open('README.md', 'w') as f:
+    with open("README.md", "w") as f:
         f.write(new_readme_text)
 
 
