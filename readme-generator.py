@@ -5,15 +5,18 @@ from tabulate import tabulate
 # https://www.onnoalo.com/onnoalo
 # https://www.anandabazar.com/rabibashoriyo
 
+
 def get_rabibasariya():
     with open('rabibasariya', 'r') as f:
         rabibasariya = f.readlines()
         return rabibasariya
 
+
 def get_onnoalo():
     with open('onnoalo', 'r') as f:
         onnoalo_arr = f.readlines()
         return onnoalo_arr
+
 
 def make_readme():
     rabibasariya_arr = get_rabibasariya()
@@ -29,15 +32,14 @@ def make_readme():
         second_column = onnoalo_arr
         remaining_len = len(onnoalo_arr) - len(rabibasariya_arr)
         blank_array = [''] * remaining_len
-        first_column =  rabibasariya_arr + blank_array
-    
-
+        first_column = rabibasariya_arr + blank_array
 
     data = {'রবিবাসরীয়':  first_column,
             'অন্য আলো': second_column,
             }
     df = pd.DataFrame(data)
-    markdown_table = tabulate(df, headers='keys', tablefmt='pipe', showindex=True)
+    markdown_table = tabulate(
+        df, headers='keys', tablefmt='pipe', showindex=True)
 
     readme_header = """
 <div align=center>
@@ -72,7 +74,7 @@ eMagazines And eNewspapers**
 
     new_readme_text = readme_header + "\n" + markdown_table
 
-    with open('README.md','w') as f:
+    with open('README.md', 'w') as f:
         f.write(new_readme_text)
 
 
