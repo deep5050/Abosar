@@ -8,7 +8,7 @@ from selenium import webdriver
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
 
 
-f.read()
+# f.read()
 
 #################################
 # url = "https://www.prothomalo.com/onnoalo/stories/%E0%A6%AC%E0%A7%81%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF"
