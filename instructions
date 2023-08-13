@@ -1,3 +1,3 @@
-1. run python rabibasariya.python # should auto crawl
+1. run python rabibasariya.py # should auto crawl
 2. run python onnoalo.py # manual crawl # update url file with manual link to story
 3. run python readme-generator.py # create readme file
