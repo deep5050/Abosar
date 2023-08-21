@@ -19,8 +19,8 @@ jobs:
       with:
         python-version: 3.x
       
-    - name: Install
-      run: yarn install
+    - name: Install python modules
+      run: pip3 install -r requirements
       
       
     - name: add rabibasariya stories
