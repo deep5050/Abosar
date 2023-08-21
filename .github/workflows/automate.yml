@@ -1,5 +1,5 @@
 
-name: GitHub CI
+name: GitHub CI runs on sundays.
 on:
   push:
     branches:
@@ -14,19 +14,23 @@ jobs:
       with:
         lfs: true
         
-    - name: Use Node.js 13.x
-      uses: actions/setup-node@main
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        node-version: 13.x
+        python-version: 3.x
       
     - name: Install
       run: yarn install
       
       
-    - name: add stories
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: node index.js
+    - name: add rabibasariya stories
+      run: python3 rabibasariya.py
+
+    - name: add prothomalo stories
+      run: python3 onnoalo.py
+
+    - name: generate README
+      run: python3 readme-generator.py
       
     - name: publish changes
       uses: mikeal/publish-to-github-action@master

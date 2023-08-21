@@ -188,5 +188,5 @@ def auto_crawl(start,end):
 url = "https://www.anandabazar.com//rabibashoriyo/bengali-short-story-written-by-sujit-basak/cid/1377215"
 
 # manual_crawl(url)
-auto_crawl(1,4)
+auto_crawl(1,2)
     
