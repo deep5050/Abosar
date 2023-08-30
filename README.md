@@ -8,18 +8,15 @@
 
 <p>
 <h1 align=center > অবসর ( ABOSAR ) </h1>
-<a href=https://t.me/rabibasariya>
-<img align=center src=https://user-images.githubusercontent.com/27947066/264323419-b5c9d0bd-2947-4322-adf7-13cb3f460e4c.png></a>
 </p>
 
 **A Collection Of Short Bengali Stories Web Scraped From Various Bengali
 eMagazines And eNewspapers**
 
 <h4> stories are added every Sunday on 8 A.M. automatically ( CRON jobs and Github CI) </h4>
-<img align=center src=https://github.com/deep5050/Abosar/actions/workflows/automate.yml/badge.svg>
 </div>
 
-## SOURCES
+## SOURCES ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
 
 <img src=onnoalo.svg width=200px >
 
