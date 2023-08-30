@@ -38,4 +38,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
     - name: send to telegram
-      run python3 telegram-bot.py
+      run: python3 telegram-bot.py
