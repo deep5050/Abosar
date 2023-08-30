@@ -9,9 +9,9 @@ import requests
 
 
 ##################### test ######################
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 ##################################################
 
@@ -19,11 +19,6 @@ load_dotenv()
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 CHANNEL_USERNAME = os.environ.get("TELEGRAM_CHANNEL_USERNAME")
 
-# Replace with your Telegram Bot token
-# TOKEN = ""
-
-# Replace with your channel username (including the @ symbol)
-# CHANNEL_USERNAME = "@rabibasariya"
 
 async def send_message_to_channel(message,markdown=True):
     bot = Bot(token=TOKEN)
@@ -61,19 +56,16 @@ async def post_a_story(image_url,story_url,story_title,extra_msg):
 
     extra_msg = """\nJoin @rabibasariya for new stories on every sunday\. \U00002764\U00002764\n\n\[DISCLAIMER\]\nThe stories and images posted on this platform are not my own creations\. All copyright and intellectual property rights are attributed to their original authors and creators\. The contents are shared here for educational purposes only\. No copyright infringement or strike is intended\. If you are the original author or copyright holder of any content posted here and have concerns, please reach out to me at d\.pal5050@gmail\.com for appropriate credit or removal\. Your rights and ownership will be respected and acknowledged\.\nSource & Copyright\: www\.anandabazar\.com/rabibashoriyo/"""
     markdown_caption = f"\n*{story_title}*\U00002728\U00002728\n\U00002935\U00002935\U00002935\U00002935\n{story_url}\n{extra_msg}"
-    # try:
+
     await bot.send_photo(chat_id=CHANNEL_USERNAME,photo=image_url,
                         caption=markdown_caption,
                         parse_mode=constants.ParseMode.MARKDOWN_V2
                         )
-    # except:
-    #     print("something went wrong!!")
-
 
 async def main():
     with open("./rabibasariya","r") as f:
         lines = f.readlines()
-        for link in lines[210:250]:
+        for link in lines[-2:]:
             # Regular expression pattern to match Markdown link
             pattern = r'\[([^\]]+)\]\(([^)]+)\)'
 

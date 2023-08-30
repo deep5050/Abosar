@@ -1,5 +1,5 @@
 
-name: GitHub CI runs on sundays.
+name: publish on telegram on sundays.
 on:
   push:
     branches:
@@ -36,3 +36,6 @@ jobs:
       uses: mikeal/publish-to-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+    - name: send to telegram
+      run python3 telegram-bot.py
