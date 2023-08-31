@@ -41,5 +41,5 @@ jobs:
     - name: send to telegram
       run: python3 telegram-bot.py
       env:
-        TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        CHANNEL_USERNAME: ${{ secrets.TELEGRAM_CHANNEL_USERNAME }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHANNEL_USERNAME: ${{ secrets.TELEGRAM_CHANNEL_USERNAME }}
