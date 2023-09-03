@@ -1,31 +1,35 @@
-
 <div align=center>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-<path fill="#273036" fill-opacity="1" d="M0,256L21.8,240C43.6,224,87,192,131,197.3C174.5,203,218,245,262,234.7C305.5,224,349,160,393,117.3C436.4,75,480,53,524,64C567.3,75,611,117,655,133.3C698.2,149,742,139,785,133.3C829.1,128,873,128,916,138.7C960,149,1004,171,1047,149.3C1090.9,128,1135,64,1178,48C1221.8,32,1265,64,1309,106.7C1352.7,149,1396,203,1418,229.3L1440,256L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path>
-</svg>
-    
-<img src="metadata/images/rabibasariya/abosar.png" title="(c) Absurd Design"  height="400px" width="400px" align=center>
-
+    <p align=center>
+    <img align=center src=https://github.com/deep5050/random-shits-happen-here/assets/27947066/6c3e568c-d8c6-4f8f-9c79-18bbb68924cd width=400px>
+    </p>
+<p align=center>
+<a href=https://t.me/rabibasariya> <img align=center src=https://user-images.githubusercontent.com/27947066/264323419-b5c9d0bd-2947-4322-adf7-13cb3f460e4c.png > </a>
+</p>
+<p align=center>
+    <img align=center src=https://github.com/deep5050/Abosar/actions/workflows/automate.yml/badge.svg >
+</p>
 <p>
 <h1 align=center > অবসর ( ABOSAR ) </h1>
 </p>
 
-**A Collection Of Short Bengali Stories Web Scraped From Various Bengali
-eMagazines And eNewspapers**
+**A collection of short Bengali stories web scraped from various Bengali
+eMagazines and eNewspapers**
 
-<h4> stories are added every Sunday on 8 A.M. automatically ( CRON jobs and Github CI) </h4>
+<h4> Stories are added here and on telegram, every Sunday at around 1:30 P.M 🕐 automatically</h4>
 </div>
 
-## SOURCES ![GitHub CI](https://github.com/deep5050/Abosar/workflows/GitHub%20CI/badge.svg)
+## DISCLAIMER
 
-<img src=onnoalo.svg width=200px >
+The stories and images posted on this platform are not my own creations. All copyright and intellectual property rights are attributed to their original authors and creators. The contents are shared here for educational purposes only. No copyright infringement or strike is intended. If you are the original author or copyright holder of any content posted here and have concerns, please contact me at d.pal5050@gmail.com for appropriate credit or removal. Your rights and ownership will be respected and acknowledged.
 
-<img src=anandabazar.png width=200px>
+Source & Copyright: www.anandabazar.com/rabibashoriyo/
+
+## SOURCES
 
 1. https://www.anandabazar.com/supplementary/rabibashoriyo/
 2. https://www.prothomalo.com/onnoalo
 
-( more will be added soon )
+(More will be added soon )
 
 ## INDEX
 |     | রবিবাসরীয়                                                                                                                           | অন্য আলো                                                                                                                                          |
@@ -539,5 +543,3 @@ eMagazines And eNewspapers**
 | 506 | [ বিমলবাবুর কাব্যচর্চা - চঞ্চলকুমার ঘোষ ](./stories/rabibasariya/বিমলবাবুর-কাব্যচর্চা-চঞ্চলকুমার-ঘোষ.md)                            |                                                                                                                                                   |
 | 507 | [ সঞ্জীবনী - পৃষতী রায়চৌধুরী ](./stories/rabibasariya/সঞ্জীবনী-পৃষতী-রায়চৌধুরী.md)                                                  |                                                                                                                                                   |
 | 508 | [ স্মারক - মৌসুমী চৌধুরী ](./stories/rabibasariya/স্মারক-মৌসুমী-চৌধুরী.md)                                                          |                                                                                                                                                   |
-| 509 | [ বিপিএল ট্রেন - সুব্রত নাগ ](./stories/rabibasariya/বিপিএল-ট্রেন-সুব্রত-নাগ.md)                                                    |                                                                                                                                                   |
-| 510 | [ ক্ষুদ্র - অভিজিৎ বেরা ](./stories/rabibasariya/ক্ষুদ্র-অভিজিৎ-বেরা.md)                                                            |                                                                                                                                                   |
