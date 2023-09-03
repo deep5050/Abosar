@@ -16,6 +16,10 @@
 eMagazines and eNewspapers**
 
 <h4> Stories are added here and on telegram, every Sunday at around 1:30 P.M 🕐 automatically</h4>
+
+ <p align=center>
+<img align=center width="500px" alt="UPI" src="https://user-images.githubusercontent.com/27947066/235618869-8c9d9bce-096d-469e-8f61-c29cc01eacc3.png">
+</p>
 </div>
 
 ## DISCLAIMER
