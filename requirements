@@ -6,3 +6,4 @@ pandas
 asyncio
 python-telegram-bot==20.4
 python-dotenv
+tabulate
