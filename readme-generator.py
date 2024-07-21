@@ -15,9 +15,28 @@ def get_onnoalo():
         onnoalo_arr = f.readlines()
         return onnoalo_arr
 
+# def make_readme():
+#     rabibasariya_arr = get_rabibasariya()
+#     onnoalo_arr = get_onnoalo()
+
+#     # first_column is always rabibasariya
+#     if len(rabibasariya_arr) > len(onnoalo_arr):
+#         first_column = rabibasariya_arr
+#         remaining_len = len(rabibasariya_arr) - len(onnoalo_arr)
+#         blank_array = [''] * remaining_len
+#         second_column = onnoalo_arr + blank_array
+#     else:
+#         second_column = onnoalo_arr
+#         remaining_len = len(onnoalo_arr) - len(rabibasariya_arr)
+#         blank_array = [''] * remaining_len
+#         first_column =  rabibasariya_arr + blank_array
 def make_readme():
     rabibasariya_arr = get_rabibasariya()
     onnoalo_arr = get_onnoalo()
+
+    # Remove duplicates from rabibasariya_arr
+    seen = set()
+    rabibasariya_arr = [x for x in rabibasariya_arr if x not in seen and not seen.add(x)]
 
     # first_column is always rabibasariya
     if len(rabibasariya_arr) > len(onnoalo_arr):
@@ -29,8 +48,7 @@ def make_readme():
         second_column = onnoalo_arr
         remaining_len = len(onnoalo_arr) - len(rabibasariya_arr)
         blank_array = [''] * remaining_len
-        first_column =  rabibasariya_arr + blank_array
-    
+        first_column = rabibasariya_arr + blank_array  
 
 
     data = {'রবিবাসরীয়':  first_column,
