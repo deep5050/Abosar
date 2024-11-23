@@ -41,7 +41,7 @@ def simulate_human_interaction(driver):
 
 # URL of the webpage to scrape
 # url = "https://www.anandabazar.com//rabibashoriyo/"
-url = "https://www.anandabazar.com/rabibashoriyo/bengali-short-story-by-binita-roychowdhury/cid/1463869"
+url = "https://www.anandabazar.com/rabibashoriyo/bengali-short-story-authored-by-joydip-chakraborty/cid/1560907"
 
 def write_metadata(object):
     # Create a datetime object for the current date and time
