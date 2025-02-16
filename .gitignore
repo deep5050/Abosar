@@ -8,3 +8,9 @@ scraper/async.js
 venv
 __pycache__
 google-chrome-stable_current_amd64.deb
+bin/
+lib/
+lib64/
+./pyvenv.cfg
+lib64
+pyvenv.cfg
