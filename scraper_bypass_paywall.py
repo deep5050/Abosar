@@ -54,6 +54,11 @@ def simulate_human_interaction(driver):
     except Exception as e:
         print(f"Interaction error: {e}")
 
+def sanitize_filename(text):
+    text = text.replace(' ', '-')
+    # Allow alphanumeric, underscore, hyphen, and Bengali characters (U+0980 to U+09FF)
+    return "".join([c for c in text if c.isalnum() or c in ('-', '_') or ('\u0980' <= c <= '\u09ff')])
+
 def write_metadata(object, base_path="./metadata/rabibasariya/premium"):
     if not os.path.exists(base_path):
         os.makedirs(base_path, exist_ok=True)
@@ -63,15 +68,12 @@ def write_metadata(object, base_path="./metadata/rabibasariya/premium"):
 
     metadata = {}
     metadata['url'] = object["url"]
+    metadata['name'] = object["name"]
     metadata['author'] = object["author"]
     metadata['crawl_date'] = date_time_str
 
-    safe_name = object["name"].replace(' ', '-')
-    safe_author = object["author"].replace(' ', '-')
-    
-    # Sanitize naming
-    safe_name = "".join([c for c in safe_name if c.isalnum() or c in ('-','_')])
-    safe_author = "".join([c for c in safe_author if c.isalnum() or c in ('-','_')])
+    safe_name = sanitize_filename(object["name"])
+    safe_author = sanitize_filename(object["author"])
 
     output_file_path = f'{base_path}/{safe_name}-{safe_author}.json'
     
@@ -87,11 +89,8 @@ def write_story(object, base_image_path="./metadata/images/rabibasariya/premium"
 
     print(f'{object["name"]}: Writing story')
     
-    safe_name = object["name"].replace(' ', '-')
-    safe_author = object["author"].replace(' ', '-')
-    # Sanitize naming
-    safe_name = "".join([c for c in safe_name if c.isalnum() or c in ('-','_')])
-    safe_author = "".join([c for c in safe_author if c.isalnum() or c in ('-','_')])
+    safe_name = sanitize_filename(object["name"])
+    safe_author = sanitize_filename(object["author"])
     
     image_filename = f"{safe_name}-{safe_author}.jpg"
     image_outfile = os.path.join(base_image_path, image_filename)
