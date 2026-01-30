@@ -54,7 +54,7 @@ def simulate_human_interaction(driver):
     except Exception as e:
         print(f"Interaction error: {e}")
 
-def write_metadata(object, base_path="./metadata/rabibasariya"):
+def write_metadata(object, base_path="./metadata/rabibasariya/premium"):
     if not os.path.exists(base_path):
         os.makedirs(base_path, exist_ok=True)
 
@@ -79,7 +79,7 @@ def write_metadata(object, base_path="./metadata/rabibasariya"):
         json.dump(metadata, outfile, ensure_ascii=False, indent=4)
         print(f"Metadata written to {output_file_path}")
 
-def write_story(object, base_image_path="./metadata/images/rabibasariya", base_story_path="./stories/rabibasariya"):
+def write_story(object, base_image_path="./metadata/images/rabibasariya/premium", base_story_path="./stories/rabibasariya/premium"):
     if not os.path.exists(base_image_path):
         os.makedirs(base_image_path, exist_ok=True)
     if not os.path.exists(base_story_path):
@@ -110,12 +110,7 @@ def write_story(object, base_image_path="./metadata/images/rabibasariya", base_s
     else:
         print("No image URL found")
 
-    # Relative path for markdown
-    # Assuming the markdown file is in ./stories/rabibasariya/
-    # and image is in ./metadata/images/rabibasariya/
-    # Relative path should be ../../metadata/images/rabibasariya/filename
-    
-    image_rel_path = f"../../{base_image_path}/{image_filename}"
+    image_rel_path = f"../../../{base_image_path}/{image_filename}"
     
     image_section = f'<div align=center> <img src="{image_rel_path}" align="center"></div>'
     name_section = f'<h1 align=center>{object["name"]}</h1>'
@@ -139,14 +134,11 @@ def fetch_story(driver, url):
         # Wait for body
         WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         
-        print("Dumping page source for debugging...")
-        with open("debug_page.html", "w", encoding="utf-8") as f:
-            f.write(driver.page_source)
+        # print("Dumping page source for debugging...")
+        # with open("debug_page.html", "w", encoding="utf-8") as f:
+        #     f.write(driver.page_source)
             
         simulate_human_interaction(driver)
-        
-        # Try to find the content
-        # Using existing selectors from previous codebase
         
         img_src = ""
         try:
@@ -158,7 +150,6 @@ def fetch_story(driver, url):
 
         title = "Unknown Title"
         try:
-            # Try multiple selectors for title
             h1_elements = driver.find_elements(By.TAG_NAME, "h1")
             for h1 in h1_elements:
                 if h1.text.strip():
@@ -169,15 +160,12 @@ def fetch_story(driver, url):
 
         author = "Unknown Author"
         try:
-            # Try finding author
-            # selector: //h4[@class='bynowtxt']
             author_element = driver.find_element(By.XPATH, "//h4[contains(@class, 'bynowtxt')]")
             if author_element.text.strip():
                 author = author_element.text.strip()
         except Exception as e:
             print(f"Could not find author with primary selector: {e}")
             try:
-                # Fallback
                  editor_div = driver.find_element(By.CLASS_NAME, "autherndntbox")
                  author = editor_div.find_element(By.TAG_NAME, "h4").text.strip()
             except Exception as e2:
@@ -185,8 +173,6 @@ def fetch_story(driver, url):
 
         p_texts = ""
         try:
-             # story content
-             # selector: #articlebox p
             content_div = driver.find_element(By.ID, "articlebox")
             p_elements = content_div.find_elements(By.TAG_NAME, "p")
             
@@ -203,7 +189,6 @@ def fetch_story(driver, url):
         except Exception as e:
             print(f"Could not find content: {e}")
             try:
-                # Fallback to outerbox
                 content_div = driver.find_element(By.ID, "outerboxarticlebox")
                 p_elements = content_div.find_elements(By.TAG_NAME, "p")
                 for p in p_elements:
@@ -228,11 +213,42 @@ def fetch_story(driver, url):
 
     except Exception as e:
         print(f"An error occurred: {e}")
-    finally:
-        driver.quit()
+    # finally:
+    #     driver.quit()
 
 if __name__ == "__main__":
-    target_url = "https://www.anandabazar.com/rabibashoriyo/bengali-short-story-authored-by-somja-das-prnt/cid/1654192"
-    # cache_url = f"http://webcache.googleusercontent.com/search?q=cache:{target_url}"
-    # print(f"Attempting source: {cache_url}")
-    fetch_story(driver, target_url)
+    urls_file = "premium_stories_url"
+    history_file = "scraped_history.txt"
+    
+    if os.path.exists(history_file):
+        with open(history_file, 'r') as f:
+            scraped_urls = set(line.strip() for line in f)
+    else:
+        scraped_urls = set()
+
+    if os.path.exists(urls_file):
+        with open(urls_file, 'r') as f:
+            urls = [line.strip() for line in f if line.strip()]
+            
+        for i, url in enumerate(urls):
+            if url in scraped_urls:
+                print(f"Skipping already scraped ({i+1}/{len(urls)}): {url}")
+                continue
+                
+            print(f"Processing ({i+1}/{len(urls)}): {url}")
+            try:
+                fetch_story(driver, url)
+                # If successful, add to history
+                with open(history_file, 'a') as f:
+                    f.write(url + "\n")
+                scraped_urls.add(url)
+                
+                print("Waiting 4 seconds...")
+                time.sleep(4)
+            except Exception as e:
+                print(f"Error processing {url}: {e}")
+    else:
+        print(f"File {urls_file} not found.")
+        
+    print("All tasks completed. Closing driver.")
+    driver.quit()
