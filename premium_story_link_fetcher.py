@@ -29,7 +29,7 @@ def fetch_links():
         all_story_links = set()
         base_url = "https://www.anandabazar.com"
 
-        for page_num in range(1, 8):
+        for page_num in range(8, 12):
             url = f"https://www.anandabazar.com/rabibashoriyo/page-{page_num}"
             print(f"Scraping page: {url}")
             
@@ -58,7 +58,7 @@ def fetch_links():
 
         # Write to file
         output_file = "premium_stories_url"
-        with open(output_file, 'w', encoding='utf-8') as f:
+        with open(output_file, 'a', encoding='utf-8') as f:
             for link in sorted(all_story_links):
                 f.write(link + "\n")
                 
