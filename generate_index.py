@@ -309,13 +309,13 @@ html_template = """<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f172a;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #3b82f6;
-            --accent-hover: #2563eb;
-            --card-bg: #e2e8f0;
-            --book-spine: rgba(0,0,0,0.1);
+            --bg-color: #f4ecce;
+            --text-main: #332211;
+            --text-muted: #5a4b3c;
+            --accent: #8b4513;
+            --accent-hover: #5c2e0e;
+            --card-bg: rgba(139, 69, 19, 0.05);
+            --book-spine: rgba(0,0,0,0.15);
         }
 
         * {
@@ -327,42 +327,51 @@ html_template = """<!DOCTYPE html>
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
+            background-image: radial-gradient(rgba(139, 69, 19, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
             color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
+        
+        /* Adds a subtle paper texture over everything */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noiseFilter)" opacity="0.05"/></svg>');
+            pointer-events: none;
+            z-index: 9999;
+        }
 
         /* Hero Section */
         .hero {
-            min-height: 80vh;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 2rem;
-            background: radial-gradient(circle at top, #1e293b, var(--bg-color) 70%);
             position: relative;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.4) 0%, transparent 70%);
         }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: linear-gradient(to bottom, transparent, var(--bg-color));
+        
+        .hero::before {
+            content: '❦';
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.6;
+            margin-bottom: 1rem;
         }
 
         .hero h1 {
             font-family: 'Tiro Bangla', serif;
-            font-size: 5rem;
+            font-size: 6rem;
             margin-bottom: 1rem;
-            background: linear-gradient(to right, #60a5fa, #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--accent);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
             animation: fadeInDown 1s ease-out;
         }
 
@@ -372,6 +381,7 @@ html_template = """<!DOCTYPE html>
             max-width: 600px;
             margin-bottom: 2rem;
             animation: fadeInUp 1s ease-out 0.3s both;
+            font-family: 'Tiro Bangla', serif;
         }
 
         .features-grid {
@@ -385,30 +395,31 @@ html_template = """<!DOCTYPE html>
         }
 
         .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
+            background: var(--card-bg);
             padding: 1.5rem 2rem;
-            border-radius: 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            border: 1px solid rgba(139, 69, 19, 0.2);
             text-align: center;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             max-width: 250px;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.05);
         }
 
         .feature-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 4px 8px 15px rgba(139, 69, 19, 0.15);
         }
 
         .feature-card h3 {
             font-size: 1.2rem;
-            color: #fff;
+            color: var(--accent);
             margin-bottom: 0.5rem;
+            font-family: 'Tiro Bangla', serif;
         }
 
         .feature-card p {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         .cta-buttons {
@@ -420,18 +431,21 @@ html_template = """<!DOCTYPE html>
             display: inline-block;
             padding: 1rem 2.5rem;
             background: var(--accent);
-            color: white;
+            color: #f4ecce;
             text-decoration: none;
-            border-radius: 2rem;
+            border-radius: 2px;
             font-weight: 600;
+            font-family: 'Tiro Bangla', serif;
+            font-size: 1.2rem;
             transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
+            border: 1px solid var(--accent-hover);
         }
 
         .cta-button:hover {
             background: var(--accent-hover);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+            box-shadow: 0 6px 15px rgba(139, 69, 19, 0.4);
         }
 
         /* Stories Section */
@@ -446,20 +460,19 @@ html_template = """<!DOCTYPE html>
             font-size: 2.5rem;
             text-align: center;
             margin-bottom: 3rem;
-            color: #fff;
+            color: var(--accent);
             position: relative;
         }
 
         .section-title::after {
-            content: '';
+            content: '❧';
             position: absolute;
-            bottom: -10px;
+            bottom: -25px;
             left: 50%;
             transform: translateX(-50%);
-            width: 50px;
-            height: 3px;
-            background: var(--accent);
-            border-radius: 2px;
+            color: var(--accent);
+            font-size: 1.5rem;
+            opacity: 0.5;
         }
 
         .tabs {
@@ -467,16 +480,17 @@ html_template = """<!DOCTYPE html>
             justify-content: center;
             gap: 1rem;
             margin-bottom: 2rem;
+            margin-top: 2rem;
             flex-wrap: wrap;
         }
 
         .tab-btn {
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(139, 69, 19, 0.3);
             color: var(--text-main);
             padding: 0.75rem 2.5rem;
-            border-radius: 2rem;
-            font-size: 1.1rem;
+            border-radius: 2px;
+            font-size: 1.2rem;
             font-family: 'Tiro Bangla', serif;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -485,12 +499,13 @@ html_template = """<!DOCTYPE html>
 
         .tab-btn.active {
             background: var(--accent);
+            color: #f4ecce;
             border-color: var(--accent);
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 10px rgba(139, 69, 19, 0.2);
         }
 
         .tab-btn:hover:not(.active) {
-            background: rgba(255,255,255,0.1);
+            background: var(--card-bg);
         }
 
         /* Search Section */
@@ -503,25 +518,25 @@ html_template = """<!DOCTYPE html>
             width: 100%;
             max-width: 600px;
             padding: 1rem 1.5rem;
-            border-radius: 2rem;
-            border: 1px solid rgba(255,255,255,0.2);
-            background: rgba(255,255,255,0.05);
-            color: white;
-            font-size: 1rem;
+            border-radius: 2px;
+            border: 1px solid rgba(139, 69, 19, 0.4);
+            background: rgba(255,255,255,0.5);
+            color: var(--text-main);
+            font-size: 1.1rem;
             outline: none;
             transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-family: 'Tiro Bangla', serif;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .search-input:focus {
             border-color: var(--accent);
-            background: rgba(255,255,255,0.1);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+            background: rgba(255,255,255,0.8);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05), 0 0 0 3px rgba(139, 69, 19, 0.2);
         }
 
         .search-input::placeholder {
-            color: rgba(255,255,255,0.4);
+            color: rgba(139, 69, 19, 0.5);
         }
 
         .books-grid {
@@ -534,17 +549,17 @@ html_template = """<!DOCTYPE html>
             perspective: 1000px;
         }
 
-        /* Book CSS */
+        /* Book CSS - Restyled to look like older books */
         .book {
             position: relative;
             width: 100%;
             aspect-ratio: 2 / 3.1;
-            background: #fdfbf7;
-            border-radius: 4px 12px 12px 4px;
+            background: #e6d5b8;
+            border-radius: 2px 6px 6px 2px;
             box-shadow: 
                 inset 5px 0 15px var(--book-spine), 
-                inset -2px 0 5px rgba(255,255,255,0.8), 
-                5px 10px 15px rgba(0,0,0,0.5);
+                inset -2px 0 5px rgba(255,255,255,0.4), 
+                5px 10px 15px rgba(0,0,0,0.3);
             text-decoration: none;
             color: #2c1810;
             display: flex;
@@ -556,6 +571,7 @@ html_template = """<!DOCTYPE html>
             transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
             transform-style: preserve-3d;
             cursor: pointer;
+            border: 1px solid rgba(139, 69, 19, 0.2);
         }
 
         .book::before {
@@ -564,56 +580,78 @@ html_template = """<!DOCTYPE html>
             top: 0;
             left: 0;
             bottom: 0;
-            width: 16px;
-            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 30%, rgba(0,0,0,0.15) 100%);
-            border-radius: 4px 0 0 4px;
+            width: 12px;
+            background: linear-gradient(to right, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0.1) 30%, rgba(0,0,0,0.1) 100%);
+            border-radius: 2px 0 0 2px;
             z-index: 2;
         }
 
-        /* Page edges */
+        /* Page edges - aged paper color */
         .book::after {
             content: '';
             position: absolute;
-            top: 4px;
-            bottom: 4px;
-            right: -6px;
-            width: 6px;
+            top: 2px;
+            bottom: 2px;
+            right: -4px;
+            width: 4px;
             background: repeating-linear-gradient(
                 to bottom,
-                #dfdacd 0,
-                #dfdacd 1px,
-                #fdfbf7 1px,
-                #fdfbf7 3px
+                #d4c4a8 0,
+                #d4c4a8 1px,
+                #ebdcc0 1px,
+                #ebdcc0 3px
             );
-            border-radius: 0 4px 4px 0;
+            border-radius: 0 2px 2px 0;
             transform: translateZ(-1px);
-            box-shadow: inset 1px 0 2px rgba(0,0,0,0.1);
+            box-shadow: inset 1px 0 2px rgba(0,0,0,0.2);
         }
 
-        /* Different book colors to make it look dynamic */
-        .book:nth-child(5n+1) { background: #fdfbf7; } /* Cream */
-        .book:nth-child(5n+2) { background: #e2e8f0; } /* Light Grayish Blue */
-        .book:nth-child(5n+3) { background: #fef3c7; } /* Warm Yellow */
-        .book:nth-child(5n+4) { background: #fce7f3; } /* Light Pink */
-        .book:nth-child(5n+5) { background: #e0f2fe; } /* Light Blue */
+        /* Vintage book cover colors */
+        .book:nth-child(5n+1) { background: #8b4513; color: #f4ecce; } /* Saddle Brown */
+        .book:nth-child(5n+2) { background: #556b2f; color: #f4ecce; } /* Dark Olive Green */
+        .book:nth-child(5n+3) { background: #800000; color: #f4ecce; } /* Maroon */
+        .book:nth-child(5n+4) { background: #2f4f4f; color: #f4ecce; } /* Dark Slate Gray */
+        .book:nth-child(5n+5) { background: #b8860b; color: #f4ecce; } /* Dark Goldenrod */
 
-        /* Optional texture overlay */
-        .book-texture {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noiseFilter)" opacity="0.05"/></svg>');
-            mix-blend-mode: multiply;
-            z-index: 1;
-            border-radius: 4px 12px 12px 4px;
-            pointer-events: none;
+        .book:nth-child(5n+1) .book-title,
+        .book:nth-child(5n+2) .book-title,
+        .book:nth-child(5n+3) .book-title,
+        .book:nth-child(5n+4) .book-title,
+        .book:nth-child(5n+5) .book-title {
+            color: #fceec4;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .book:nth-child(5n+1) .book-author,
+        .book:nth-child(5n+2) .book-author,
+        .book:nth-child(5n+3) .book-author,
+        .book:nth-child(5n+4) .book-author,
+        .book:nth-child(5n+5) .book-author {
+            color: #dcb87d;
+        }
+        
+        .book:nth-child(5n+1) .book-decoration,
+        .book:nth-child(5n+2) .book-decoration,
+        .book:nth-child(5n+3) .book-decoration,
+        .book:nth-child(5n+4) .book-decoration,
+        .book:nth-child(5n+5) .book-decoration {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .book:nth-child(5n+1) .book-decoration::after,
+        .book:nth-child(5n+2) .book-decoration::after,
+        .book:nth-child(5n+3) .book-decoration::after,
+        .book:nth-child(5n+4) .book-decoration::after,
+        .book:nth-child(5n+5) .book-decoration::after {
+            border-color: rgba(255,255,255,0.3);
         }
 
         .book:hover {
             transform: translateY(-15px) rotateY(-12deg) rotateX(5deg) scale(1.03);
             box-shadow: 
                 inset 5px 0 15px var(--book-spine), 
-                inset -2px 0 5px rgba(255,255,255,0.8), 
-                15px 25px 30px rgba(0,0,0,0.6);
+                inset -2px 0 5px rgba(255,255,255,0.2), 
+                15px 25px 30px rgba(0,0,0,0.5);
             z-index: 10;
         }
 
@@ -628,16 +666,18 @@ html_template = """<!DOCTYPE html>
             -webkit-box-orient: vertical;
             overflow: hidden;
             z-index: 3;
-            color: #1e293b;
-            text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+            border-top: 2px double rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding: 10px 0;
+            width: 80%;
         }
 
         .book-author {
-            font-size: 0.85rem;
-            color: #475569;
+            font-size: 0.9rem;
             font-style: italic;
             z-index: 3;
             font-family: 'Tiro Bangla', serif;
+            margin-top: 10px;
         }
         
         .book-decoration {
@@ -645,7 +685,6 @@ html_template = """<!DOCTYPE html>
             bottom: 20px;
             width: 40px;
             height: 2px;
-            background: rgba(0,0,0,0.2);
             z-index: 3;
         }
 
@@ -657,9 +696,9 @@ html_template = """<!DOCTYPE html>
             transform: translateX(-50%);
             width: 10px;
             height: 10px;
-            border: 2px solid rgba(0,0,0,0.2);
+            border: 2px solid;
             border-radius: 50%;
-            background: inherit;
+            background: transparent;
         }
 
         /* Pagination */
@@ -673,19 +712,21 @@ html_template = """<!DOCTYPE html>
         }
 
         .page-btn {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: white;
+            background: rgba(139, 69, 19, 0.1);
+            border: 1px solid rgba(139, 69, 19, 0.3);
+            color: var(--accent);
             padding: 10px 20px;
-            border-radius: 8px;
+            border-radius: 2px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Tiro Bangla', serif;
             font-weight: 600;
+            font-size: 1.1rem;
         }
 
         .page-btn:hover:not(:disabled) {
             background: var(--accent);
+            color: #f4ecce;
             border-color: var(--accent);
             transform: translateY(-2px);
         }
@@ -693,11 +734,13 @@ html_template = """<!DOCTYPE html>
         .page-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
+            background: transparent;
         }
 
         .page-info {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 1rem;
+            font-family: 'Tiro Bangla', serif;
         }
 
         /* Empty state */
@@ -706,33 +749,38 @@ html_template = """<!DOCTYPE html>
             text-align: center;
             padding: 3rem;
             color: var(--text-muted);
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-family: 'Tiro Bangla', serif;
+            border: 1px dashed rgba(139, 69, 19, 0.3);
+            border-radius: 4px;
         }
 
         /* Footer */
         footer {
             text-align: center;
             padding: 4rem 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(139, 69, 19, 0.2);
             margin-top: 4rem;
             color: var(--text-muted);
-            background: rgba(0,0,0,0.2);
+            background: var(--card-bg);
+            font-family: 'Tiro Bangla', serif;
         }
         
         footer p {
             margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
 
         footer a {
             color: var(--accent);
             text-decoration: none;
             transition: color 0.3s ease;
+            border-bottom: 1px dotted var(--accent);
         }
 
         footer a:hover {
             color: var(--accent-hover);
-            text-decoration: underline;
+            border-bottom-style: solid;
         }
 
         @keyframes fadeInDown {
@@ -748,7 +796,7 @@ html_template = """<!DOCTYPE html>
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 3.5rem;
+                font-size: 4rem;
             }
             .books-grid {
                 grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -764,33 +812,33 @@ html_template = """<!DOCTYPE html>
 
     <header class="hero">
         <h1>অবসর</h1>
-        <p class="tagline">A beautifully curated collection of short Bengali stories scraped weekly from leading eMagazines.</p>
+        <p class="tagline">A beautifully curated collection of short Bengali stories, preserved like old pages in a timeless library.</p>
         
         <div class="features-grid">
             <div class="feature-card">
-                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🕰️</h3>
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px; opacity: 0.8;">🕰️</h3>
                 <h3>Weekly Updates</h3>
                 <p>New stories added dynamically every Sunday at 1:30 PM</p>
             </div>
             <div class="feature-card">
-                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">📚</h3>
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px; opacity: 0.8;">📚</h3>
                 <h3>Massive Library</h3>
                 <p>Over 700+ hand-picked stories from verified sources</p>
             </div>
             <div class="feature-card">
-                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">✨</h3>
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px; opacity: 0.8;">✨</h3>
                 <h3>Immersive Reading</h3>
-                <p>Distraction-free, minimal and paper-styled readable view</p>
+                <p>Distraction-free, vintage paper-styled readable view</p>
             </div>
         </div>
 
         <div class="cta-buttons">
-            <a href="#library" class="cta-button" onclick="document.getElementById('library').scrollIntoView({ behavior: 'smooth' })">Open the Library</a>
+            <a href="#library" class="cta-button" onclick="document.getElementById('library').scrollIntoView({ behavior: 'smooth' })">Open the Archives</a>
         </div>
     </header>
 
     <main class="section-container" id="library">
-        <h2 class="section-title">Story Library</h2>
+        <h2 class="section-title">Story Archives</h2>
         
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab(event, 'rabibasariya')">রবিবাসরীয়</button>
