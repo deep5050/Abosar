@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্ল্যাকহোল - আলভী আহমেদ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper-container {
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }
+        
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .story-content {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .story-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .story-content hr {
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .story-content hr::after {
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .paper-container {
+                padding: 3rem 1.5rem;
+            }
+            .back-nav {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }
+            .paper-container::before {
+                left: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .story-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>ব্ল্যাকহোল</h1>
+            <div class="author">আলভী আহমেদ</div>
+        </header>
+
+        <div class="story-content">
+            <div align=center>
+<img src=https://images.prothomalo.com/prothomalo-bangla%2F2021-12%2Ff23783d7-b8e2-4be2-a591-63c9be75002f%2Falvi_ahmed_.jpg?rect=0%2C559%2C3000%2C1575&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&overlay=&overlay_position=bottom&overlay_width_pct=1 />
+<br><br>
+<h1>ব্ল্যাকহোল</h1> 
+<h4>আলভী আহমেদ</h4>
+<br><br>
+</div>
+
+<p>ডায়েরি আমি কখনো লিখিনি। বোগাস একটা কাজ। সারা দিনে এমন কোনো হাতি–ঘোড়া করি না যে লিখে রাখতে হবে। ছবিও তুলি না। যে জীবন পেছনে ফেলে এসেছি, তা মোটামুটিভাবে হারিয়ে যায় আমার কাছে।</p>
+<p>গত রাতে হঠাৎ আবিষ্কার করলাম, সব হারিয়ে যায়নি। ২০০৮ সাল থেকে কিছু স্মৃতি আছে। ওই বছর আমি ফেসবুকে অ্যাকাউন্ট খুলেছিলাম এবং সেখানে একটা ডায়েরি আমি মেইনটেইন করে চলেছি। সচেতনভাবে নয়। ফেসবুকের পুরোনো পোস্টগুলো ঘাঁটতে গিয়ে দেখলাম, সেগুলো ঠিক ডায়েরির মতো সাজানো।</p>
+<p>উদাহরণ হিসেবে ২০০৮ সালের ২৩ ডিসেম্বরের একটা পোস্ট হুবহু তুলে দিচ্ছি:</p>
+<p>বাসার লিফট। রাত ১০টা। লিফটে হুড়মুড় করে আমার সঙ্গে সাত-আটজন উঠল। তাদের মধ্যে এক মেয়ের চেহারা বেশ চেনা। নাম তিশনা। আমার ফ্রেন্ড দীপান্বিতার বন্ধু। বছর তিনেক আগে আমি, দীপান্বিতা আর তিশনা মিলে তুমুল এক আড্ডা দিয়েছিলাম।</p>
+<p>এই সব পরিস্থিতি বেশ কনফিউজিং। মেয়েটাকে হাই বলব, নাকি বলব না? বললে কী মনে করবে? তিন বছর আগের কথা। আমার কথা ওর মনে আছে তো? হঠাৎই মনে হলো, আমি আবার ভেবেচিন্তে কাজ শুরু করলাম কবে থেকে? বললাম, হাই।</p>
+<p>তিশনা শুনল না।</p>
+<p>আবারও ‘হাই’ বললাম। এবার একটু জোরে।</p>
+<p>তিশনা তো শুনলই, লিফটের বাকিরাও এবার শুনল। সব কটা চোখ ঘুরে গেল আমার দিকে। তিশনার চোখে পরিচিত মানুষ দেখার কোনো অভিব্যক্তি নেই। লিফটের বাকি সবাই এমনভাবে তাকাচ্ছে যে নিজেকে মনে হলো একজন ইভটিজার। তাদের চোখ বলছে, হাফপ্যান্ট পরা এক বদ রাত ১০টার সময় অপরিচিত এক মেয়েকে ‘হাই’ মারাচ্ছে।</p>
+<p>জীবনে দমে যেতে নেই। এসব ক্ষেত্রে নিজের পরিচয় দিয়ে ঘটনা মনে করিয়ে দিতে হয়। পরিচয়পর্ব শুরু করতে যাবো, ‘ডিং’ শব্দে লিফটটা থামল। সেভেনথ ফ্লোর। মেয়েটা নেমে গেল। কিন্তু বাকিরা তখনো লিফটে। আমার দিকে কেমন করে যেন তাকাচ্ছে সবাই।</p>
+<p>লিফট উঠতে লাগল ওপরে, সমানুপাতিক হারে আমি নিচে নামলাম। ‘যত উঠবে, তত নামবে’—সত্যজিতের জন-অরণ্য ছবিতে কথাটা শুনেছিলাম।</p>
+<p>২০১২ সালের ১৪ এপ্রিলের তারিখে লেখা:</p>
+<p>আজ পয়লা বৈশাখ। প্রচণ্ড গরম সকাল থেকে। ভিড়ে ভিড়াক্কার চারদিক। শান্তিনগর মোড়ে দাঁড়িয়ে আছি। রাস্তা পার হব। হঠাৎই একঝলক ঠান্ডা বাতাস বয়ে গেল। বাতাসের উৎস বরাবর তাকিয়ে দেখি নওশিন। সে আমার ছোট বোন পৃথ্বীর বন্ধু।</p>
+<p>ডাক দিলাম, নওশিন।</p>
+<p>সুন্দরী মেয়েরা আমার ডাক একবারে শুনতে পায় না—নিপাতনে সিদ্ধ। দ্বিতীয়বার ডাকলাম।</p>
+<p>এবার সে শুনতে পেল। তাকাল, কিন্তু চিনল না। চিনবে কী করে? এর আগে একবার মাত্র দেখা হয়েছে। তা–ও রাতের বেলায়, আধো আলো আধো অন্ধকারে।</p>
+<p>স্বল্প আলোর সেই পরিচয় বৈশাখের ঠা ঠা রোদ্দুরে টিকবে না জানা কথা। নওশিন ন্যূনতম পাত্তা না দিয়ে সুন্দর করে হেলেদুলে চলে গেল এবং পেছনে রেখে গেল অনেকগুলো চোখ—যেসব চোখ ক্রমাগত বলে যাচ্ছে, তুই একটা লুইস। চিনিস না জানিস না, রাস্তার মধ্যে মেয়েদের বিরক্ত করিস।</p>
+<p>শান্তিনগর মোড়ে দাঁড়িয়ে অশান্তি কত প্রকার ও কী কী—হাড়ে হাড়ে টের পেলাম।</p>
+<p>২০১৭ সালের ২৩ অক্টোবরের পোস্টে লেখা:</p>
+<p>বেইলি রোড থেকে হেঁটে মগবাজারে যাচ্ছি। দেখলাম, গাড়ির জানালা দিয়ে মুখ বের করে আছে একটা মেয়ে। আমাকে দেখছে। আগের কিছু অভিজ্ঞতা থেকে জানি, মেয়েদের দিকে সরাসরি তাকাতে নেই। আগ্রহ দেখালে উল্টো বিপদ হতে পারে। তাই এবার আড়চোখে দেখলাম। চেনা চেনা চেহারা।</p>
+<p>মেয়েটা কিন্তু অনেকক্ষণ ধরেই আমাকে দেখছে। ‘হাউ লাকি আই অ্যাম’ ধরনের একটা অনুভূতি টের পেলাম ভেতরে। এসব ক্ষেত্রে খেলতে হয় খুব সাবধানে। একটা মেয়ে তোমার দিকে নজর দিয়েছে, সুতরাং তুমি যে–সে লোক নও। হট কেক ধরনের। মেয়েটাকে ইগনোর করো। তাকিয়ো না ওর দিকে। ভাব নাও।</p>
+<p>আমি ভাব নিলাম। ভিকারুননিসার মোড়ের সিগন্যাল ছেড়ে দিলে গাড়িটা হুস করে বেরিয়ে গেল। দুই মিনিট পর অপরিচিত নম্বর থেকে একটা টেক্সট এল মুঠোফোনে, ‘দেখেও কথা বললে না যে? চিনতে পারোনি? আমি টুম্পা।’</p>
+<p>টুম্পা—এত বছর পর! টের পেলাম, আমার হার্টে কোনো বিট মিস হলো না। একসময় হতো। ওর কথা ভাবতেই বাতাসে অক্সিজেনের অভাব বোধ করতাম। খুব কাছের বন্ধু ছিলাম আমরা। প্রেম আর বন্ধুত্বের মধ্যে যে একটা কাল্পনিক সীমারেখা আছে, বুঝতে পারিনি। বয়স কম ছিল। বোকার মতো স্বপ্ন দেখে ফেলেছিলাম। রাতের পর রাত ফোনে কথা বলেছি ওর সঙ্গে। আমার লেখালেখির হাতেখড়ি টুম্পাকে চিঠি লিখতে গিয়ে।</p>
+<p>২১তম জন্মদিনে ও আমাকে একটা ডায়েরি উপহার দিয়ে বলেছিল, প্রতিদিন সেখানে কিছু একটা লিখতে হবে। এক লাইন হলেও। চিঠির মতো।</p>
+<p>একসঙ্গে ৩৬৫টা চিঠি জমিয়ে ওকে দেওয়ার কথা ছিল পরের বছর। লিখতেও শুরু করেছিলাম। ৯১টা চিঠি জমেছিল মোট। ৯২তম দিনে টুম্পা আন্দালিবের সঙ্গে সম্পর্কে জড়িয়ে পড়ে। ডায়েরিটা ওকে আর দেওয়া হয়নি। শহীদুল্লাহ হলের ছাদে একরাতে আগুনে পুড়িয়ে ফেলেছিলাম।</p>
+<p>আমার পরবর্তী জীবনের দীর্ঘ সময়জুড়ে যেসব নাম এসে একে একে হারিয়ে গেছে, তার সূচনা হয় টুম্পার মাধ্যমে—২০০২ সালে।</p>
+<p>২০০২ থেকে ২০২১—মাঝের বছরগুলোয় নতুন মানুষ হয়ে উঠতে পারিনি। বিশেষ কোনো পরিবর্তন আসেনি আমার মধ্যে। পুরোনো হয়েছি খানিকটা, কিন্তু বয়স বাড়েনি। এখনো আমি আগের মতোই আছি। ওজন বেড়েছে, চোখের নিচে কালি পড়েছে, সিগারেট ছেড়েছি। এটুকুই।</p>
+<p>এখনো আমি ক্রমাগত হারাই—যা যা পেতে পারতাম, সবকিছু ব্ল্যাকহোলে হারিয়ে যায়।</p>
+        </div>
+    </div>
+
+</body>
+</html>
