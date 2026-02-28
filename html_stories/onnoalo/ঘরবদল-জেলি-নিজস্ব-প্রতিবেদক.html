@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ঘরবদল: জেলি - নিজস্ব প্রতিবেদক</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper-container {
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }
+        
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .story-content {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .story-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .story-content hr {
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .story-content hr::after {
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .paper-container {
+                padding: 3rem 1.5rem;
+            }
+            .back-nav {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }
+            .paper-container::before {
+                left: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .story-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>ঘরবদল: জেলি</h1>
+            <div class="author">নিজস্ব প্রতিবেদক</div>
+        </header>
+
+        <div class="story-content">
+            <div align=center>
+<img src=https://images.prothomalo.com/prothomalo-bangla/2021-01/1d75151c-eff9-4e9f-ac28-aebc4618d00f/palo_bangla_og.png />
+<br><br>
+<h1>ঘরবদল: জেলি</h1> 
+<h4>নিজস্ব প্রতিবেদক</h4>
+<br><br>
+</div>
+
+<p>চায়ের কেতলিজুড়ে পানির টগবগ শব্দ জেগে উঠছে। মাইগ্রেনের ব্যথাটা বেড়ে চলছে। ঝাপসা হয়ে উঠছে চোখের দৃষ্টি। কতটুকু চাপাতা গরম জলে ঢেলে দেব, ঠিক বুঝে উঠতে পারছি না।</p>
+<p>ডাক এল, এই শুনছ, আমার চায়ে কড়া পাতি দিয়ো, কিন্তু চিনি দিয়ো না।</p>
+<p>কী বিড়ম্বনা, চিনি তো আগেই দিয়ে ফেলেছি!</p>
+<p>একটু পর শ্বাশুড়ির ডাক এল, বউমা শুনছ, আমার চায়ে কড়া পাতি দিয়ো, চিনি হালকা দিয়ো।</p>
+<p>আবার জটিলতা, কারণ, এবার শ্বশুর ডাকল, বউমা শুনছ, আমার চায়ে হালকা পাতি দিয়ো, আর কড়া চিনি দিয়ো।</p>
+<p>এত দিকের চাওয়া মেলাতে গিয়ে মনে হলো, টিভির রিমোট চেপে চেপে কেউ চ্যানেল পরিবর্তনের মতো নির্দেশ করছে! মাথা তিন শ ষাট ডিগ্রি কোণে ঘুরছে আমার।</p>
+<p>একটু পর ফোন করল আমার একমাত্র ননদ অর্থাৎ শ্বাশুড়ির একমাত্র মেয়ে। ফোন কানে নিয়ে শ্বাশুড়ির চোখজোড়া চকচক করে উঠল, তার কণ্ঠের আনন্দ আমার নিজের মায়ের কথা মনে করিয়ে দিল। আমার গলা শুনেও মা এ করম খুশি হয়। মাকে ফোন করার ইচ্ছে হলেও করা হলো না, অন্য কাজে লেগে গেলাম।</p>
+<p>ননদের পছন্দের খাবার রান্না করে পাঠিয়ে, রাতে যখন আয়নার সামনে বসে চুল আঁচড়াচ্ছি, তখন খেয়াল করলাম ফ্যান চলছে কিন্তু আমি ঘেমেই চলেছি।</p>
+<p>বছর কয়েক আগের একটা ঘটনা মনে পড়ল:মা যখন রান্না করত, পেঁয়াজ কাটতে গেলে নাকের পানি চোখের পানি এক করে ফেলতাম। মা বলত, 'অনেক হয়েছে, থাক, আমার কাজ আমি করব।' মরিচ কাটতে গেলে মা বলত, হাত জ্বালা করবে, তখন যেন না কাঁদি, কিংবা নারিকেল তেল না খুঁজি। শিং বা টেংরা মাছ বাবা কাটতে দিত না, কারণ, কাটা ফুটলে ব্যথা করবে। আগুনের কাছে যেতাম না, মাকে বলতাম গায়ের রং কালো হবে।</p>
+<p>যখন রাত জেগে জেগে খুব পড়তাম, বাবা বলত, আর পড়তে হবে না। মুখে দু-একটা ব্রণ দেখা দিলে বাবা বলত, যত দোষ কসমেটিকস কোম্পানির! অথচ আজ যখন বাবা ফোন করে বলে, 'মা কেমন আছ?'</p>
+<p>বলি, বাবা সময়ের সাথে সাথে চায়ের কাপের বয়স বেড়েছে, ঠিক তেমনি তোমার মেয়ের বয়স পাল্লা দিয়ে বেড়ে চলছে, ঘরবাড়ি বদলের সাথে সাথে রান্নাঘরে বন্দী হওয়াটা মানিয়ে নিয়ে দিব্যি আছি, বাবা।</p>
+<p>[নিয়ম: ১০০ শব্দের গল্প লিখুন প্রথম আলোর সাহিত্য অনলাইন ম্যাগাজিন অন্য আলো ডটকমের জন্য। নিজের ফেসবুকের টাইমলাইনে পাবলিক করে প্রকাশ করুন। #শশব্দগল্প #ছোট্টগল্প #অন্যআলো দিতে পারেন। এই তিনটা হ্যাশট্যাশগের যেকোনো একটা থাকলে আমরা ধরে নেব এটা আপনারা অন্য আলোডট কমে প্রকাশ করতে দিতে রাজি আছেন। আপনি গল্প লিখে ফেসবুকের সাত বন্ধুকে চ্যালেঞ্জ জানাবেন। তাঁদের ট্যাগ করবেন। যাঁদের ট্যাগ করবেন, তাঁরা আবার শত শব্দের একটা গল্প নিজেদের টাইমলাইনে পোস্ট করবেন। আর নিয়মকানুনগুলো গল্পের নিচে কপি পেস্ট করে দেবেন। পেশাদার লেখক হতে হবে, এমন নয়। বরং নতুন প্রতিভা, নতুন লেখক লেখা শুরু করুক...। কেউ সরাসরিও লেখা পাঠাতে পারেন: [email protected] [email protected]]</p>
+        </div>
+    </div>
+
+</body>
+</html>

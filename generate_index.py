@@ -1,8 +1,11 @@
+import os
 import re
 import json
+import markdown
 
 readme_path = "/home/deep/code/Abosar/README.md"
 html_path = "/home/deep/code/Abosar/index.html"
+base_dir = "/home/deep/code/Abosar"
 
 def parse_readme(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -21,7 +24,17 @@ def parse_readme(file_path):
             parts = [x.strip() for x in t_a_1.split('-', 1)]
             t = parts[0]
             a = parts[1] if len(parts) > 1 else "Unknown"
-            rabibasariya.append({'title': t, 'author': a, 'link': l_1.replace('./', '')})
+            
+            # Generate the HTML link
+            md_path = l_1.replace('./', '')
+            html_link = md_path.replace('stories/', 'html_stories/').replace('.md', '.html')
+            
+            rabibasariya.append({
+                'title': t, 
+                'author': a, 
+                'link': html_link,
+                'md_path': md_path
+            })
             
         # Onnoalo
         t_a_2 = match.group(3)
@@ -32,11 +45,260 @@ def parse_readme(file_path):
             parts = [x.strip() for x in t_a_2.split('-', 1)]
             t = parts[0]
             a = parts[1] if len(parts) > 1 else "Unknown"
-            onnoalo.append({'title': t, 'author': a, 'link': l_2.replace('./', '')})
+            
+            # Generate the HTML link
+            md_path = l_2.replace('./', '')
+            html_link = md_path.replace('stories/', 'html_stories/').replace('.md', '.html')
+            
+            onnoalo.append({
+                'title': t, 
+                'author': a, 
+                'link': html_link,
+                'md_path': md_path
+            })
             
     return rabibasariya, onnoalo
 
 r_stories, o_stories = parse_readme(readme_path)
+
+# --------------------------------------------------------------------------------------
+# 1. Generate Individual HTML Story Pages
+# --------------------------------------------------------------------------------------
+
+story_template = """<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} - {author}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {{
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }}
+
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+
+        body {{
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }}
+
+        .paper-container {{
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }}
+        
+        .paper-container::before {{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }}
+
+        .back-nav {{
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }}
+
+        .back-btn {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }}
+
+        .back-btn:hover {{
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }}
+
+        header {{
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }}
+        
+        header::after {{
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }}
+
+        h1 {{
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }}
+
+        .author {{
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }}
+
+        .story-content {{
+            font-size: 1.25rem;
+            text-align: justify;
+        }}
+
+        .story-content p {{
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }}
+        
+        .story-content img {{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }}
+
+        .story-content hr {{
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }}
+        
+        .story-content hr::after {{
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }}
+
+        @media (max-width: 768px) {{
+            .paper-container {{
+                padding: 3rem 1.5rem;
+            }}
+            .back-nav {{
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }}
+            .paper-container::before {{
+                left: 0.5rem;
+            }}
+            h1 {{
+                font-size: 2rem;
+            }}
+            .story-content {{
+                font-size: 1.1rem;
+            }}
+        }}
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>{title}</h1>
+            <div class="author">{author}</div>
+        </header>
+
+        <div class="story-content">
+            {html_content}
+        </div>
+    </div>
+
+</body>
+</html>
+"""
+
+def generate_html_files(stories, category):
+    os.makedirs(os.path.join(base_dir, f'html_stories/{category}'), exist_ok=True)
+    
+    for story in stories:
+        md_file = os.path.join(base_dir, story['md_path'])
+        
+        # Determine the depth to construct relative back link accurately.
+        # usually it's "html_stories/rabibasariya/filename.html" -> backlink="../../index.html"
+        # However, we hardcoded "../../index.html" in the template which handles this standard depth.
+        
+        if os.path.exists(md_file):
+            with open(md_file, 'r', encoding='utf-8') as f:
+                md_content = f.read()
+                
+            # Convert Markdown to HTML
+            html_content = markdown.markdown(md_content)
+            
+            # Format template
+            final_html = story_template.format(
+                title=story['title'],
+                author=story['author'],
+                html_content=html_content
+            )
+            
+            out_file = os.path.join(base_dir, story['link'])
+            
+            # Be mindful of subdirectories if there are any inside stories/category/
+            os.makedirs(os.path.dirname(out_file), exist_ok=True)
+            
+            with open(out_file, 'w', encoding='utf-8') as f:
+                f.write(final_html)
+
+print("Generating individual HTML story pages...")
+generate_html_files(r_stories, 'rabibasariya')
+generate_html_files(o_stories, 'onnoalo')
+print("Done generating individual pages.")
+
+# --------------------------------------------------------------------------------------
+# 2. Generate Main index.html
+# --------------------------------------------------------------------------------------
 
 html_template = """<!DOCTYPE html>
 <html lang="bn">
@@ -681,4 +943,4 @@ html_final = html_template.replace('__RABI__', json.dumps(r_stories)).replace('_
 with open(html_path, 'w', encoding='utf-8') as f:
     f.write(html_final)
     
-print(f"Generated successfully with {len(r_stories)} Rabibasariya and {len(o_stories)} Onno Alo stories.")
+print("Updated index.html to point to generated HTML story files.")

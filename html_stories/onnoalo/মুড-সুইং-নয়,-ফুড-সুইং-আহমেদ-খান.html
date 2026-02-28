@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মুড সুইং নয়, ফুড সুইং - আহমেদ খান</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper-container {
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }
+        
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .story-content {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .story-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .story-content hr {
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .story-content hr::after {
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .paper-container {
+                padding: 3rem 1.5rem;
+            }
+            .back-nav {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }
+            .paper-container::before {
+                left: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .story-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>মুড সুইং নয়, ফুড সুইং</h1>
+            <div class="author">আহমেদ খান</div>
+        </header>
+
+        <div class="story-content">
+            <div align=center>
+<img src=https://images.prothomalo.com/prothomalo-bangla%2F2023-04%2F9c4309c9-a7a6-46f4-99c1-a8bbde4d7565%2FFood_Swing.jpg?rect=0%2C273%2C1192%2C626&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&overlay=&overlay_position=bottom&overlay_width_pct=1 />
+<br><br>
+<h1>মুড সুইং নয়, ফুড সুইং</h1> 
+<h4>আহমেদ খান</h4>
+<br><br>
+</div>
+
+<p>মুড সুইং পর্যন্ত ঠিক ছিল, কিন্তু তাই বলে ফুড সুইং? সত্যিই কি এ ধরনের কিছু আছে দুনিয়ায়?</p>
+<p>না, এ প্রশ্ন করার উপায় অবশ্য নেই। তিশা যেহেতু বলেছে ফুড সুইং আছে, তো আছে। তিশা বলেছে, আমার নতুন অসুখ হয়েছে…অসুখের নাম ফুড সুইং।</p>
+<p>তা ফুড সুইং হলে কী হয়?</p>
+<p>হাহাকার হয়।</p>
+<p>বিশ্বাস হলো না তো… আমারও হয়নি। কিন্তু যেদিন প্রথম খেয়াল করলাম, রাতের খাবারটা শেষ করে ফোনটা খুলে অকারণেই ঢুকে গেলাম ফেসবুকে, আর ঢুকতেই কী এক মোহে আটকে গেলাম, যেতে যেতেই মনে হলো, আহা রে, কী যেন খাওয়ার কথা ছিল আমার...হলো না খাওয়া!</p>
+<p>কী অদ্ভুত! পেট পুরো ভরা। অথচ মনের ভেতর তীব্র হাহাকার। কী যেন খেতে হতো, কী যেন খেতে হতো...। আমার পরপর দুটো হাঁচি এলেও তিশাকে ফোন দিতে হয়। রাতটা একটু বেশি, তাতেই–বা কী!</p>
+<p>‘তিশা?’</p>
+<p>‘হু, বলো…’</p>
+<p>‘আচ্ছা শোনো না… আমার না কেমন একটা খালি খালি লাগতেছে!’</p>
+<p>‘ঘুমাও। ঘুমালে ঠিক হয়ে যাবে। গত তিন দিন তুমি নতুন সিরিজ দেখা নিয়ে পাগলের মতো ছিলে।’</p>
+<p>‘না না। ঘুম ইস্যু না। খাওয়া ইস্যু। পেটটা কেমন শূন্য শূন্য...শূন্য শূন্য!’</p>
+<p>‘আরে পেট শূন্য থাকলে পেট ভরাও। খাও কিছু।’</p>
+<p>‘খেয়েছি তো। মোরগ-পোলাও খেলাম। বেগুনভাজা ছিল। আলুকুচি ভাজি ছিল। ভাজিটা খুব টেস্টি হয়েছিল। পেট ভরে খেলাম।’</p>
+<p>‘হীরক, শোনো, এই ভররাতে আমার সাথে এই সব ইয়ার্কি করবা না। আমি মেস করে থাকি। ডিমভাজা দিয়ে ভাত খেয়েছি। এখন আমি ঘুমাতে যাচ্ছি। তোমার ভরা পেটের খালি খালি ইস্যু নিয়ে আন্দোলন করতে পারব না। ফোন রাখো!’</p>
+<p>ফোন রাখলেও মনকে কোথাও রাখা যায় না!</p>
+<p>অন্য সময় ফেসবুকে ঢুকলেই সমাধান হয়ে যায়। একের পর এক রিল আসতে থাকে। রিলের ফাঁদে সময় কেটে যায়। এখন কাটছে না…কী যেন খেতে চাই, কী যেন খেতে চাই!</p>
+<p>পরের দিন তাই তিশাকে নিয়ে খেতে ছুটলাম চাপ-পরোটা। দুর্দান্ত টেস্টি জিনিস। গরুর চাপ, সঙ্গে লুচি লুচি পরোটা...আর মগজভুনা। সবকিছু উজাড় করে খেলাম। তিশা আমার খাওয়ার দিকে হাঁ হয়ে তাকিয়ে থাকল শুধু। কয়েকটা ফলস ঢেকুরের পর আস্ত একটা বোম্বে ঢেকুর তুললাম। ‘ইয়াক’ বলে রেস্তোরাঁ থেকে ছিটকে বেরিয়ে এল তিশা। আমি বেরোলাম পান-মসলা চিবাতে চিবাতে। পৃথিবীতে যেন শান্তি নেমে এসেছে। মরুভূর তৃষা মেটাবে তুমি, কোথা পাবে এত জল...ব্যাপারটা সব জায়গায় সত্য না; পেটের মরুতা মেটানোর জন্য চাপ-পরোটা দুর্দান্ত। এর ওপর একটা লেকচার দিতে যাব, তখনই আবার মনের মধ্যে উটকো একটা কিছু কাছিমের মতো গলা বাড়াতে শুরু করল। মুখের দিকে তাকিয়েই তিশা কিছু বুঝল কি না কে জানে। বলল, ‘কী হইছে?’</p>
+<p>আমি একটু হাসার মতো ভঙ্গি করলাম শুধু। বললাম, ‘না মানে, পেট তো ভরাই…তবু কী যেন খেতে ইচ্ছা করছে, বুঝলা!’</p>
+<p>আর ঠিক তখনই, তিশার হঠাৎই মুড সুইং হলো, ‘চেঁচিয়ে বলল, তুমি বুঝতেছ যে তোমার ফুড সুইং হইতেছে?’</p>
+<p>আগেই বলেছি, তিশা যখন বলেছে আমার ফুড সুইং হচ্ছে, তো ফুড সুইংই হচ্ছে! কিন্তু এই ফুড সুইং যে এমন ভয়াবহ ব্যাপার, তা আগে বুঝিনি।</p>
+<p>ভাত খেলে কাচ্চির কথা মনে পড়ে, কাচ্চি খেলে খিচুড়ি।</p>
+<p>খিচুড়ি মুখে তুলতে ধরলে মনে আসে তন্দুরির চেহারা।</p>
+<p>একদিকে পৃথিবীর তাবৎ জিনিস খেতে খেতে মনে আসতে থাকে পৃথিবীর আর কী কী খাওয়া যেতে পারে! খেয়ে উঠে খাওয়ার কথা ভাবার মতো এমন বীভৎস ব্যাপার কিছু নেই। তিশাকে বললাম, ‘আমারে বাঁচাও! আমি তো শেষ!’</p>
+<p>প্রেমিকা হলেও তিশা আমার গুরুজনের মতো। সে আমাকে নিয়ে গেল ডাক্তারের কাছে। ডাক্তার রহমান। বয়স ৪৮ কি ৫০। ইঁদুরের মতো চোখ পিটপিট করেন। আমার ফুড সুইংয়ের কথা শুনেই কেমন যেন সিরিয়াস হয়ে গেলেন। চোখ-মুখ-নাক হাতালেন বেশ কিছুক্ষণ। পেটে দিলেন গুঁতো। তারপর মাথা নাড়ালেন। ঠোঁটও ওলটালেন। মনে হলো, আমার খুব বেশি দিন বাকি নেই। পেটটা গুড়গুড় করে উঠল। এভাবেই তাহলে মৃত্যু ছিল? খেতে খেতে আর খাওয়ার কথা ভাবতে ভাবতে চিতপটাং! কবরে শয়ন। এপিটাফে লেখা থাকবে, ‘এখানে এক ফুড সুইঙ্গার ঘুমিয়ে আছে, তাকে শান্তিতে ঘুমাতে দাও!’</p>
+<p>না বলে যেন জেগে উঠলাম। স্বপ্ন দেখছিলাম নাকি এতক্ষণ!</p>
+<p>নাহ! তা–ও না! ডাক্তার রহমান একই রকম কুতকুতে চোখে তাকিয়ে আছেন। তিশা অনবরত আমার রোগের বর্ণনা দিয়ে যাচ্ছে। ডাক্তার ঠান্ডা মাথায় সব কথা শুনে যেতে যেতে অনেকক্ষণ পর বললেন, ‘হুমমম…’</p>
+<p>তারপরই নিজের প্যাডটা টেনে কিছু লিখলেন খসখস করে। আমাকে ধরিয়ে দিয়ে বললেন, ‘যান!’</p>
+<p>বাইরে এসে প্রেসক্রিপশনটা খুলে দেখলাম, ওষুধের নাম না, যেন একটা চিঠি লিখেছেন ডাক্তার রহমান। লিখেছেন, ‘ফুড সুইং না, আপনি ভুগছেন অতৃপ্তিতে। অবশ্য পৃথিবীর বেশির ভাগ মানুষই এখন এ রোগে ভুগছে। অন্যের সঙ্গে নিজের তুলনা, আর এক্সট্রা কিছুর আশার বালিঘর গড়ছেন। তাই কিছুতেই সুখী হতে পারছেন না কেউই। তৃপ্ত থাকেন, ভালো থাকেন।’</p>
+<p>মেজাজটা খারাপ হলো। বিরাট এক লেকচার লিখে দিয়েছেন ডাক্তার। আপনি বলবেন আর আমি তৃপ্ত হব, তাই না?</p>
+<p>কিন্তু তিশা বলল, ‘ডাক্তার ঠিকই বলেছে। তুমি অতৃপ্তিতে ভুগছ। আমরা সবাই–ই আসলে অতৃপ্তিতে ভুগছি।’</p>
+<p>আমি আর কিছু বললাম না। তিশা যেহেতু বলেছে, তাহলে এটাই ঠিক। ফুড সুইং না, আমার অসুখের নাম অতৃপ্তি! আর যা–ই হোক, জীবন তো ছোটগল্প না যে অতৃপ্তি রেখে শেষ করতে হবে!</p>
+        </div>
+    </div>
+
+</body>
+</html>
