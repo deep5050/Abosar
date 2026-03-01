@@ -390,6 +390,7 @@
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 4;
+            line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
             z-index: 3;
@@ -655,15 +656,16 @@
 
         function applyData() {
             const currentData = currentTab === 'rabibasariya' ? rabibasariya : onnoalo;
+            const reversedData = [...currentData].reverse();
             const query = searchInput.value.toLowerCase().trim();
 
             if (query) {
-                filteredData = currentData.filter(s =>
+                filteredData = reversedData.filter(s =>
                     s.title.toLowerCase().includes(query) ||
                     s.author.toLowerCase().includes(query)
                 );
             } else {
-                filteredData = currentData;
+                filteredData = reversedData;
             }
 
             renderBooks();
@@ -689,7 +691,7 @@
                 const bookHtml = `
                     <a href="${story.link}" class="book" target="_self">
                         <div class="book-texture"></div>
-                        <div class="book-title">${story.title}</div>
+                       <div class="book-title">${story.title.replace(/:crown:\s?/, "")}</div>
                         <div class="book-author">${story.author}</div>
                         <div class="book-decoration"></div>
                     </a>
