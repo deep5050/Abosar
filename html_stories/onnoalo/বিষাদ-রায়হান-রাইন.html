@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বিষাদ - রায়হান রাইন</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper-container {
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }
+        
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .story-content {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .story-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .story-content hr {
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .story-content hr::after {
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .paper-container {
+                padding: 3rem 1.5rem;
+            }
+            .back-nav {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }
+            .paper-container::before {
+                left: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .story-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>বিষাদ</h1>
+            <div class="author">রায়হান রাইন</div>
+        </header>
+
+        <div class="story-content">
+            <div align=center>
+<img src=https://images.prothomalo.com/prothomalo-bangla%2F2020-08%2Fb20dedcc-4fd2-4b33-87d3-e4b137eab40c%2F01.png?rect=0%2C32%2C862%2C453&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&overlay=&overlay_position=bottom&overlay_width_pct=1 />
+<br><br>
+<h1>বিষাদ</h1> 
+<h4>রায়হান রাইন</h4>
+<br><br>
+</div>
+
+<p>বিষণ্নতা, প্রথমে যা ছিল একটা ছায়ামাত্র, ক্রমশ সেটা ত্বকের সঙ্গে মিশে গেল, ভেজা ভেজা একটা বিষাদ যেন শেওলার পাতলা একটা স্তর।</p>
+<p>সবাই এটা লুকায়। কিন্তু আমি স্পষ্ট দেখতে পাই, হাসির আড়ালে, উচ্ছ্বসিত কথাবার্তার ফাঁকে মুখের রেখাগুলোর ভাঁজে ভাঁজে, চোখের নিচে, ঠোঁটের দুপাশে ঝিকিয়ে ওঠে সেই শেওলাসবুজ স্যাঁতসেঁতে বিষাদ।</p>
+<p>আমার মুখের বিষাদটাও সে আবিষ্কার করে ফেলল। ছাদবাগানের জন্য মাটি আনতে গেছি। বাসার পেছনের জঙ্গলে মেটে আলু তুলতে গিয়ে কারা যেন মাটি খুঁড়েছিল, বালতিতে সেই মাটি ভরতে গিয়ে খেয়াল করলাম, ধসে পড়া উইঢিবির নিচ থেকে সে আমার দিকে তাকানো; দেখতে গুবরে পোকার মতো, চোখ পিটপিট করছে আর আমাকে দেখছে। মনে হলো, অধঃপতিত কোনো দেবতা পোকাজন্ম লাভ করেছে।</p>
+<p>অত্যন্ত ক্ষীণ কণ্ঠের একটা আওয়াজ শুনতে পেলাম, ‘এত বিষণ্নতা কিসের?’</p>
+<p>আমি বুঝে উঠতে পারি না আদৌ ওই পোকাই কথা বলছে কি না এবং কথাটা আমারই উদ্দেশে কি না।</p>
+<p>‘আমাকে বলছ?’ আমি জিজ্ঞেস করি।</p>
+<p>‘হ্যাঁ, তোমাকেই,’ সে বলল আড়বাঁশির মতো চিকন কণ্ঠে।</p>
+<p>আমি বলি, ‘মহামারি চলছে, চারদিকে এত এত মৃত্যু! তাই বিষণ্ন।’</p>
+<p>‘তুমি তো বেঁচেই আছ, দেখাই যাচ্ছে।’</p>
+<p>‘তা আছি। কিন্তু যেকোনো সময়...’</p>
+<p>‘সে তো একটা পরিসংখ্যান। শুধু এ জন্যই এত বিষাদ?’</p>
+<p>‘গৃহবন্দী থাকি। বাইরে গিয়েও শান্তি নেই। মানুষ দেখলেই সন্দেহ হয়। কী অভিশপ্ত ব্যাপার!’</p>
+<p>‘তুমি তো নিঃসঙ্গতাই চাও।’</p>
+<p>‘কিন্তু এভাবে চাই না, যেন আমি বাধ্য।’</p>
+<p>‘তা ঠিক আছে।’</p>
+<p>‘কী ঠিক আছে?’</p>
+<p>‘ওই না চাওয়াটা। যদিও তুমি ভাবো কারও কাছে যাওয়া মানেই জীবনের শুরু, কিন্তু আসলে তোমার কাছে তারা এক্সিস্ট করে না।’</p>
+<p>‘মানে?’</p>
+<p>‘তুমি মনে করো তারা আছে কেবল তোমাকেই অস্তিত্ব দিতে, তাই বলছিলাম। তবু মারি যেভাবে তোমার বেঁচে থাকাটাকে কেটেছেঁটে ছোট করে এনেছে, তাতে অভ্যস্ত হয়ো না। কারণ, সেটাও মৃত্যুই।’</p>
+<p>পোকাটা হঠাৎ গর্তে ঢুকে পড়ে। তাকে আর দেখতে পাই না।</p>
+        </div>
+    </div>
+
+</body>
+</html>

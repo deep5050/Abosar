@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রেমিক - নুসরৎ নওরিন</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper-container {
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }
+        
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .story-content {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .story-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .story-content hr {
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .story-content hr::after {
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .paper-container {
+                padding: 3rem 1.5rem;
+            }
+            .back-nav {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }
+            .paper-container::before {
+                left: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .story-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>প্রেমিক</h1>
+            <div class="author">নুসরৎ নওরিন</div>
+        </header>
+
+        <div class="story-content">
+            <div align=center>
+<img src=https://images.prothomalo.com/prothomalo-bangla%2F2021-01%2F46751d85-6bd3-485b-9c5a-da1a3e6df8f2%2Fpremik_.png?rect=0%2C68%2C600%2C315&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&overlay=&overlay_position=bottom&overlay_width_pct=1 />
+<br><br>
+<h1>প্রেমিক</h1> 
+<h4>নুসরৎ নওরিন</h4>
+<br><br>
+</div>
+
+<p>চিঠিটা খুঁজে পেয়ে মনিরা অবাক হয়ে গেল। মেয়ে ক্লাস করতে গিয়েছিল। তার জিনিসপত্র গোছাতে গিয়ে তার আইসিটি বইয়ের ফাঁকে দেখল নীল খাম। ঠোঁটে ঠোঁট চেপে সে খামটা খুলল। ‘প্রিয়া’ সম্বোধন করে যাকে চিঠি লেখা হয়েছে, সে যে মনিরার মেয়ে হুমায়রা, সে বিষয়ে সন্দেহ নেই।</p>
+<p>চিঠির বক্তব্য সোজা। হুমায়রাকে ছাড়া চিঠির লেখক কিছুই ভাবতে পারে না। তার জীবন এখন ‘হুমায়রা, হুমায়রা’। কয়েকটা লাইন পড়ে মনিরার বুক গুড়গুড় করে উঠল। এই চিঠি যাকে উদ্দেশ করে লেখা, তার জায়গায় নিজেকে কল্পনা করে বোঝার চেষ্টা করল এই বয়সে কতটা কাঁপাতে পারে লাইনগুলো। ‘আমার ছোট্ট পাখি, আমি তোমার জন্য একটা পুরা নীল আকাশ। আমার মিষ্টি পাখি, রোজ রাতে ঘুমানোর আগে তোমার কপালে চুমু, চোখের পাতায় চুমু...’ মনিরা বড় একটা শ্বাস টেনে নিল। চিঠিতে অবশ্য এমন কিছু নেই, যা সীমা অতিক্রম করে। আজকালকার ছেলেমেয়েরাও চিঠি লেখে, সেটাই মনিরার জানা ছিল না। ভ্রু কুঁচকে, হৃৎপিণ্ডের দ্রুত তালে তালে বিষয়টা বোঝার চেষ্টা করল সে।</p>
+<p>মা–বাবা হিসেবে মনিরা আর এবাদুর তো চেষ্টা কম করেনি। মেয়ে বাড়ির বাইরেই খুব কম যায়, গেলেও কড়া পর্দা করে যাওয়া লাগে। কোথাও সে একফোঁটা আড্ডা দেয় না, শপিংয়ে যায় না, মোবাইল ফোনও কিনে দেওয়া হয়নি এখনো। তবু কোন দিক দিয়ে এই বিপদ ঘটে গেল! আরও খুঁজে মনিরা আরেকটা চিঠি পেল। এটাও নীল খামে। সুন্দর হাতের লেখা। ‘জানপাখি, সারা রাত ঘুমাতে পারিনি। তোমাকে দেখার জন্য, তোমার চোখে তাকানোর জন্য কী অস্থির লাগছিল! দিঘির মতো তোমার চোখ। তুমি খোদার দেওয়া নেয়ামত আমার জীবনে, ভাবলে আনন্দে চোখে পানি আসে...২১ তারিখ তোমার প্রতীক্ষায় থাকব...’ আরও আবেগপ্রবণ কথাবার্তা। মনিরা বোঝার চেষ্টা করল। হয়তো ছেলেটাকে একদিন সে দেখেছেও। লম্বা, পাতলা, শ্যামলা, বিশ-একুশের একটা ছেলে। তার মাথা ভনভন করছিল। চিঠি হাতে চুপচাপ বসে রইল সে।</p>
+<p>হুমায়রা ফেরার পর ছোট ছেলে তওসিফকে বাজারে পাঠিয়ে দিল মনিরা। মেয়েকে শুরু করল জেরা। কিন্তু অনেক সময় পেরিয়ে যাওয়ার পরও মেয়ের প্রতিক্রিয়ায় সে অবাক। মনে হলো, বিষয়টার জন্য আগে থেকেই সে প্রস্তুত ছিল। কয়েকটা থাপ্পড় খেয়েছে, অন্যদিকে তাকিয়ে চোখের পানি ফেলছে, চোখ–মুখ লাল। তবু নির্বিকার। একটা কথারও জবাব নেই। রাগের চোটে মনিরা আরও কয়েকটা থাপ্পড় দিল। হুমায়রার গালে আঙুলের দাগ বসে গেল। নিচের দিকে চোখ, একদম চুপ। দৃশ্যটা মনিরার চেনা। তার হাত-পা অসাড় হয়ে আসছিল। প্রচণ্ড অসহায় লাগছিল। একুশ বছর আগের এক সকালের কথা মনে পড়ে যাচ্ছিল। সেদিন কিশোরী মনিরা নিজের মায়ের সামনে এমনি হাত-পা শক্ত করে বসে ছিল।</p>
+<p>মনিরা চেঁচিয়ে বলে, ‘তুই কি জানোস, জীবনডা নষ্ট করতাসোছ তুই? তরে কোন জিনিসটা দেই নাই ক!’</p>
+<p>‘ভাবছি পড়ালেখা শিখা নিজের পায়ে দাঁড়াইবি। কত টেকা খরচ কইরা তর বাপে মাস্টার রাখছে। কলেজ ভর্তি করছে।’</p>
+<p>‘আমারে দেইখা শিখস না? তর বয়সে বিয়া অইছিল।’ একটু থেমে মনিরা দাঁতে দাঁত চেপে বলে, ‘শিখস না? শিখস না?’ বলতে বলতে মনিরা হঠাৎ বাঁধভাঙা কান্নায় ভেঙে পড়ে হকচকিয়ে দেয় সতেরো বছরের মেয়েকে। হুমায়রা কখনো মাকে এভাবে কাঁদতে দেখেনি।</p>
+<p>একনিশ্বাসে সে বলতে থাকে, ‘বিয়ার পর কয় দিন তোর নানার বাড়ি গেছি? না খাইয়া থাকলে কুনো দিন আমার মায়ের প্যাটের ভাই খুঁজ নিছে? তর বাপ কয় দিন খুঁজ নিছে আমরা বাঁইচা আছি নাকি?’</p>
+<p>মনিরার প্রথম বাক্যগুলোয় হুমায়রার কোনো প্রতিক্রিয়া না থাকলেও শেষ বাক্যটা তাকে চিন্তায় ফেলে দেয়। চোখ তুলে মায়ের দিকে তাকিয়ে থাকে সে। ‘তর বাপেও তো আমারে নীল খামে চিঠি দিত। কইত আমারে ছাড়া বাঁচব না। বাঁচে নাই? তরে ছাড়া বাঁচে নাই? ষুলো বছর আমাগো লাত্থি দিয়া রইছে না আরেক বিটির লগে?’ মনিরা বড় বড় চোখ করে তাকিয়ে থাকে। বাবা হিসেবে আশৈশব একজনকেই চেনে সে। এ কার কথা বলছে তার মা? এতক্ষণ পর প্রথম কথা বলে সে, ‘কী বলবার চাও?’</p>
+<p>মনিরার চোখের পানি শুকিয়ে গালে শক্ত হয়ে আছে। মেয়ের দৃষ্টি এড়াতে সে অন্যদিকে চেয়ে, ‘তোমার বয়স আছিল এক বছর। সেই সময় তোমার বাবা ওবায়দুল ইসলাম আমাগো ছাইড়া গেছে।’ দুঃখের সময় মা একটু গুছিয়ে কথা বলে, হুমায়রার মনে পড়ে। একদৃষ্টে মায়ের মুখের দিকে তাকিয়ে থাকে সে। ‘এই সব চিঠিফিঠি কিছু না রে মা। এগোলা কিছু না।’ শূন্য চোখে হুমায়রার মা বিড়বিড় করে বলে চলে নিজেকে।</p>
+<p>হুমায়রা তখন খানিকটা অন্যমনস্ক। তার চোখে ভর করে দুপুরের উদাসীনতা। সে কি তার প্রেমিকের কথা ভাবছিল, নাকি বাবার কথা, তা তাকে দেখে বোঝার উপায় নেই।</p>
+        </div>
+    </div>
+
+</body>
+</html>

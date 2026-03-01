@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দুটি অণুকাহন - রায়হান রাইন</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c1810;
+            --accent: #8b4513;
+            --accent-light: #d2b48c;
+            --paper-shadow: rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tiro Bangla', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper-container {
+            background-color: var(--bg-color);
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem 6rem;
+            border-radius: 4px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                inset 0 0 50px rgba(200, 180, 160, 0.2);
+            position: relative;
+        }
+        
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 2px;
+            background-color: rgba(139, 69, 19, 0.2);
+        }
+
+        .back-nav {
+            position: absolute;
+            top: 2rem;
+            left: -5rem;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            color: var(--accent);
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        header::after {
+            content: '❦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .story-content {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .story-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .story-content hr {
+            border: none;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .story-content hr::after {
+            content: '***';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+            color: rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .paper-container {
+                padding: 3rem 1.5rem;
+            }
+            .back-nav {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 2rem;
+            }
+            .paper-container::before {
+                left: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .story-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper-container">
+        <div class="back-nav">
+            <a href="../../index.html" class="back-btn" title="Back to Library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <header>
+            <h1>দুটি অণুকাহন</h1>
+            <div class="author">রায়হান রাইন</div>
+        </header>
+
+        <div class="story-content">
+            <div align=center>
+<img src=https://images.prothomalo.com/prothomalo-bangla%2F2020-09%2F58cdfe33-a695-410d-89fc-bb2cd854003c%2FRahayan.png?rect=0%2C61%2C1834%2C963&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&overlay=&overlay_position=bottom&overlay_width_pct=1 />
+<br><br>
+<h1>দুটি অণুকাহন</h1> 
+<h4>রায়হান রাইন</h4>
+<br><br>
+</div>
+
+<p>আশপাশের বাড়ির ছাদে কেউ না কেউ এসে দাঁড়ায়। বাচ্চারা খেলে। আর ঠিক সন্ধ্যা ছটায় দক্ষিণ দিকের লেকগুলো থেকে ঝাঁক ঝাঁক পানকৌড়ি উড়ে আসে। আমাদের মাথার ওপর দিয়ে উড়ে যায় উত্তরের দিকে।</p>
+<p>খবর শুনি। মৃত্যুর সংখ্যা বাড়ছে।</p>
+<p>কিছুদিন পর পানকৌড়িগুলো আর আসে না। পিএটিসির দিক থেকে কিছু বক উড়ে আসে। ধীরে ধীরে এদের সংখ্যা বেড়ে যায়। বকেরা ডেইরি ফার্ম, বিএলআরআইয়ের গাছগুলোর ওপর দিয়ে উড়ে যায় সেনওয়ালিয়ার দিকে।</p>
+<p>মৃত্যুর সংখ্যা আরও বাড়ে। পরিচিত কারও কারও মৃত্যুর খবর আসে।</p>
+<p>তত দিনে বকগুলো অন্য কোথাও চলে গেছে। এবার উত্তর দিক থেকে ঝাঁকে ঝাঁকে কাক উড়ে আসে। ওরাও আসে ঠিক সন্ধ্যা ছটায়। এ সময় একঝাঁক চড়ুই ঝটপট উড়ে যায় বিশমাইলের দিকে।</p>
+<p>মৃত্যুর সংখ্যা বেড়েই চলেছে। পাশের বিল্ডিংয়ে একজন আক্রান্ত হয়েছেন।</p>
+<p>বিকেলে ছাদে গিয়ে দাঁড়াই। পাশের ছাদগুলো ফাঁকা। তবু সন্ধ্যা পর্যন্ত বসে থাকি। দু–একটা বাদুড় উড়ে যায় দক্ষিণ দিকে।</p>
+<p>হঠাৎ একদিন টের পেলাম, তারা জাল টানছে।</p>
+<p>হ্যাঁ। আমি নিশ্চিত, কিছু লোক আমার ভেতর সারাক্ষণ জাল টেনে চলেছে। এটা ঠিক, মানুষ কোনো জলাশয় নয় যে সেখানে কেউ জাল ফেলবে। কিন্তু এটা একটা উপমা।</p>
+<p>আমি লোকগুলোকে জিজ্ঞেস করি, ‘আপনারা কারা?’</p>
+<p>‘আমরা ওপর থেকে এসেছি।’</p>
+<p>‘আমার ভেতর কেন জাল ফেলছেন?’</p>
+<p>‘উজ্জ্বল আর রঙিন পাঁচটা মাছ আমরা ধরব।’</p>
+<p>‘ঠিক এ সময়ই কেন?’ আমি মরিয়া হয়ে জিজ্ঞেস করি।</p>
+<p>‘এটাই উপযুক্ত সময়। মারির সময়ই মাছগুলো চঞ্চল হয়ে ভেসে ওঠে একদম উপরিতলে।’</p>
+<p>এই বলে তারা ভাসাজালের দড়ি ধরে টানতে শুরু করে।</p>
+<p>আমি টের পেতে থাকি জাল টানা আর জলের শব্দ, সারাক্ষণ, আমার ভেতর।</p>
+        </div>
+    </div>
+
+</body>
+</html>
